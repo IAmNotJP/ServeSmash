@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp4tf5eq4s4fh"]
+
+[ext_resource type="Script" path="res://main_scene.gd" id="1_0vimj"]
+
+[node name="MainScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0vimj")
+
+[node name="Main Menu" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 1149.0
+offset_bottom = 649.0
+
+[node name="Start Button" type="Button" parent="Main Menu"]
+layout_mode = 0
+offset_left = 505.0
+offset_top = 216.0
+offset_right = 643.0
+offset_bottom = 263.0
+text = "Start"
+
+[node name="Exit Button" type="Button" parent="Main Menu"]
+layout_mode = 0
+offset_left = 505.0
+offset_top = 301.0
+offset_right = 643.0
+offset_bottom = 348.0
+text = "Exit"
+
+[connection signal="pressed" from="Main Menu/Start Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Main Menu/Exit Button" to="." method="_on_exit_button_pressed"]
