@@ -9,4 +9,5 @@ func handle_move_animation(move_direction: float) -> void:
 		sprite.play('run')
 	else:
 		sprite.play('idle')
+	print(move_direction)
 	

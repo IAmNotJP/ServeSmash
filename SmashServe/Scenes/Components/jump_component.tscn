@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://fysjotek216k"]
+
+[ext_resource type="Script" path="res://Scenes/Components/jump_component.gd" id="1_b5owa"]
+
+[node name="JumpComponent" type="Node"]
+script = ExtResource("1_b5owa")
+jump_height = null
+jump_time_to_peak = null
+jump_time_to_descent = null
