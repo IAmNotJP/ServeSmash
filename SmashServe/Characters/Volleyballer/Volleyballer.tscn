@@ -1,8 +1,7 @@
-[gd_scene load_steps=77 format=3 uid="uid://e40nw3kufsoa"]
+[gd_scene load_steps=76 format=3 uid="uid://e40nw3kufsoa"]
 
 [ext_resource type="Script" path="res://Characters/Volleyballer/volleyballer.gd" id="1_ughjb"]
 [ext_resource type="Texture2D" uid="uid://b6hfschvvko8p" path="res://Characters/Volleyballer/spritesheets/playerIdle.png" id="2_8y761"]
-[ext_resource type="PackedScene" uid="uid://b6nsr3nn7sbew" path="res://Scenes/Components/gravity_component.tscn" id="2_nutbn"]
 [ext_resource type="Texture2D" uid="uid://bgsishdkmgvk2" path="res://Characters/Volleyballer/spritesheets/playerBlock.png" id="3_4ye6u"]
 [ext_resource type="Texture2D" uid="uid://c0p0m8heovl8k" path="res://Characters/Volleyballer/spritesheets/playerRun.png" id="3_c52d6"]
 [ext_resource type="PackedScene" uid="uid://tawiiu8h1sqj" path="res://Scenes/Components/input_component.tscn" id="4_apy5s"]
@@ -503,7 +502,7 @@ size = Vector2(8.25, 4.75)
 position = Vector2(876, 570)
 scale = Vector2(2, 2)
 script = ExtResource("1_ughjb")
-gravity_component = NodePath("GravityComponent")
+gravity_component = NodePath("")
 input_component = NodePath("InputComponent")
 movement_component = NodePath("MovementComponent")
 animation_component = NodePath("AnimationComponent")
@@ -516,9 +515,6 @@ shape = SubResource("RectangleShape2D_epd4j")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rggpm")
 animation = &"airbourne"
-
-[node name="GravityComponent" parent="." instance=ExtResource("2_nutbn")]
-gravity = 0.0
 
 [node name="InputComponent" parent="." instance=ExtResource("4_apy5s")]
 
