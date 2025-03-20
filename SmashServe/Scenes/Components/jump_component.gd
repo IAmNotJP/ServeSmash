@@ -1,16 +1,12 @@
 class_name JumpComponent
 extends Node
 
-@export var jump_height : float
-@export var jump_time_to_peak : float
-@export var jump_time_to_descent : float
+@export_subgroup("Settings")
+@export var jump_velocity: float = -350.0
 
-var jump_velocity : float = ((2.0 * jump_height)/ jump_time_to_peak) * -1.0
-var jump_gravity :  float = ((-2.0 * jump_height)/ (jump_time_to_peak * jump_time_to_peak)) * -1.0
-var fall_gravity : float = ((-2.0 * jump_height)/ (jump_time_to_descent * jump_time_to_descent)) * -1.0
+var is_jumping: bool = false
 
-func handle_jump(delta, body: CharacterBody2D, ) -> void:
-	body.velocity.y += get_gravity() * delta
-
-
-func get_gravity() -> float
+func handle_jump(body: CharacterBody2D, want_to_jump: bool) -> void:
+	if want_to_jump and body.is_on_floor():
+		body.velocity.y = jump_velocity
+	is_jumping = body.velocity.y < 0 and not body.is_on_floor()

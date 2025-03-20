@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=3 uid="uid://e40nw3kufsoa"]
+[gd_scene load_steps=78 format=3 uid="uid://e40nw3kufsoa"]
 
 [ext_resource type="Script" path="res://Characters/Volleyballer/volleyballer.gd" id="1_ughjb"]
 [ext_resource type="Texture2D" uid="uid://b6hfschvvko8p" path="res://Characters/Volleyballer/spritesheets/playerIdle.png" id="2_8y761"]
@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://cj43lb27iguei" path="res://Scenes/Components/movement_component.tscn" id="5_umave"]
 [ext_resource type="PackedScene" uid="uid://2001is3sa1gg" path="res://Scenes/Components/animation_component.tscn" id="6_3ns68"]
 [ext_resource type="Texture2D" uid="uid://b4rcuixp1ixly" path="res://Characters/Volleyballer/spritesheets/playerReception.png" id="6_mitmv"]
+[ext_resource type="PackedScene" uid="uid://fysjotek216k" path="res://Scenes/Components/jump_component.tscn" id="11_ke7pq"]
+[ext_resource type="PackedScene" uid="uid://b6nsr3nn7sbew" path="res://Scenes/Components/gravity_component.tscn" id="12_dpwii"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_epd4j"]
 size = Vector2(13.25, 25.5)
@@ -498,11 +500,11 @@ size = Vector2(26, 15)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fg58f"]
 size = Vector2(8.25, 4.75)
 
-[node name="CharacterBody2D" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "input_component", "movement_component", "animation_component")]
-position = Vector2(876, 570)
+[node name="Volleyballer" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component", "animation_component")]
 scale = Vector2(2, 2)
 script = ExtResource("1_ughjb")
-gravity_component = NodePath("")
+gravity_component = NodePath("GravityComponent")
+jump_component = NodePath("JumpComponent")
 input_component = NodePath("InputComponent")
 movement_component = NodePath("MovementComponent")
 animation_component = NodePath("AnimationComponent")
@@ -514,14 +516,20 @@ shape = SubResource("RectangleShape2D_epd4j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rggpm")
-animation = &"airbourne"
+animation = &"idle"
 
 [node name="InputComponent" parent="." instance=ExtResource("4_apy5s")]
 
 [node name="MovementComponent" parent="." instance=ExtResource("5_umave")]
+speed = 400.0
 
 [node name="AnimationComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("6_3ns68")]
 sprite = NodePath("../AnimatedSprite2D")
+
+[node name="JumpComponent" parent="." instance=ExtResource("11_ke7pq")]
+jump_velocity = -650.0
+
+[node name="GravityComponent" parent="." instance=ExtResource("12_dpwii")]
 
 [node name="VolleyHitBox" type="CollisionShape2D" parent="."]
 position = Vector2(9.5, 10.5)

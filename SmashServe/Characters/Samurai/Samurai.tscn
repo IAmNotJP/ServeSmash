@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://bgxt3u4j4pghh"]
+[gd_scene load_steps=39 format=3 uid="uid://bgxt3u4j4pghh"]
 
 [ext_resource type="Script" path="res://Characters/Samurai/samurai.gd" id="1_e7ibr"]
 [ext_resource type="Texture2D" uid="uid://fyxeebw8rhrg" path="res://Characters/Samurai/spritesheets/Fall.png" id="2_y7e60"]
@@ -7,6 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://bjtbaprtr6o2e" path="res://Characters/Samurai/spritesheets/Run.png" id="5_vtfkx"]
 [ext_resource type="Texture2D" uid="uid://714k15452blk" path="res://Characters/Samurai/spritesheets/Attack2.png" id="6_wbjqx"]
 [ext_resource type="Texture2D" uid="uid://bufsxxd8fpff7" path="res://Characters/Samurai/spritesheets/Attack1.png" id="7_mxqbo"]
+[ext_resource type="PackedScene" uid="uid://tawiiu8h1sqj" path="res://Scenes/Components/input_component.tscn" id="8_hlsd1"]
+[ext_resource type="PackedScene" uid="uid://cj43lb27iguei" path="res://Scenes/Components/movement_component.tscn" id="9_uijgm"]
+[ext_resource type="PackedScene" uid="uid://fysjotek216k" path="res://Scenes/Components/jump_component.tscn" id="10_2h1gy"]
+[ext_resource type="PackedScene" uid="uid://b6nsr3nn7sbew" path="res://Scenes/Components/gravity_component.tscn" id="11_3kckm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5swlh"]
 atlas = ExtResource("2_y7e60")
@@ -216,12 +220,36 @@ animations = [{
 "speed": 12.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ct2if"]
+size = Vector2(59, 106)
+
+[node name="Samurai" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component")]
+scale = Vector2(0.5, 0.5)
+slide_on_ceiling = false
 script = ExtResource("1_e7ibr")
+gravity_component = NodePath("GravityComponent")
+jump_component = NodePath("JumpComponent")
+input_component = NodePath("InputComponent")
+movement_component = NodePath("MovementComponent")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(560, 308)
 scale = Vector2(2.071, 2)
 sprite_frames = SubResource("SpriteFrames_5fley")
 animation = &"volley"
 frame_progress = 0.894936
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ct2if")
+one_way_collision = true
+one_way_collision_margin = 5.3
+
+[node name="InputComponent" parent="." instance=ExtResource("8_hlsd1")]
+
+[node name="MovementComponent" parent="." instance=ExtResource("9_uijgm")]
+speed = 350.0
+
+[node name="JumpComponent" parent="." instance=ExtResource("10_2h1gy")]
+jump_velocity = -900.0
+
+[node name="GravityComponent" parent="." instance=ExtResource("11_3kckm")]
+gravity = 2000.0

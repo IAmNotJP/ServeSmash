@@ -2,7 +2,7 @@ class_name InputComponent
 extends Node
 
 var input_horizontal: float = 0.0
-
+var input_jump: bool = false
 
 func _process(_delta: float) -> void:
 	input_horizontal = Input.get_axis('p1left','p1right')
