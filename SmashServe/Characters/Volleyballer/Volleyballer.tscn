@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=3 uid="uid://e40nw3kufsoa"]
+[gd_scene load_steps=81 format=3 uid="uid://e40nw3kufsoa"]
 
 [ext_resource type="Script" path="res://Characters/Volleyballer/volleyballer.gd" id="1_ughjb"]
 [ext_resource type="Texture2D" uid="uid://b6hfschvvko8p" path="res://Characters/Volleyballer/spritesheets/playerIdle.png" id="2_8y761"]
@@ -10,11 +10,14 @@
 [ext_resource type="PackedScene" uid="uid://cj43lb27iguei" path="res://Scenes/Components/movement_component.tscn" id="5_umave"]
 [ext_resource type="PackedScene" uid="uid://2001is3sa1gg" path="res://Scenes/Components/animation_component.tscn" id="6_3ns68"]
 [ext_resource type="Texture2D" uid="uid://b4rcuixp1ixly" path="res://Characters/Volleyballer/spritesheets/playerReception.png" id="6_mitmv"]
+[ext_resource type="Script" path="res://Characters/Volleyballer/flippable_sprite.gd" id="8_w3uvh"]
 [ext_resource type="PackedScene" uid="uid://fysjotek216k" path="res://Scenes/Components/jump_component.tscn" id="11_ke7pq"]
 [ext_resource type="PackedScene" uid="uid://b6nsr3nn7sbew" path="res://Scenes/Components/gravity_component.tscn" id="12_dpwii"]
+[ext_resource type="PackedScene" uid="uid://q3tgpqskq875" path="res://Scenes/Components/flippable_shape.tscn" id="14_7117i"]
+[ext_resource type="PackedScene" uid="uid://c0gij2p7i4t43" path="res://Scenes/Components/hitbox_component.tscn" id="14_ku3gw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_epd4j"]
-size = Vector2(13.25, 25.5)
+size = Vector2(13.25, 21.5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2ucah"]
 atlas = ExtResource("2_8y761")
@@ -494,8 +497,8 @@ animations = [{
 "speed": 12.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fcu04"]
-size = Vector2(26, 15)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8inbt"]
+size = Vector2(16, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fg58f"]
 size = Vector2(8.25, 4.75)
@@ -510,13 +513,13 @@ movement_component = NodePath("MovementComponent")
 animation_component = NodePath("AnimationComponent")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.75, -2)
 scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_epd4j")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="FlippableSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rggpm")
 animation = &"idle"
+script = ExtResource("8_w3uvh")
 
 [node name="InputComponent" parent="." instance=ExtResource("4_apy5s")]
 
@@ -524,17 +527,22 @@ animation = &"idle"
 speed = 400.0
 
 [node name="AnimationComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("6_3ns68")]
-sprite = NodePath("../AnimatedSprite2D")
+sprite = NodePath("../FlippableSprite")
 
 [node name="JumpComponent" parent="." instance=ExtResource("11_ke7pq")]
-jump_velocity = -650.0
+jump_velocity = -900.0
 
 [node name="GravityComponent" parent="." instance=ExtResource("12_dpwii")]
+gravity = 2000.0
 
-[node name="VolleyHitBox" type="CollisionShape2D" parent="."]
-position = Vector2(9.5, 10.5)
-shape = SubResource("RectangleShape2D_fcu04")
+[node name="HitboxComponent" parent="." node_paths=PackedStringArray("flippable_sprite") instance=ExtResource("14_ku3gw")]
+flippable_sprite = NodePath("../FlippableSprite")
+
+[node name="FlippableShape" parent="HitboxComponent" instance=ExtResource("14_7117i")]
+position = Vector2(9, 10.5)
+shape = SubResource("RectangleShape2D_8inbt")
 disabled = true
+default_position = Vector2(9, 10.5)
 
 [node name="VolleySweetspot" type="CollisionShape2D" parent="."]
 position = Vector2(9, 10.5)

@@ -224,7 +224,6 @@ animations = [{
 size = Vector2(59, 106)
 
 [node name="Samurai" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component")]
-scale = Vector2(0.5, 0.5)
 slide_on_ceiling = false
 script = ExtResource("1_e7ibr")
 gravity_component = NodePath("GravityComponent")
