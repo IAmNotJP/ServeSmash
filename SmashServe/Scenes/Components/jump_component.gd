@@ -20,7 +20,7 @@ func handle_jump(body: CharacterBody2D, want_to_jump: bool) -> void:
 		get_parent().is_airbourne = true
 		body.velocity.y = jump_velocity
 	
-	if body.velocity.y < 0 and not body.is_on_floor() and is_jumping == false:
+	if body.velocity.y < 0 and not body.is_on_floor() and is_jumping == false and get_parent().is_hitting == false:
 		sprite.play("jump_launch")
 		
 	is_jumping = body.velocity.y < 0 and not body.is_on_floor()
@@ -30,8 +30,7 @@ func handle_jump(body: CharacterBody2D, want_to_jump: bool) -> void:
 		get_parent().is_airbourne = false
 		is_falling = is_jumping
 		
-	if (prevframe + currentframe) > 0 and not body.is_on_floor() and is_falling == false:
+	if (prevframe + currentframe) > 0 and not body.is_on_floor() and is_falling == false and get_parent().is_hitting == false:
 		is_falling = true
 		sprite.play("jump_land")
-	
 	

@@ -16,6 +16,6 @@ func handle_hitbox(body: CharacterBody2D, want_to_hit: bool) -> void:
 			get_parent().is_hitting = false
 		
 func animation_finished():
-	if sprite.animation == "volley":
-		volley_hitbox.disabled = true
-		get_parent().is_hitting = false
+
+	volley_hitbox.disabled = true
+	get_parent().is_hitting = false
