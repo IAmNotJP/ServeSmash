@@ -12,3 +12,9 @@ func get_jump_input() -> bool:
 
 func get_volley_input()-> bool:
 	return Input.is_action_just_pressed("p1volley")
+
+func get_smash_input()-> bool:
+	return Input.is_action_just_pressed("p1smash")
+	
+func get_lob_input()-> bool:
+	return Input.is_action_just_pressed("p1lob")

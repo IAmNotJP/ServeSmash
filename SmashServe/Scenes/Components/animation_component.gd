@@ -3,7 +3,6 @@ extends Node
 
 @export_subgroup("Nodes")
 @export var sprite: AnimatedSprite2D
-@export var volley: Area2D
 
 func handle_horizonal_flip(move_direction: float) -> void:
 	if move_direction == 0:
@@ -13,8 +12,10 @@ func handle_horizonal_flip(move_direction: float) -> void:
 
 func handle_move_animation(move_direction: float) -> void:
 	handle_horizonal_flip(move_direction)
-	if move_direction != 0:
+	if move_direction != 0 and get_parent().is_hitting == false and get_parent().is_airbourne == false:
+		get_parent().is_running = true
 		sprite.play('run')
-	else:
+	elif get_parent().is_hitting == false and get_parent().is_airbourne == false:
+		get_parent().is_running = false
 		sprite.play('idle')
 	

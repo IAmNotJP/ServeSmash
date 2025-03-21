@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://e40nw3kufsoa"]
+[gd_scene load_steps=91 format=3 uid="uid://e40nw3kufsoa"]
 
 [ext_resource type="Script" path="res://Characters/Volleyballer/volleyballer.gd" id="1_ughjb"]
 [ext_resource type="Texture2D" uid="uid://b6hfschvvko8p" path="res://Characters/Volleyballer/spritesheets/playerIdle.png" id="2_8y761"]
@@ -15,6 +15,9 @@
 [ext_resource type="PackedScene" uid="uid://b6nsr3nn7sbew" path="res://Scenes/Components/gravity_component.tscn" id="12_dpwii"]
 [ext_resource type="PackedScene" uid="uid://q3tgpqskq875" path="res://Scenes/Components/flippable_shape.tscn" id="14_7117i"]
 [ext_resource type="PackedScene" uid="uid://c0gij2p7i4t43" path="res://Scenes/Components/hitbox_component.tscn" id="14_ku3gw"]
+[ext_resource type="PackedScene" uid="uid://k7tgiwgu8awq" path="res://Scenes/Components/smash_component.tscn" id="15_ptaf6"]
+[ext_resource type="PackedScene" uid="uid://vbvcyul3pn85" path="res://Scenes/Components/volley_component.tscn" id="16_yhxas"]
+[ext_resource type="PackedScene" uid="uid://fcq0orj5j81m" path="res://Scenes/Components/lob_component.tscn" id="18_773kl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_epd4j"]
 size = Vector2(13.25, 21.5)
@@ -106,6 +109,30 @@ region = Rect2(96, 0, 32, 46)
 [sub_resource type="AtlasTexture" id="AtlasTexture_dn06f"]
 atlas = ExtResource("3_4ye6u")
 region = Rect2(128, 0, 32, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rtg5q"]
+atlas = ExtResource("6_mitmv")
+region = Rect2(0, 0, 32, 43)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yecyo"]
+atlas = ExtResource("6_mitmv")
+region = Rect2(32, 0, 32, 43)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52e5m"]
+atlas = ExtResource("6_mitmv")
+region = Rect2(256, 0, 32, 43)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_03x6o"]
+atlas = ExtResource("3_4ye6u")
+region = Rect2(160, 0, 32, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l3dab"]
+atlas = ExtResource("3_4ye6u")
+region = Rect2(192, 0, 32, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2vhp"]
+atlas = ExtResource("3_4ye6u")
+region = Rect2(224, 0, 32, 46)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mw0wt"]
 atlas = ExtResource("3_c52d6")
@@ -327,9 +354,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_7ltls")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump_land",
-"speed": 12.0
+"speed": 24.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -350,14 +377,50 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dn06f")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump_launch",
-"speed": 12.0
+"speed": 24.0
 }, {
-"frames": [],
-"loop": true,
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rtg5q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yecyo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52e5m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_03x6o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l3dab")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p2vhp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p2vhp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l3dab")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_03x6o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52e5m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yecyo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rtg5q")
+}],
+"loop": false,
 "name": &"lob",
-"speed": 5.0
+"speed": 24.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -422,7 +485,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_xbvft")
 }],
-"loop": true,
+"loop": false,
 "name": &"slide",
 "speed": 12.0
 }, {
@@ -466,9 +529,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8cvab")
 }],
-"loop": true,
+"loop": false,
 "name": &"smash",
-"speed": 12.0
+"speed": 24.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -492,18 +555,20 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bkotg")
 }],
-"loop": true,
+"loop": false,
 "name": &"volley",
-"speed": 12.0
+"speed": 24.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8inbt"]
 size = Vector2(16, 16)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fg58f"]
-size = Vector2(8.25, 4.75)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_17vuu"]
+size = Vector2(20, 21.75)
 
-[node name="Volleyballer" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component", "animation_component")]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5q4gt"]
+
+[node name="Volleyballer" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component", "animation_component", "volley_component", "smash_component", "lob_component")]
 scale = Vector2(2, 2)
 script = ExtResource("1_ughjb")
 gravity_component = NodePath("GravityComponent")
@@ -511,6 +576,9 @@ jump_component = NodePath("JumpComponent")
 input_component = NodePath("InputComponent")
 movement_component = NodePath("MovementComponent")
 animation_component = NodePath("AnimationComponent")
+volley_component = NodePath("VolleyComponent")
+smash_component = NodePath("SmashComponent")
+lob_component = NodePath("LobComponent")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(2, 2)
@@ -518,7 +586,7 @@ shape = SubResource("RectangleShape2D_epd4j")
 
 [node name="FlippableSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rggpm")
-animation = &"idle"
+animation = &"jump_land"
 script = ExtResource("8_w3uvh")
 
 [node name="InputComponent" parent="." instance=ExtResource("4_apy5s")]
@@ -529,22 +597,44 @@ speed = 400.0
 [node name="AnimationComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("6_3ns68")]
 sprite = NodePath("../FlippableSprite")
 
-[node name="JumpComponent" parent="." instance=ExtResource("11_ke7pq")]
+[node name="JumpComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("11_ke7pq")]
 jump_velocity = -900.0
+sprite = NodePath("../FlippableSprite")
 
 [node name="GravityComponent" parent="." instance=ExtResource("12_dpwii")]
 gravity = 2000.0
 
+[node name="VolleyComponent" parent="." node_paths=PackedStringArray("volley_hitbox", "sprite") instance=ExtResource("16_yhxas")]
+volley_hitbox = NodePath("../HitboxComponent/VolleyShape")
+sprite = NodePath("../FlippableSprite")
+
+[node name="SmashComponent" parent="." node_paths=PackedStringArray("smash_hitbox", "sprite") instance=ExtResource("15_ptaf6")]
+smash_hitbox = NodePath("../HitboxComponent/SmashShape")
+sprite = NodePath("../FlippableSprite")
+
+[node name="LobComponent" parent="." node_paths=PackedStringArray("lob_hitbox", "sprite") instance=ExtResource("18_773kl")]
+lob_hitbox = NodePath("../HitboxComponent/LobShape")
+sprite = NodePath("../FlippableSprite")
+
 [node name="HitboxComponent" parent="." node_paths=PackedStringArray("flippable_sprite") instance=ExtResource("14_ku3gw")]
 flippable_sprite = NodePath("../FlippableSprite")
 
-[node name="FlippableShape" parent="HitboxComponent" instance=ExtResource("14_7117i")]
+[node name="VolleyShape" parent="HitboxComponent" instance=ExtResource("14_7117i")]
 position = Vector2(9, 10.5)
 shape = SubResource("RectangleShape2D_8inbt")
 disabled = true
 default_position = Vector2(9, 10.5)
 
-[node name="VolleySweetspot" type="CollisionShape2D" parent="."]
-position = Vector2(9, 10.5)
-shape = SubResource("RectangleShape2D_fg58f")
+[node name="SmashShape" parent="HitboxComponent" instance=ExtResource("14_7117i")]
+position = Vector2(7, -10.875)
+shape = SubResource("RectangleShape2D_17vuu")
 disabled = true
+default_position = Vector2(7, -10.875)
+
+[node name="LobShape" parent="HitboxComponent" instance=ExtResource("14_7117i")]
+position = Vector2(8, -14.5)
+shape = SubResource("RectangleShape2D_5q4gt")
+disabled = true
+default_position = Vector2(8, -14.5)
+
+[connection signal="animation_finished" from="FlippableSprite" to="." method="_on_flippable_sprite_animation_finished"]
