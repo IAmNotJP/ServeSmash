@@ -586,7 +586,9 @@ shape = SubResource("RectangleShape2D_epd4j")
 
 [node name="FlippableSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rggpm")
-animation = &"jump_land"
+animation = &"run"
+frame = 5
+frame_progress = 0.507795
 script = ExtResource("8_w3uvh")
 
 [node name="InputComponent" parent="." instance=ExtResource("4_apy5s")]
