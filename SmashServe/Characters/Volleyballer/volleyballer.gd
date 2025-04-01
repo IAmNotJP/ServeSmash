@@ -1,5 +1,16 @@
 extends CharacterBody2D
 
+var inputs = {
+	"up": null,
+	"down": null,
+	"left": null,
+	"right": null,
+	"jump": null,
+	"volley": null,
+	"smash": null,
+	"lob": null,
+}
+
 @export_subgroup("Nodes")
 @export var gravity_component: GravityComponent
 @export var jump_component: JumpComponent

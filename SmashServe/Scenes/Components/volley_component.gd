@@ -11,7 +11,7 @@ func handle_hitbox(body: CharacterBody2D, want_to_hit: bool) -> void:
 		get_parent().is_hitting = true
 		
 	if !body.is_on_floor():
-		if sprite.animation == "lob":
+		if sprite.animation == "volley":
 			volley_hitbox.disabled = true
 			get_parent().is_hitting = false
 		

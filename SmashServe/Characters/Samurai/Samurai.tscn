@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://bgxt3u4j4pghh"]
+[gd_scene load_steps=46 format=3 uid="uid://bgxt3u4j4pghh"]
 
 [ext_resource type="Script" path="res://Characters/Samurai/samurai.gd" id="1_e7ibr"]
 [ext_resource type="Texture2D" uid="uid://fyxeebw8rhrg" path="res://Characters/Samurai/spritesheets/Fall.png" id="2_y7e60"]
@@ -8,17 +8,19 @@
 [ext_resource type="Texture2D" uid="uid://714k15452blk" path="res://Characters/Samurai/spritesheets/Attack2.png" id="6_wbjqx"]
 [ext_resource type="Texture2D" uid="uid://bufsxxd8fpff7" path="res://Characters/Samurai/spritesheets/Attack1.png" id="7_mxqbo"]
 [ext_resource type="PackedScene" uid="uid://tawiiu8h1sqj" path="res://Scenes/Components/input_component.tscn" id="8_hlsd1"]
+[ext_resource type="Script" path="res://Characters/Volleyballer/flippable_sprite.gd" id="8_ufhxx"]
 [ext_resource type="PackedScene" uid="uid://cj43lb27iguei" path="res://Scenes/Components/movement_component.tscn" id="9_uijgm"]
 [ext_resource type="PackedScene" uid="uid://fysjotek216k" path="res://Scenes/Components/jump_component.tscn" id="10_2h1gy"]
 [ext_resource type="PackedScene" uid="uid://b6nsr3nn7sbew" path="res://Scenes/Components/gravity_component.tscn" id="11_3kckm"]
+[ext_resource type="PackedScene" uid="uid://2001is3sa1gg" path="res://Scenes/Components/animation_component.tscn" id="11_ickjb"]
+[ext_resource type="PackedScene" uid="uid://vbvcyul3pn85" path="res://Scenes/Components/volley_component.tscn" id="14_uemud"]
+[ext_resource type="PackedScene" uid="uid://fcq0orj5j81m" path="res://Scenes/Components/lob_component.tscn" id="15_8dndn"]
+[ext_resource type="PackedScene" uid="uid://c0gij2p7i4t43" path="res://Scenes/Components/hitbox_component.tscn" id="15_8uhny"]
+[ext_resource type="PackedScene" uid="uid://q3tgpqskq875" path="res://Scenes/Components/flippable_shape.tscn" id="16_elkio"]
+[ext_resource type="PackedScene" uid="uid://k7tgiwgu8awq" path="res://Scenes/Components/smash_component.tscn" id="16_k0vls"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5swlh"]
-atlas = ExtResource("2_y7e60")
-region = Rect2(0, 0, 200, 200)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hgx6w"]
-atlas = ExtResource("2_y7e60")
-region = Rect2(200, 0, 200, 200)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ct2if"]
+size = Vector2(59, 106)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_il40j"]
 atlas = ExtResource("3_m7v4g")
@@ -51,6 +53,14 @@ region = Rect2(1200, 0, 200, 200)
 [sub_resource type="AtlasTexture" id="AtlasTexture_7bun7"]
 atlas = ExtResource("3_m7v4g")
 region = Rect2(1400, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5swlh"]
+atlas = ExtResource("2_y7e60")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hgx6w"]
+atlas = ExtResource("2_y7e60")
+region = Rect2(200, 0, 200, 200)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_80mbp"]
 atlas = ExtResource("4_lnwpq")
@@ -116,17 +126,6 @@ region = Rect2(1000, 0, 200, 200)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5swlh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hgx6w")
-}],
-"loop": true,
-"name": &"fall",
-"speed": 12.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_il40j")
 }, {
 "duration": 1.0,
@@ -156,14 +155,30 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_5swlh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hgx6w")
+}],
+"loop": true,
+"name": &"jump_land",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_80mbp")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_kekii")
 }],
 "loop": true,
-"name": &"jump",
+"name": &"jump_launch",
 "speed": 12.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"lob",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -195,7 +210,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_i5df0")
 }],
-"loop": true,
+"loop": false,
 "name": &"smash",
 "speed": 12.0
 }, {
@@ -215,40 +230,68 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3xpay")
 }],
-"loop": true,
+"loop": false,
 "name": &"volley",
 "speed": 12.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ct2if"]
-size = Vector2(59, 106)
-
-[node name="Samurai" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component")]
+[node name="Samurai" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component", "animation_component", "volley_component", "smash_component", "lob_component")]
 slide_on_ceiling = false
 script = ExtResource("1_e7ibr")
 gravity_component = NodePath("GravityComponent")
 jump_component = NodePath("JumpComponent")
 input_component = NodePath("InputComponent")
 movement_component = NodePath("MovementComponent")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(2.071, 2)
-sprite_frames = SubResource("SpriteFrames_5fley")
-animation = &"volley"
-frame_progress = 0.894936
+animation_component = NodePath("AnimationComponent")
+volley_component = NodePath("VolleyComponent")
+smash_component = NodePath("SmashComponent")
+lob_component = NodePath("LobComponent")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_ct2if")
 one_way_collision = true
 one_way_collision_margin = 5.3
 
+[node name="FlippableSprite" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2.071, 2)
+sprite_frames = SubResource("SpriteFrames_5fley")
+animation = &"smash"
+script = ExtResource("8_ufhxx")
+
 [node name="InputComponent" parent="." instance=ExtResource("8_hlsd1")]
 
 [node name="MovementComponent" parent="." instance=ExtResource("9_uijgm")]
 speed = 350.0
 
-[node name="JumpComponent" parent="." instance=ExtResource("10_2h1gy")]
+[node name="AnimationComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("11_ickjb")]
+sprite = NodePath("../FlippableSprite")
+
+[node name="JumpComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("10_2h1gy")]
 jump_velocity = -900.0
+sprite = NodePath("../FlippableSprite")
 
 [node name="GravityComponent" parent="." instance=ExtResource("11_3kckm")]
 gravity = 2000.0
+
+[node name="VolleyComponent" parent="." node_paths=PackedStringArray("volley_hitbox", "sprite") instance=ExtResource("14_uemud")]
+volley_hitbox = NodePath("../HitboxComponent/VolleyShape")
+sprite = NodePath("../FlippableSprite")
+
+[node name="SmashComponent" parent="." node_paths=PackedStringArray("smash_hitbox", "sprite") instance=ExtResource("16_k0vls")]
+smash_hitbox = NodePath("../HitboxComponent/SmashShape")
+sprite = NodePath("../FlippableSprite")
+
+[node name="LobComponent" parent="." node_paths=PackedStringArray("lob_hitbox", "sprite") instance=ExtResource("15_8dndn")]
+lob_hitbox = NodePath("../HitboxComponent/LobShape")
+sprite = NodePath("../FlippableSprite")
+
+[node name="HitboxComponent" parent="." node_paths=PackedStringArray("flippable_sprite") instance=ExtResource("15_8uhny")]
+flippable_sprite = NodePath("../FlippableSprite")
+
+[node name="VolleyShape" parent="HitboxComponent" instance=ExtResource("16_elkio")]
+
+[node name="LobShape" parent="HitboxComponent" instance=ExtResource("16_elkio")]
+
+[node name="SmashShape" parent="HitboxComponent" instance=ExtResource("16_elkio")]
+
+[connection signal="animation_finished" from="FlippableSprite" to="." method="_on_flippable_sprite_animation_finished"]
