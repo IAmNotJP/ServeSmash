@@ -1,1 +1,0 @@
-this is the repo for the Serve Smash Capstone Project 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ftdgib1hfrkh"
-path="res://.godot/imported/trees.png-7d4e9aaed8635ebd32b4318b1b151bb9.ctex"
+path="res://.godot/imported/trees.png-1e08534f262c1776e4a1c8d4216be04b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Serve Smash Assets/Grassland Tileset/Tiles/Social/trees.png"
-dest_files=["res://.godot/imported/trees.png-7d4e9aaed8635ebd32b4318b1b151bb9.ctex"]
+source_file="res://Serve Smash/Tilesets/Grassland Tileset/Social/trees.png"
+dest_files=["res://.godot/imported/trees.png-1e08534f262c1776e4a1c8d4216be04b.ctex"]
 
 [params]
 

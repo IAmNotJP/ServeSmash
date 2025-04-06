@@ -1,0 +1,808 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1743981721
+GameState.gd::GDScript::-1::1743981703::0::1::::<>Node<>::
+::res://Serve Smash/::1743981671
+::res://Serve Smash/Buttons/::1743452597
+Options.png::CompressedTexture2D::4323902436559756850::1742596188::1743452597::1::::<><>::
+Quit.png::CompressedTexture2D::7433866602616831589::1742596188::1743452597::1::::<><>::
+Start.png::CompressedTexture2D::5351980858282716574::1742596188::1743452597::1::::<><>::
+::res://Serve Smash/Characters/::1743979889
+::res://Serve Smash/Characters/Capybara/::1743979895
+charlie.gd::GDScript::-1::1743979889::0::1::::<>CharacterBody2D<>::
+Charlie.tscn::PackedScene::4451349531761070995::1743979889::0::1::::<><>::res://Characters/Capybara/charlie.gd<>uid://b20sfpbpmf7kt::::res://Characters/Capybara/spritesheets/charlieTheCapybaraAnimationSheet.png<>res://Scenes/Components/flippable_sprite.gd<>uid://2001is3sa1gg::::res://Scenes/Components/animation_component.tscn<>uid://cj43lb27iguei::::res://Scenes/Components/movement_component.tscn<>uid://b6nsr3nn7sbew::::res://Scenes/Components/gravity_component.tscn<>uid://tawiiu8h1sqj::::res://Scenes/Components/input_component.tscn<>uid://fysjotek216k::::res://Scenes/Components/jump_component.tscn<>uid://c0gij2p7i4t43::::res://Scenes/Components/hitbox_component.tscn<>uid://fcq0orj5j81m::::res://Scenes/Components/lob_component.tscn<>uid://k7tgiwgu8awq::::res://Scenes/Components/smash_component.tscn<>uid://vbvcyul3pn85::::res://Scenes/Components/volley_component.tscn<>uid://q3tgpqskq875::::res://Scenes/Components/flippable_shape.tscn
+::res://Serve Smash/Characters/Capybara/spritesheets/::1743979895
+charlieTheCapybaraAnimationSheet.png::CompressedTexture2D::4334231530703648495::1743979889::1743979893::1::::<><>::
+::res://Serve Smash/Characters/Knight/::1743979895
+knight.gd::GDScript::-1::1743979889::0::1::::<>CharacterBody2D<>::
+Knight.tscn::PackedScene::5471818501305126681::1743979889::0::1::::<><>::res://Characters/Knight/knight.gd<>uid://br5iat1cwyqyh::::res://Characters/Knight/spritesheet/Idle.png<>uid://cl6c7mw3jg1d2::::res://Characters/Knight/spritesheet/Jump.png<>res://Scenes/Components/flippable_sprite.gd<>uid://dvco2hxkkatww::::res://Characters/Knight/spritesheet/Attacks.png<>uid://tawiiu8h1sqj::::res://Scenes/Components/input_component.tscn<>uid://k8sfuwpealfh::::res://Characters/Knight/spritesheet/Run.png<>uid://2001is3sa1gg::::res://Scenes/Components/animation_component.tscn<>uid://cj43lb27iguei::::res://Scenes/Components/movement_component.tscn<>uid://b6fo3otc7xbdb::::res://Characters/Knight/spritesheet/attack_from_air.png<>uid://b6nsr3nn7sbew::::res://Scenes/Components/gravity_component.tscn<>uid://fysjotek216k::::res://Scenes/Components/jump_component.tscn<>uid://vbvcyul3pn85::::res://Scenes/Components/volley_component.tscn<>uid://fcq0orj5j81m::::res://Scenes/Components/lob_component.tscn<>uid://k7tgiwgu8awq::::res://Scenes/Components/smash_component.tscn<>uid://c0gij2p7i4t43::::res://Scenes/Components/hitbox_component.tscn<>uid://q3tgpqskq875::::res://Scenes/Components/flippable_shape.tscn
+::res://Serve Smash/Characters/Knight/spritesheet/::1743979895
+_Info.txt::TextFile::-1::1743979889::0::1::::<><>::
+Attacks.png::CompressedTexture2D::8638255180981958382::1743979889::1743979893::1::::<><>::
+attack_from_air.png::CompressedTexture2D::4573497530183196195::1743979889::1743979893::1::::<><>::
+Climb.png::CompressedTexture2D::1899981774065643336::1743979889::1743979893::1::::<><>::
+crouch_attacks.png::CompressedTexture2D::1510479072369706573::1743979889::1743979893::1::::<><>::
+crouch_idle.png::CompressedTexture2D::379567083778615392::1743979889::1743979893::1::::<><>::
+Death.png::CompressedTexture2D::994022952856494833::1743979889::1743979893::1::::<><>::
+Hanging.png::CompressedTexture2D::8461901570524983883::1743979889::1743979893::1::::<><>::
+Health.png::CompressedTexture2D::6226299570973325950::1743979889::1743979893::1::::<><>::
+Hurt.png::CompressedTexture2D::1071814878739907883::1743979889::1743979893::1::::<><>::
+Idle.png::CompressedTexture2D::3642049132333376983::1743979889::1743979893::1::::<><>::
+Jump.png::CompressedTexture2D::5609093602721284777::1743979889::1743979893::1::::<><>::
+license.txt::TextFile::-1::1743979889::0::1::::<><>::
+Pray.png::CompressedTexture2D::7226500238236306592::1743979889::1743979893::1::::<><>::
+Roll.png::CompressedTexture2D::6947936303863694891::1743979889::1743979893::1::::<><>::
+Run.png::CompressedTexture2D::771115822243206909::1743979889::1743979893::1::::<><>::
+Slide.png::CompressedTexture2D::4167557440526854931::1743979889::1743979893::1::::<><>::
+::res://Serve Smash/Characters/Knight/spritesheet/_PSD/::1743979895
+::res://Serve Smash/Characters/Necromancer/::1743979895
+::res://Serve Smash/Characters/Necromancer/Spritesheet/::1743979895
+Necromancer_creativekind-Sheet.png::CompressedTexture2D::4259631098987522909::1743979889::1743979893::1::::<><>::
+::res://Serve Smash/Characters/Samurai/::1743979895
+samurai.gd::GDScript::-1::1743979889::0::1::::<>CharacterBody2D<>::
+Samurai.tscn::PackedScene::2856239154671170357::1743979889::0::1::::<><>::res://Characters/Samurai/samurai.gd<>uid://fyxeebw8rhrg::::res://Characters/Samurai/spritesheets/Fall.png<>uid://drt4tfp8d4r7s::::res://Characters/Samurai/spritesheets/Idle.png<>uid://btlxh4bw7k6ae::::res://Characters/Samurai/spritesheets/Jump.png<>uid://bjtbaprtr6o2e::::res://Characters/Samurai/spritesheets/Run.png<>uid://714k15452blk::::res://Characters/Samurai/spritesheets/Attack2.png<>uid://bufsxxd8fpff7::::res://Characters/Samurai/spritesheets/Attack1.png<>uid://tawiiu8h1sqj::::res://Scenes/Components/input_component.tscn<>res://Scenes/Components/flippable_sprite.gd<>uid://cj43lb27iguei::::res://Scenes/Components/movement_component.tscn<>uid://fysjotek216k::::res://Scenes/Components/jump_component.tscn<>uid://b6nsr3nn7sbew::::res://Scenes/Components/gravity_component.tscn<>uid://2001is3sa1gg::::res://Scenes/Components/animation_component.tscn<>uid://vbvcyul3pn85::::res://Scenes/Components/volley_component.tscn<>uid://fcq0orj5j81m::::res://Scenes/Components/lob_component.tscn<>uid://c0gij2p7i4t43::::res://Scenes/Components/hitbox_component.tscn<>uid://q3tgpqskq875::::res://Scenes/Components/flippable_shape.tscn<>uid://k7tgiwgu8awq::::res://Scenes/Components/smash_component.tscn
+::res://Serve Smash/Characters/Samurai/spritesheets/::1743979895
+Attack1.png::CompressedTexture2D::3801654638531769350::1743979889::1743979893::1::::<><>::
+Attack2.png::CompressedTexture2D::2301496882061883228::1743979889::1743979893::1::::<><>::
+Death.png::CompressedTexture2D::4546601674941931374::1743979889::1743979893::1::::<><>::
+Fall.png::CompressedTexture2D::401893130979405052::1743979889::1743979893::1::::<><>::
+Idle.png::CompressedTexture2D::8393490580420765454::1743979889::1743979893::1::::<><>::
+Jump.png::CompressedTexture2D::3744127385266066384::1743979889::1743979893::1::::<><>::
+Run.png::CompressedTexture2D::3057404985754448250::1743979889::1743979893::1::::<><>::
+Take Hit.png::CompressedTexture2D::1468241835925743295::1743979889::1743979893::1::::<><>::
+::res://Serve Smash/Characters/Volleyballer/::1743979895
+volleyballer.gd::GDScript::-1::1743979889::0::1::::<>CharacterBody2D<>::
+Volleyballer.tscn::PackedScene::342164668809313868::1743979889::0::1::::<><>::res://Characters/Volleyballer/volleyballer.gd<>uid://b6hfschvvko8p::::res://Characters/Volleyballer/spritesheets/playerIdle.png<>uid://bgsishdkmgvk2::::res://Characters/Volleyballer/spritesheets/playerBlock.png<>uid://c0p0m8heovl8k::::res://Characters/Volleyballer/spritesheets/playerRun.png<>uid://tawiiu8h1sqj::::res://Scenes/Components/input_component.tscn<>uid://h5sjdm7i7kdg::::res://Characters/Volleyballer/spritesheets/playerSlide.png<>uid://bxjoejnr0x1ha::::res://Characters/Volleyballer/spritesheets/playerSmash.png<>uid://cj43lb27iguei::::res://Scenes/Components/movement_component.tscn<>uid://2001is3sa1gg::::res://Scenes/Components/animation_component.tscn<>uid://b4rcuixp1ixly::::res://Characters/Volleyballer/spritesheets/playerReception.png<>res://Scenes/Components/flippable_sprite.gd<>uid://fysjotek216k::::res://Scenes/Components/jump_component.tscn<>uid://b6nsr3nn7sbew::::res://Scenes/Components/gravity_component.tscn<>uid://q3tgpqskq875::::res://Scenes/Components/flippable_shape.tscn<>uid://c0gij2p7i4t43::::res://Scenes/Components/hitbox_component.tscn<>uid://k7tgiwgu8awq::::res://Scenes/Components/smash_component.tscn<>uid://vbvcyul3pn85::::res://Scenes/Components/volley_component.tscn<>uid://fcq0orj5j81m::::res://Scenes/Components/lob_component.tscn
+::res://Serve Smash/Characters/Volleyballer/spritesheets/::1743979895
+ballBounce.png::CompressedTexture2D::4243298963400376069::1743979889::1743979893::1::::<><>::
+ballBounceHard.png::CompressedTexture2D::5622058184838903325::1743979889::1743979893::1::::<><>::
+ballFull.png::CompressedTexture2D::7875397795656139150::1743979889::1743979893::1::::<><>::
+ballRoll.png::CompressedTexture2D::7372154753996388898::1743979889::1743979893::1::::<><>::
+ballShot.png::CompressedTexture2D::7198855602352141875::1743979889::1743979893::1::::<><>::
+beachbkgIso.png::CompressedTexture2D::1385222884648081894::1743979889::1743979893::1::::<><>::
+beachbkgO.png::CompressedTexture2D::5054199596035961265::1743979889::1743979893::1::::<><>::
+bubbleOK.png::CompressedTexture2D::4842799149381525817::1743979889::1743979893::1::::<><>::
+net0.png::CompressedTexture2D::6368876258354670569::1743979889::1743979893::1::::<><>::
+playerBlock.png::CompressedTexture2D::2845230798095306163::1743979889::1743979893::1::::<><>::
+playerIdle.png::CompressedTexture2D::4577061326847592361::1743979889::1743979893::1::::<><>::
+playerReception.png::CompressedTexture2D::4457149177312607466::1743979889::1743979893::1::::<><>::
+playerRun.png::CompressedTexture2D::6560069223279404000::1743979889::1743979893::1::::<><>::
+playerSlide.png::CompressedTexture2D::554362393676557460::1743979889::1743979893::1::::<><>::
+playerSmash.png::CompressedTexture2D::4020201161828087550::1743979889::1743979893::1::::<><>::
+pushbutton.png::CompressedTexture2D::6804246755598115712::1743979889::1743979893::1::::<><>::
+shadow1.png::CompressedTexture2D::2549790368417601989::1743979889::1743979893::1::::<><>::
+::res://Serve Smash/Main Menu/::1743981707
+Main Menu.mp3::AudioStreamMP3::7111941043691774291::1743810203::1743903590::1::::<><>::
+main_menu.gd::GDScript::-1::1743981703::0::1::::<>Control<>::
+main_menu.gdshader::Shader::-1::1743810417::0::1::::<><>::
+main_menu.tscn::PackedScene::7914253562617316850::1743981707::0::1::::<><>::res://Serve Smash/Main Menu/main_menu.gd<>uid://olh0e1qhnphk::::res://Serve Smash/Main Menu/Smash Serve Logo.png<>uid://cv21v5kpo2sos::::res://Serve Smash/Main Menu/ph3.jpg<>uid://ciislwjqj20ek::::res://Serve Smash/Buttons/Start.png<>uid://b2usbn4gornig::::res://Serve Smash/Buttons/Options.png<>uid://dd6axxs0gim1b::::res://Serve Smash/Buttons/Quit.png<>res://Serve Smash/Main Menu/main_menu.gdshader<>uid://cs3q2d85sp702::::res://Serve Smash/Music/Main Menu.mp3
+ph3.jpg::CompressedTexture2D::6304163018478298062::1742596188::1743903591::1::::<><>::
+Smash Serve Logo.png::CompressedTexture2D::1005821881019263628::1742596188::1743903591::1::::<><>::
+::res://Serve Smash/Main Menu/parallax/::1743645522
+::res://Serve Smash/Main Menu/parallax/desert/::1743903592
+desert_cloud.png::CompressedTexture2D::3838360443518199282::1743645513::1743903591::1::::<><>::
+desert_dunefrontt.png::CompressedTexture2D::817187575770795989::1743645513::1743903591::1::::<><>::
+desert_dunemid.png::CompressedTexture2D::4352754672313283007::1743645513::1743903591::1::::<><>::
+desert_moon.png::CompressedTexture2D::4208271921013445587::1743645513::1743903592::1::::<><>::
+desert_mountain.png::CompressedTexture2D::8686636503813388926::1743645513::1743903591::1::::<><>::
+desert_sky.png::CompressedTexture2D::3838759558967596569::1743645513::1743903591::1::::<><>::
+::res://Serve Smash/Main Menu/parallax/forest/::1743903592
+forest_back.png::CompressedTexture2D::4688159878232198257::1743645513::1743903592::1::::<><>::
+forest_long.png::CompressedTexture2D::3624490045326172663::1743645513::1743903591::1::::<><>::
+forest_mid.png::CompressedTexture2D::8859305306869163473::1743645513::1743903592::1::::<><>::
+forest_moon.png::CompressedTexture2D::5861757471873665702::1743645513::1743903592::1::::<><>::
+forest_mountain.png::CompressedTexture2D::3180983815452011548::1743645513::1743903592::1::::<><>::
+forest_short.png::CompressedTexture2D::8768639244893124880::1743645513::1743903592::1::::<><>::
+forest_sky.png::CompressedTexture2D::3871614420661317871::1743645513::1743903591::1::::<><>::
+::res://Serve Smash/Main Menu/parallax/moon/::1743903591
+moon_back.png::CompressedTexture2D::1628398504949093837::1743645513::1743903591::1::::<><>::
+moon_earth.png::CompressedTexture2D::1695645445579052545::1743645513::1743903591::1::::<><>::
+moon_floor.png::CompressedTexture2D::3975891080559756808::1743645513::1743903591::1::::<><>::
+moon_front.png::CompressedTexture2D::4705803839828411832::1743645513::1743903591::1::::<><>::
+moon_mid.png::CompressedTexture2D::1568259431880532489::1743645513::1743903591::1::::<><>::
+moon_sky.png::CompressedTexture2D::2139808123243928819::1743645513::1743903591::1::::<><>::
+::res://Serve Smash/Main Menu/parallax/skies/::1743903592
+Sky_back_mountain.png::CompressedTexture2D::7792550292623218835::1743645513::1743903591::1::::<><>::
+sky_clouds.png::CompressedTexture2D::4870404978390319432::1743645513::1743903591::1::::<><>::
+sky_cloud_floor.png::CompressedTexture2D::3493822545528765844::1743645513::1743903591::1::::<><>::
+sky_cloud_floor_2.png::CompressedTexture2D::4050788562677377827::1743645513::1743903591::1::::<><>::
+Sky_cloud_single.png::CompressedTexture2D::2139949890683146022::1743645513::1743903591::1::::<><>::
+Sky_front_cloud.png::CompressedTexture2D::2589293479928477153::1743645513::1743903591::1::::<><>::
+sky_front_mountain.png::CompressedTexture2D::7245945369360816009::1743645513::1743903591::1::::<><>::
+sky_moon.png::CompressedTexture2D::8086331855624279473::1743645513::1743903592::1::::<><>::
+Sky_sky.png::CompressedTexture2D::7146354298828261298::1743645513::1743903591::1::::<><>::
+::res://Serve Smash/Music/::1743810241
+Character Select.mp3::AudioStreamMP3::8161432764226306187::1743810238::1743810241::1::::<><>::
+Main Menu.mp3::AudioStreamMP3::6095063028240494725::1743810238::1743810241::1::::<><>::
+::res://Serve Smash/Scenes/::1743979917
+main_menu.tscn::PackedScene::7914253562617316850::1743903587::0::1::::<><>::uid://olh0e1qhnphk::::res://Serve Smash/Main Menu/Smash Serve Logo.png<>uid://cv21v5kpo2sos::::res://Serve Smash/Main Menu/ph3.jpg<>uid://ciislwjqj20ek::::res://Serve Smash/Buttons/Start.png<>uid://b2usbn4gornig::::res://Serve Smash/Buttons/Options.png<>uid://dd6axxs0gim1b::::res://Serve Smash/Buttons/Quit.png
+sprite_2d.gd::GDScript::-1::1742596188::0::1::::<>Sprite2D<>::
+::res://Serve Smash/Scenes/Components/::1743979930
+animation_component.gd::GDScript::-1::1743979930::0::1::::AnimationComponent<>Node<>::
+animation_component.tscn::PackedScene::1948273026828614490::1743979930::0::1::::<><>::res://Scenes/Components/animation_component.gd
+flippable_shape.gd::GDScript::-1::1743979930::0::1::::FlippableShape<>CollisionShape2D<>::
+flippable_shape.tscn::PackedScene::1181989226347176002::1743979930::0::1::::<><>::res://Scenes/Components/flippable_shape.gd
+flippable_sprite.gd::GDScript::-1::1743979930::0::1::::FlippableSprite<>AnimatedSprite2D<>::
+gravity_component.gd::GDScript::-1::1743979930::0::1::::GravityComponent<>Node<>::
+gravity_component.tscn::PackedScene::4590236503011455122::1743979930::0::1::::<><>::res://Scenes/Components/gravity_component.gd
+hitbox_component.gd::GDScript::-1::1743979930::0::1::::HitboxComponent<>Area2D<>::
+hitbox_component.tscn::PackedScene::6540451975716953322::1743979930::0::1::::<><>::res://Scenes/Components/hitbox_component.gd
+input_component.gd::GDScript::-1::1743979930::0::1::::InputComponent<>Node<>::
+input_component.tscn::PackedScene::1334938541907372753::1743979930::0::1::::<><>::res://Scenes/Components/input_component.gd
+jump_component.gd::GDScript::-1::1743979930::0::1::::JumpComponent<>Node<>::
+jump_component.tscn::PackedScene::401599027176920264::1743979930::0::1::::<><>::res://Scenes/Components/jump_component.gd
+lob_component.gd::GDScript::-1::1743979930::0::1::::LobComponent<>Node<>::
+lob_component.tscn::PackedScene::356089852468146060::1743979930::0::1::::<><>::res://Scenes/Components/lob_component.gd
+movement_component.gd::GDScript::-1::1743979930::0::1::::MovementComponent<>Node<>::
+movement_component.tscn::PackedScene::5466127730224594640::1743979930::0::1::::<><>::res://Scenes/Components/movement_component.gd
+smash_component.gd::GDScript::-1::1743979930::0::1::::SmashComponent<>Node<>::
+smash_component.tscn::PackedScene::769113316609364228::1743979930::0::1::::<><>::res://Scenes/Components/smash_component.gd
+state_machine.gd::GDScript::-1::1743979930::0::1::::StateMachine<>Node<>::
+state_machine.tscn::PackedScene::6513061685810829848::1743979930::0::1::::<><>::res://Scenes/Components/state_machine.gd
+volley_component.gd::GDScript::-1::1743979930::0::1::::VolleyComponent<>Node<>::
+volley_component.tscn::PackedScene::1477310014582949964::1743979930::0::1::::<><>::res://Scenes/Components/volley_component.gd
+::res://Serve Smash/Stages/::1743981703
+Airship Stage.tscn::PackedScene::7037439702522414733::1743118406::0::1::::<><>::uid://laacsgs7jg1k::::res://Serve Smash Assets/Airship Tileset/Enjl-Dream Ship Tileset/background_1.png<>uid://du77g8thvnv8w::::res://Serve Smash Assets/Airship Tileset/Enjl-Dream Ship Tileset/background_2.png<>uid://ba073lb4fqfc4::::res://Serve Smash Assets/Airship Tileset/Enjl-Dream Ship Tileset/background_4.png<>uid://dt3qqvehiyasy::::res://Serve Smash Assets/Airship Tileset/Enjl-Dream Ship Tileset/background_3.png<>uid://dfbk6vx7x8686::::res://Serve Smash Assets/Airship Tileset/Enjl-Dream Ship Tileset/background_5.png<>uid://d1aliip4n6vqr::::res://Serve Smash Assets/Airship Tileset/Enjl-Dream Ship Tileset/tileset.png
+Character Select.tscn::PackedScene::4002459051939797642::1743981517::0::1::::<><>::res://Serve Smash/Stages/CharacterSelect.gd<>uid://b8ph6fqgsij4l::::res://Serve Smash/Tilesets/UI Assets/Complete_UI_Essential_Pack_Free/01_Flat_Theme/Sprites/UI_Flat_BarFill01g.png<>uid://bfdxejqk0dgly::::res://Serve Smash/Tilesets/UI Assets/Complete_UI_Essential_Pack_Free/01_Flat_Theme/Sprites/UI_Flat_FrameSlot02a.png<>uid://b20sfpbpmf7kt::::res://Serve Smash/Characters/Capybara/spritesheets/charlieTheCapybaraAnimationSheet.png<>uid://dvco2hxkkatww::::res://Serve Smash/Characters/Knight/spritesheet/Attacks.png<>uid://b1xnrcfefsd6t::::res://Serve Smash/Characters/Necromancer/Spritesheet/Necromancer_creativekind-Sheet.png<>uid://bufsxxd8fpff7::::res://Serve Smash/Characters/Samurai/spritesheets/Attack1.png<>uid://b6hfschvvko8p::::res://Serve Smash/Characters/Volleyballer/spritesheets/playerIdle.png
+CharacterSelect.gd::GDScript::-1::1743981703::0::1::::<>Control<>::
+Sci-fi Lab Stage.tscn::PackedScene::7476678067102017081::1743909718::0::1::::<><>::uid://bnwhkevmogrc3::::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Tileset/level_tileset.png<>uid://crfmcvkkoqenq::::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/barrier_idle.png<>uid://bhe1cobkl02rx::::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Decor/full decor tiles.png<>uid://ojwd5nbulvqu::::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/saw_activate.png<>uid://uchh2yerm07a::::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/saw_deactivate.png<>uid://b8owdcbhxkucu::::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/saw_idle.png<>uid://cvn16olmiakmb::::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/control_panel_deactivate.png<>uid://1kb8skc8cv4o::::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/control_panel_idle.png<>uid://colcm37ggdh72::::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/laser_spikes_activate.png
+Space Stage.tscn::PackedScene::2575185001382022071::1743981469::0::1::::<><>::res://Serve Smash/Stages/SpaceStage.gd<>uid://dw8hxm06okwyu::::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/PNGs/Condesed/Starry background  - Layer 01 - Void.png<>uid://b6wf1sxjhn7hc::::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/PNGs/Condesed/Starry background  - Layer 02 - Stars.png<>uid://bao7eghnjsw7b::::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/PNGs/Condesed/Starry background  - Layer 03 - Stars.png<>uid://bgbclbsnbelp::::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Planets/PNGs/Earth-Like planet.png<>uid://c21kvqeqre745::::res://Serve Smash/Tilesets/Space Tileset/cave tileset/props1.png<>uid://cpxlx1v21tl6o::::res://Serve Smash/Tilesets/Space Tileset/cave tileset/mainlev_build.png<>uid://to48j801g7rq::::res://Serve Smash/Tilesets/Space Tileset/cave tileset/background4b.png<>uid://crrgx5scwc2k1::::res://Serve Smash/Tilesets/Space Tileset/cave tileset/background4a.png<>uid://bjp05b1qddj05::::res://Serve Smash/Tilesets/Space Tileset/cave tileset/background3.png<>uid://gvydlk36ypnf::::res://Serve Smash/Tilesets/Space Tileset/cave tileset/background2.png<>uid://d0uqp2pfmxwps::::res://Serve Smash/Tilesets/Space Tileset/cave tileset/background1.png<>uid://dmqht0em7iefq::::res://Serve Smash/Tilesets/Space Tileset/cave tileset/props2.png
+SpaceStage.gd::GDScript::-1::1743978882::0::1::::<>Node2D<>::
+::res://Serve Smash/Tilesets/::1743644007
+::res://Serve Smash/Tilesets/Airship Tileset/::1743210171
+::res://Serve Smash/Tilesets/Airship Tileset/Enjl-Dream Ship Tileset/::1743452597
+background_1.png::CompressedTexture2D::772081807156257054::1743117158::1743452597::1::::<><>::
+background_2.png::CompressedTexture2D::8631054433470305956::1743117158::1743452597::1::::<><>::
+background_3.png::CompressedTexture2D::8551653811401587228::1743117158::1743452597::1::::<><>::
+background_4.png::CompressedTexture2D::2440023654169059109::1743117158::1743452597::1::::<><>::
+background_5.png::CompressedTexture2D::7512934316569099189::1743117158::1743452597::1::::<><>::
+preview.png::CompressedTexture2D::8327034156177402227::1743117158::1743452597::1::::<><>::
+tileset.png::CompressedTexture2D::8984854603634925741::1743117158::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Central City Tileset/::1743452747
+::res://Serve Smash/Tilesets/Central City Tileset/Sidescroller Shooter - Central City/::1743452750
+::res://Serve Smash/Tilesets/Central City Tileset/Sidescroller Shooter - Central City/Assets/::1743452750
+Buildings.png::CompressedTexture2D::6644499154012207169::1743452747::1743452750::1::::<><>::
+Props-01.png::CompressedTexture2D::1563495938087062916::1743452747::1743452750::1::::<><>::
+Tiles.png::CompressedTexture2D::7017269345895571645::1743452747::1743452750::1::::<><>::
+::res://Serve Smash/Tilesets/Central City Tileset/Sidescroller Shooter - Central City/Background/::1743452750
+Background Props.png::CompressedTexture2D::949759523823273970::1743452747::1743452750::1::::<><>::
+Base Color.png::CompressedTexture2D::2230547419275145987::1743452747::1743452750::1::::<><>::
+Frontal Fog.png::CompressedTexture2D::1765217239758944897::1743452747::1743452750::1::::<><>::
+Mid Fog.png::CompressedTexture2D::5801007440791598123::1743452747::1743452750::1::::<><>::
+::res://Serve Smash/Tilesets/Central City Tileset/Sidescroller Shooter - Central City/Social/::1743452750
+Background Props.png::CompressedTexture2D::8762014660453721851::1743452747::1743452750::1::::<><>::
+Buildings.png::CompressedTexture2D::2733190106180154375::1743452747::1743452750::1::::<><>::
+MockUp-01.png::CompressedTexture2D::3011651902607192929::1743452747::1743452750::1::::<><>::
+Props-01.png::CompressedTexture2D::2075800866091666231::1743452747::1743452750::1::::<><>::
+Tiles.png::CompressedTexture2D::270858061268029285::1743452747::1743452750::1::::<><>::
+::res://Serve Smash/Tilesets/Grassland Tileset/::1743123588
+Autor_note.txt::TextFile::-1::1742596188::0::1::::<><>::
+::res://Serve Smash/Tilesets/Grassland Tileset/Social/::1743452598
+Assets.png::CompressedTexture2D::6085303339648474358::1742596188::1743452598::1::::<><>::
+entrance.png::CompressedTexture2D::1603601998210341653::1742596188::1743452597::1::::<><>::
+Mine.png::CompressedTexture2D::7186964113836457813::1742596188::1743452597::1::::<><>::
+trees.png::CompressedTexture2D::390360684181523895::1742596188::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Grassland Tileset/Tiles/::1743123572
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/::1743210171
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/::1743210171
+Readme.txt::TextFile::-1::1743118355::0::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/::1743452597
+barrier_deactivate.png::CompressedTexture2D::1570650523977897627::1743118355::1743452597::1::::<><>::
+barrier_idle.png::CompressedTexture2D::5977106892416152954::1743118355::1743452597::1::::<><>::
+control_panel_deactivate.png::CompressedTexture2D::6275278748886317441::1743118355::1743452597::1::::<><>::
+control_panel_idle.png::CompressedTexture2D::1845674321324488348::1743118355::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/Individual_PNGs/::1743210172
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/Individual_PNGs/barrier_deactivate/::1743452597
+tile000.png::CompressedTexture2D::4105738995478227151::1743118355::1743452597::1::::<><>::
+tile001.png::CompressedTexture2D::2605069038746137545::1743118355::1743452597::1::::<><>::
+tile002.png::CompressedTexture2D::7799364848989043777::1743118355::1743452597::1::::<><>::
+tile003.png::CompressedTexture2D::4549279802373424285::1743118355::1743452597::1::::<><>::
+tile004.png::CompressedTexture2D::6196878642469528537::1743118355::1743452597::1::::<><>::
+tile005.png::CompressedTexture2D::9066373913067960625::1743118355::1743452597::1::::<><>::
+tile006.png::CompressedTexture2D::7267254994988226362::1743118355::1743452597::1::::<><>::
+tile007.png::CompressedTexture2D::3627026290989949742::1743118355::1743452597::1::::<><>::
+tile008.png::CompressedTexture2D::7406885819440885412::1743118355::1743452597::1::::<><>::
+tile009.png::CompressedTexture2D::5524923217450742717::1743118355::1743452597::1::::<><>::
+tile010.png::CompressedTexture2D::893360175443161987::1743118355::1743452597::1::::<><>::
+tile011.png::CompressedTexture2D::4638455448122431716::1743118355::1743452597::1::::<><>::
+tile012.png::CompressedTexture2D::4064878975219682906::1743118355::1743452597::1::::<><>::
+tile013.png::CompressedTexture2D::3239659980292982715::1743118355::1743452597::1::::<><>::
+tile014.png::CompressedTexture2D::6467326108388420685::1743118355::1743452597::1::::<><>::
+tile015.png::CompressedTexture2D::8685073670734229354::1743118355::1743452597::1::::<><>::
+tile016.png::CompressedTexture2D::426498578436131923::1743118355::1743452597::1::::<><>::
+tile017.png::CompressedTexture2D::7554701916779066211::1743118355::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/Individual_PNGs/barrier_idle/::1743452597
+tile000.png::CompressedTexture2D::2822857757764703700::1743118355::1743452597::1::::<><>::
+tile001.png::CompressedTexture2D::7786031161830614405::1743118355::1743452597::1::::<><>::
+tile002.png::CompressedTexture2D::5401161849429514441::1743118355::1743452597::1::::<><>::
+tile003.png::CompressedTexture2D::4565031921417669600::1743118355::1743452597::1::::<><>::
+tile004.png::CompressedTexture2D::7291508676090483375::1743118355::1743452597::1::::<><>::
+tile005.png::CompressedTexture2D::3071581077565638949::1743118355::1743452597::1::::<><>::
+tile006.png::CompressedTexture2D::1613723150214084176::1743118355::1743452597::1::::<><>::
+tile007.png::CompressedTexture2D::1899130229791733728::1743118355::1743452597::1::::<><>::
+tile008.png::CompressedTexture2D::7174360092968030775::1743118355::1743452597::1::::<><>::
+tile009.png::CompressedTexture2D::5490651947664362386::1743118355::1743452597::1::::<><>::
+tile010.png::CompressedTexture2D::1586590543847299911::1743118355::1743452597::1::::<><>::
+tile011.png::CompressedTexture2D::8090921393705362159::1743118355::1743452597::1::::<><>::
+tile012.png::CompressedTexture2D::6639627786809582798::1743118355::1743452597::1::::<><>::
+tile013.png::CompressedTexture2D::4793716222596492759::1743118355::1743452597::1::::<><>::
+tile014.png::CompressedTexture2D::8786481152275723074::1743118355::1743452597::1::::<><>::
+tile015.png::CompressedTexture2D::8144440335802715477::1743118355::1743452597::1::::<><>::
+tile016.png::CompressedTexture2D::3645321017679015463::1743118355::1743452597::1::::<><>::
+tile017.png::CompressedTexture2D::5259549519126480290::1743118355::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/Individual_PNGs/control_panel_deactivate/::1743452597
+tile000.png::CompressedTexture2D::3046393339236883895::1743118355::1743452597::1::::<><>::
+tile001.png::CompressedTexture2D::166124758185938142::1743118355::1743452597::1::::<><>::
+tile002.png::CompressedTexture2D::1091321545100374808::1743118355::1743452597::1::::<><>::
+tile003.png::CompressedTexture2D::5302999936426539514::1743118355::1743452597::1::::<><>::
+tile004.png::CompressedTexture2D::1556861539754680012::1743118355::1743452597::1::::<><>::
+tile005.png::CompressedTexture2D::5004308994828482694::1743118355::1743452597::1::::<><>::
+tile006.png::CompressedTexture2D::6883879159982138591::1743118355::1743452597::1::::<><>::
+tile007.png::CompressedTexture2D::3948857126897768060::1743118355::1743452597::1::::<><>::
+tile008.png::CompressedTexture2D::1965567978260374920::1743118355::1743452597::1::::<><>::
+tile009.png::CompressedTexture2D::4698258802449119305::1743118355::1743452597::1::::<><>::
+tile010.png::CompressedTexture2D::8027498192452306979::1743118355::1743452597::1::::<><>::
+tile011.png::CompressedTexture2D::6694190887367446766::1743118355::1743452597::1::::<><>::
+tile012.png::CompressedTexture2D::6403059170114246028::1743118355::1743452597::1::::<><>::
+tile013.png::CompressedTexture2D::6052448800555407784::1743118355::1743452597::1::::<><>::
+tile014.png::CompressedTexture2D::338391961513482505::1743118355::1743452597::1::::<><>::
+tile015.png::CompressedTexture2D::3268346507013874645::1743118355::1743452597::1::::<><>::
+tile016.png::CompressedTexture2D::3338001317489967538::1743118355::1743452597::1::::<><>::
+tile017.png::CompressedTexture2D::614830198972058045::1743118355::1743452597::1::::<><>::
+tile018.png::CompressedTexture2D::4636665708455971211::1743118355::1743452597::1::::<><>::
+tile019.png::CompressedTexture2D::8626665068620436013::1743118355::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/Individual_PNGs/control_panel_idle/::1743452597
+tile000.png::CompressedTexture2D::3756061747139479534::1743118355::1743452597::1::::<><>::
+tile001.png::CompressedTexture2D::5902347307290187234::1743118355::1743452597::1::::<><>::
+tile002.png::CompressedTexture2D::1930531049315030391::1743118355::1743452597::1::::<><>::
+tile003.png::CompressedTexture2D::7216254170644119308::1743118355::1743452597::1::::<><>::
+tile004.png::CompressedTexture2D::7876247499057383107::1743118355::1743452597::1::::<><>::
+tile005.png::CompressedTexture2D::6796870752396814845::1743118355::1743452597::1::::<><>::
+tile006.png::CompressedTexture2D::2277179403085980178::1743118355::1743452597::1::::<><>::
+tile007.png::CompressedTexture2D::126763369564041910::1743118355::1743452597::1::::<><>::
+tile008.png::CompressedTexture2D::2697757478180883572::1743118355::1743452597::1::::<><>::
+tile009.png::CompressedTexture2D::2289330824093318508::1743118355::1743452597::1::::<><>::
+tile010.png::CompressedTexture2D::316472517354006890::1743118355::1743452597::1::::<><>::
+tile011.png::CompressedTexture2D::7512685829071139402::1743118355::1743452597::1::::<><>::
+tile012.png::CompressedTexture2D::7103199923217039438::1743118355::1743452597::1::::<><>::
+tile013.png::CompressedTexture2D::7878787822323626450::1743118355::1743452597::1::::<><>::
+tile014.png::CompressedTexture2D::6879518762321534151::1743118355::1743452597::1::::<><>::
+tile015.png::CompressedTexture2D::6100635995116255209::1743118355::1743452597::1::::<><>::
+tile016.png::CompressedTexture2D::6767633850494267655::1743118355::1743452597::1::::<><>::
+tile017.png::CompressedTexture2D::5648203781602738910::1743118355::1743452597::1::::<><>::
+tile018.png::CompressedTexture2D::3809268540111385020::1743118355::1743452597::1::::<><>::
+tile019.png::CompressedTexture2D::4400907633182165410::1743118355::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Decor/::1743452597
+full decor tiles.png::CompressedTexture2D::2887583050917079485::1743118355::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Decor/Individual_PNGs/::1743452597
+decor_1.png::CompressedTexture2D::8900409180865322870::1743118355::1743452597::1::::<><>::
+decor_2.png::CompressedTexture2D::1633644327668148898::1743118355::1743452597::1::::<><>::
+decor_3.png::CompressedTexture2D::8195290376855209113::1743118355::1743452597::1::::<><>::
+decor_4.png::CompressedTexture2D::4047816528579084507::1743118355::1743452597::1::::<><>::
+decor_5.png::CompressedTexture2D::1674806578181352796::1743118355::1743452597::1::::<><>::
+decor_6.png::CompressedTexture2D::3431733658985989770::1743118355::1743452597::1::::<><>::
+decor_7.png::CompressedTexture2D::725824219320217327::1743118355::1743452597::1::::<><>::
+decor_8.png::CompressedTexture2D::5537111890670564779::1743118355::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Mockup/::1743452597
+sci fi (decor assets) assets.png::CompressedTexture2D::4830778531000983339::1743118355::1743452597::1::::<><>::
+sci fi mockup .png::CompressedTexture2D::4669807209788078427::1743118355::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Tileset/::1743452597
+level_tileset.png::CompressedTexture2D::3344735081563734004::1743118356::1743452596::1::::<><>::
+platform_moving.png::CompressedTexture2D::3178773189683634598::1743118356::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Tileset/Individual_PNGs/::1743210172
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Tileset/Individual_PNGs/Level_Tileset/::1743452598
+tile000.png::CompressedTexture2D::6274036571510531212::1743118355::1743452597::1::::<><>::
+tile001.png::CompressedTexture2D::799364814464311554::1743118355::1743452597::1::::<><>::
+tile002.png::CompressedTexture2D::88608923310559716::1743118355::1743452597::1::::<><>::
+tile003.png::CompressedTexture2D::9075116440526500154::1743118355::1743452597::1::::<><>::
+tile004.png::CompressedTexture2D::3489437542539749151::1743118355::1743452598::1::::<><>::
+tile005.png::CompressedTexture2D::340014711059766761::1743118355::1743452598::1::::<><>::
+tile006.png::CompressedTexture2D::6285389409922553455::1743118355::1743452598::1::::<><>::
+tile007.png::CompressedTexture2D::2547144092626826159::1743118355::1743452598::1::::<><>::
+tile008.png::CompressedTexture2D::2815213567151815583::1743118355::1743452598::1::::<><>::
+tile009.png::CompressedTexture2D::4239902459762318356::1743118355::1743452598::1::::<><>::
+tile010.png::CompressedTexture2D::8544627910219296827::1743118355::1743452598::1::::<><>::
+tile011.png::CompressedTexture2D::8174893253747418644::1743118355::1743452598::1::::<><>::
+tile012.png::CompressedTexture2D::4829554002477395762::1743118355::1743452598::1::::<><>::
+tile013.png::CompressedTexture2D::1830589023780282722::1743118355::1743452598::1::::<><>::
+tile014.png::CompressedTexture2D::5241380995062842250::1743118355::1743452598::1::::<><>::
+tile015.png::CompressedTexture2D::3121514953836016744::1743118355::1743452598::1::::<><>::
+tile016.png::CompressedTexture2D::7130755937096600285::1743118355::1743452598::1::::<><>::
+tile017.png::CompressedTexture2D::7552990109931457095::1743118355::1743452598::1::::<><>::
+tile018.png::CompressedTexture2D::2378902661195101096::1743118355::1743452598::1::::<><>::
+tile019.png::CompressedTexture2D::2522841157279244399::1743118355::1743452598::1::::<><>::
+tile020.png::CompressedTexture2D::545464862495974517::1743118355::1743452598::1::::<><>::
+tile021.png::CompressedTexture2D::2527534271889694921::1743118355::1743452598::1::::<><>::
+tile022.png::CompressedTexture2D::1340055740136118134::1743118355::1743452598::1::::<><>::
+tile023.png::CompressedTexture2D::2334043663678016052::1743118355::1743452598::1::::<><>::
+tile024.png::CompressedTexture2D::2327349643859175800::1743118355::1743452598::1::::<><>::
+tile025.png::CompressedTexture2D::4124985858332098618::1743118355::1743452598::1::::<><>::
+tile026.png::CompressedTexture2D::8484494895351863521::1743118355::1743452598::1::::<><>::
+tile027.png::CompressedTexture2D::1209181403424870479::1743118355::1743452598::1::::<><>::
+tile028.png::CompressedTexture2D::5396338147237277389::1743118355::1743452598::1::::<><>::
+tile029.png::CompressedTexture2D::2850126846043126478::1743118355::1743452598::1::::<><>::
+tile030.png::CompressedTexture2D::2561127912213093797::1743118355::1743452598::1::::<><>::
+tile031.png::CompressedTexture2D::8180160649283759534::1743118355::1743452598::1::::<><>::
+tile032.png::CompressedTexture2D::2474549961849436899::1743118355::1743452598::1::::<><>::
+tile033.png::CompressedTexture2D::4569608020728223333::1743118355::1743452598::1::::<><>::
+tile034.png::CompressedTexture2D::6786232732003170011::1743118355::1743452598::1::::<><>::
+tile035.png::CompressedTexture2D::8262308126318355121::1743118355::1743452598::1::::<><>::
+tile036.png::CompressedTexture2D::9151461835051354073::1743118355::1743452598::1::::<><>::
+tile037.png::CompressedTexture2D::1225648481708145444::1743118355::1743452598::1::::<><>::
+tile038.png::CompressedTexture2D::2408398891195730762::1743118355::1743452598::1::::<><>::
+tile039.png::CompressedTexture2D::7459178480335600811::1743118355::1743452598::1::::<><>::
+tile040.png::CompressedTexture2D::379179341999764032::1743118355::1743452598::1::::<><>::
+tile041.png::CompressedTexture2D::5853111626948200713::1743118355::1743452598::1::::<><>::
+tile042.png::CompressedTexture2D::2518128991856950548::1743118355::1743452598::1::::<><>::
+tile043.png::CompressedTexture2D::105106265948667992::1743118355::1743452598::1::::<><>::
+tile044.png::CompressedTexture2D::6771550024827213192::1743118355::1743452598::1::::<><>::
+tile045.png::CompressedTexture2D::6654769703876544935::1743118355::1743452598::1::::<><>::
+tile046.png::CompressedTexture2D::7157958672664558105::1743118355::1743452598::1::::<><>::
+tile047.png::CompressedTexture2D::1630934480346996458::1743118355::1743452598::1::::<><>::
+tile048.png::CompressedTexture2D::1059837497998066325::1743118355::1743452598::1::::<><>::
+tile049.png::CompressedTexture2D::7419941196127589858::1743118355::1743452598::1::::<><>::
+tile050.png::CompressedTexture2D::5675389696280509070::1743118355::1743452598::1::::<><>::
+tile051.png::CompressedTexture2D::2575446555434269287::1743118356::1743452598::1::::<><>::
+tile052.png::CompressedTexture2D::6167428351834652169::1743118356::1743452598::1::::<><>::
+tile053.png::CompressedTexture2D::6670580832826093644::1743118356::1743452598::1::::<><>::
+tile054.png::CompressedTexture2D::4599697656778124688::1743118356::1743452598::1::::<><>::
+tile055.png::CompressedTexture2D::8181251250904694048::1743118356::1743452598::1::::<><>::
+tile056.png::CompressedTexture2D::5710316312757875740::1743118356::1743452598::1::::<><>::
+tile057.png::CompressedTexture2D::254771622091976335::1743118356::1743452598::1::::<><>::
+tile058.png::CompressedTexture2D::5276924357397700002::1743118356::1743452598::1::::<><>::
+tile059.png::CompressedTexture2D::8999544967174569270::1743118356::1743452598::1::::<><>::
+tile060.png::CompressedTexture2D::4917986295955249940::1743118356::1743452597::1::::<><>::
+tile061.png::CompressedTexture2D::2304920761736325948::1743118356::1743452597::1::::<><>::
+tile062.png::CompressedTexture2D::1209838404578955169::1743118356::1743452597::1::::<><>::
+tile063.png::CompressedTexture2D::1735403423887648619::1743118356::1743452597::1::::<><>::
+tile064.png::CompressedTexture2D::6745067414079805013::1743118356::1743452597::1::::<><>::
+tile065.png::CompressedTexture2D::1125952875701428354::1743118356::1743452597::1::::<><>::
+tile066.png::CompressedTexture2D::7903949909250168928::1743118356::1743452597::1::::<><>::
+tile067.png::CompressedTexture2D::8063548169366589826::1743118356::1743452597::1::::<><>::
+tile068.png::CompressedTexture2D::67958403565189466::1743118356::1743452597::1::::<><>::
+tile069.png::CompressedTexture2D::5337651178876199110::1743118356::1743452597::1::::<><>::
+tile070.png::CompressedTexture2D::2971732844593468614::1743118356::1743452597::1::::<><>::
+tile071.png::CompressedTexture2D::4136880754702713093::1743118356::1743452597::1::::<><>::
+tile072.png::CompressedTexture2D::4617408738562348174::1743118356::1743452597::1::::<><>::
+tile073.png::CompressedTexture2D::945417763362859336::1743118356::1743452597::1::::<><>::
+tile074.png::CompressedTexture2D::8798887034442646623::1743118356::1743452597::1::::<><>::
+tile075.png::CompressedTexture2D::1975629350646121767::1743118356::1743452597::1::::<><>::
+tile076.png::CompressedTexture2D::6256168235899116819::1743118356::1743452597::1::::<><>::
+tile077.png::CompressedTexture2D::3880101274819341312::1743118356::1743452597::1::::<><>::
+tile078.png::CompressedTexture2D::268201783428699477::1743118356::1743452597::1::::<><>::
+tile079.png::CompressedTexture2D::1162836780519518465::1743118356::1743452597::1::::<><>::
+tile080.png::CompressedTexture2D::664655774012428934::1743118356::1743452597::1::::<><>::
+tile081.png::CompressedTexture2D::5708897871826905312::1743118356::1743452597::1::::<><>::
+tile082.png::CompressedTexture2D::5909889171068776986::1743118356::1743452597::1::::<><>::
+tile083.png::CompressedTexture2D::1920013481724766195::1743118356::1743452597::1::::<><>::
+tile084.png::CompressedTexture2D::2416220240882189230::1743118356::1743452597::1::::<><>::
+tile085.png::CompressedTexture2D::6727926786997529762::1743118356::1743452597::1::::<><>::
+tile086.png::CompressedTexture2D::4623461494112739293::1743118356::1743452597::1::::<><>::
+tile087.png::CompressedTexture2D::3572612936927576702::1743118356::1743452597::1::::<><>::
+tile088.png::CompressedTexture2D::6328073853628344742::1743118356::1743452598::1::::<><>::
+tile089.png::CompressedTexture2D::6678492913614426760::1743118356::1743452598::1::::<><>::
+tile090.png::CompressedTexture2D::5046468411793950832::1743118356::1743452598::1::::<><>::
+tile091.png::CompressedTexture2D::7295442321986156004::1743118356::1743452598::1::::<><>::
+tile092.png::CompressedTexture2D::4364110726030249282::1743118356::1743452598::1::::<><>::
+tile093.png::CompressedTexture2D::8051922846867835476::1743118356::1743452598::1::::<><>::
+tile094.png::CompressedTexture2D::5961596087533851077::1743118356::1743452598::1::::<><>::
+tile095.png::CompressedTexture2D::7119041864710701993::1743118356::1743452598::1::::<><>::
+tile096.png::CompressedTexture2D::8726763366685072909::1743118356::1743452598::1::::<><>::
+tile097.png::CompressedTexture2D::2296054344936315644::1743118356::1743452598::1::::<><>::
+tile098.png::CompressedTexture2D::4784089626956648504::1743118356::1743452598::1::::<><>::
+tile099.png::CompressedTexture2D::2089539165370643211::1743118356::1743452598::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Tileset/Individual_PNGs/platform_moving/::1743452598
+tile000.png::CompressedTexture2D::4691463470942074837::1743118356::1743452598::1::::<><>::
+tile001.png::CompressedTexture2D::7248500163946755046::1743118356::1743452598::1::::<><>::
+tile002.png::CompressedTexture2D::8013739906607213614::1743118356::1743452598::1::::<><>::
+tile003.png::CompressedTexture2D::2003642036884860405::1743118356::1743452598::1::::<><>::
+tile004.png::CompressedTexture2D::6831374576193777089::1743118356::1743452598::1::::<><>::
+tile005.png::CompressedTexture2D::3287521903510325494::1743118356::1743452598::1::::<><>::
+tile006.png::CompressedTexture2D::1454405886622594996::1743118356::1743452598::1::::<><>::
+tile007.png::CompressedTexture2D::140460781397817228::1743118356::1743452598::1::::<><>::
+tile008.png::CompressedTexture2D::1566396094315059281::1743118356::1743452598::1::::<><>::
+tile009.png::CompressedTexture2D::7283685049014947139::1743118356::1743452598::1::::<><>::
+tile010.png::CompressedTexture2D::9016878765744882575::1743118356::1743452598::1::::<><>::
+tile011.png::CompressedTexture2D::4884952703280008491::1743118356::1743452598::1::::<><>::
+tile012.png::CompressedTexture2D::3644388204542836182::1743118356::1743452598::1::::<><>::
+tile013.png::CompressedTexture2D::9099503710455426805::1743118356::1743452598::1::::<><>::
+tile014.png::CompressedTexture2D::5351567436747029082::1743118356::1743452598::1::::<><>::
+tile015.png::CompressedTexture2D::4614528691930181335::1743118356::1743452597::1::::<><>::
+tile016.png::CompressedTexture2D::376200250277385731::1743118356::1743452596::1::::<><>::
+tile017.png::CompressedTexture2D::7814450952445691881::1743118356::1743452596::1::::<><>::
+tile018.png::CompressedTexture2D::2201796858053345760::1743118356::1743452596::1::::<><>::
+tile019.png::CompressedTexture2D::3755663613681674985::1743118356::1743452596::1::::<><>::
+tile020.png::CompressedTexture2D::1967521897555599891::1743118356::1743452596::1::::<><>::
+tile021.png::CompressedTexture2D::6923220066856692295::1743118356::1743452596::1::::<><>::
+tile022.png::CompressedTexture2D::5214897826999326391::1743118356::1743452596::1::::<><>::
+tile023.png::CompressedTexture2D::7375744786843660243::1743118356::1743452596::1::::<><>::
+tile024.png::CompressedTexture2D::1635575765925138866::1743118356::1743452596::1::::<><>::
+tile025.png::CompressedTexture2D::245475910190403274::1743118356::1743452596::1::::<><>::
+tile026.png::CompressedTexture2D::1228304448335158442::1743118356::1743452596::1::::<><>::
+tile027.png::CompressedTexture2D::5374500886087592126::1743118356::1743452596::1::::<><>::
+tile028.png::CompressedTexture2D::1527013419308245632::1743118356::1743452596::1::::<><>::
+tile029.png::CompressedTexture2D::4788276331265303675::1743118356::1743452596::1::::<><>::
+tile030.png::CompressedTexture2D::5559245819599454199::1743118356::1743452596::1::::<><>::
+tile031.png::CompressedTexture2D::6245031202579738598::1743118356::1743452596::1::::<><>::
+tile032.png::CompressedTexture2D::5540502859828609480::1743118356::1743452596::1::::<><>::
+tile033.png::CompressedTexture2D::3008188762822591026::1743118356::1743452596::1::::<><>::
+tile034.png::CompressedTexture2D::5508643680792135971::1743118356::1743452596::1::::<><>::
+tile035.png::CompressedTexture2D::5697619530511668604::1743118356::1743452596::1::::<><>::
+tile036.png::CompressedTexture2D::1229755068217272547::1743118356::1743452596::1::::<><>::
+tile037.png::CompressedTexture2D::902335534713354581::1743118356::1743452596::1::::<><>::
+tile038.png::CompressedTexture2D::3964403871827056769::1743118356::1743452596::1::::<><>::
+tile039.png::CompressedTexture2D::4256039163654369052::1743118356::1743452596::1::::<><>::
+tile040.png::CompressedTexture2D::8737774939196025115::1743118356::1743452596::1::::<><>::
+tile041.png::CompressedTexture2D::6122816766318444271::1743118356::1743452596::1::::<><>::
+tile042.png::CompressedTexture2D::6591115640840877272::1743118356::1743452596::1::::<><>::
+tile043.png::CompressedTexture2D::3698407062180408745::1743118356::1743452596::1::::<><>::
+tile044.png::CompressedTexture2D::2542635466490137515::1743118356::1743452597::1::::<><>::
+tile045.png::CompressedTexture2D::8916968036186554976::1743118356::1743452597::1::::<><>::
+tile046.png::CompressedTexture2D::8837355924945177967::1743118356::1743452597::1::::<><>::
+tile047.png::CompressedTexture2D::8811860124946971315::1743118356::1743452597::1::::<><>::
+tile048.png::CompressedTexture2D::3208931680366526441::1743118356::1743452597::1::::<><>::
+tile049.png::CompressedTexture2D::4962496433343661693::1743118356::1743452597::1::::<><>::
+tile050.png::CompressedTexture2D::310399495276586011::1743118356::1743452597::1::::<><>::
+tile051.png::CompressedTexture2D::7321412899704354721::1743118356::1743452597::1::::<><>::
+tile052.png::CompressedTexture2D::5683427289122722653::1743118356::1743452597::1::::<><>::
+tile053.png::CompressedTexture2D::8359855371855372411::1743118356::1743452597::1::::<><>::
+tile054.png::CompressedTexture2D::4097201799925707911::1743118356::1743452597::1::::<><>::
+tile055.png::CompressedTexture2D::3891637626171476534::1743118356::1743452597::1::::<><>::
+tile056.png::CompressedTexture2D::4646932518617544955::1743118356::1743452597::1::::<><>::
+tile057.png::CompressedTexture2D::2408101249230518844::1743118356::1743452597::1::::<><>::
+tile058.png::CompressedTexture2D::7243870865302429922::1743118356::1743452597::1::::<><>::
+tile059.png::CompressedTexture2D::6696963637565837923::1743118356::1743452597::1::::<><>::
+tile060.png::CompressedTexture2D::3788590436164088942::1743118356::1743452597::1::::<><>::
+tile061.png::CompressedTexture2D::8347497034765993277::1743118356::1743452597::1::::<><>::
+tile062.png::CompressedTexture2D::8641740844334865080::1743118356::1743452597::1::::<><>::
+tile063.png::CompressedTexture2D::3056958443022732230::1743118356::1743452596::1::::<><>::
+tile064.png::CompressedTexture2D::7276968908154444337::1743118356::1743452596::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/::1743452597
+electric_turret.png::CompressedTexture2D::488483599241885782::1743118356::1743452597::1::::<><>::
+laser_activate.png::CompressedTexture2D::5883881706073677359::1743118356::1743452597::1::::<><>::
+laser_deactivate.png::CompressedTexture2D::4266381242112438183::1743118356::1743452597::1::::<><>::
+laser_idle.png::CompressedTexture2D::4986694414660006202::1743118356::1743452597::1::::<><>::
+laser_spikes_activate.png::CompressedTexture2D::5778337717494007727::1743118356::1743452597::1::::<><>::
+laser_spikes_deactivate.png::CompressedTexture2D::2587759584402591350::1743118356::1743452597::1::::<><>::
+laser_spikes_idle.png::CompressedTexture2D::6822349297369126298::1743118356::1743452597::1::::<><>::
+laser_turret.png::CompressedTexture2D::8780548076976759140::1743118356::1743452597::1::::<><>::
+saw_activate.png::CompressedTexture2D::1002565937797149312::1743118356::1743452597::1::::<><>::
+saw_deactivate.png::CompressedTexture2D::1408344603186187668::1743118356::1743452597::1::::<><>::
+saw_idle.png::CompressedTexture2D::4732895050468288136::1743118356::1743452597::1::::<><>::
+wall_blades.png::CompressedTexture2D::556374418896683647::1743118356::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/::1743210172
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/electric_turret/::1743452596
+tile000.png::CompressedTexture2D::2612062907225270592::1743118356::1743452596::1::::<><>::
+tile001.png::CompressedTexture2D::7064920712577299047::1743118356::1743452596::1::::<><>::
+tile002.png::CompressedTexture2D::6638730490100343417::1743118356::1743452596::1::::<><>::
+tile003.png::CompressedTexture2D::8095987305759480037::1743118356::1743452596::1::::<><>::
+tile004.png::CompressedTexture2D::4861164604671057858::1743118356::1743452596::1::::<><>::
+tile005.png::CompressedTexture2D::4836665425150552493::1743118356::1743452596::1::::<><>::
+tile006.png::CompressedTexture2D::7541029770936231882::1743118356::1743452596::1::::<><>::
+tile007.png::CompressedTexture2D::2096123386643401508::1743118356::1743452596::1::::<><>::
+tile008.png::CompressedTexture2D::8402984071695069313::1743118356::1743452596::1::::<><>::
+tile009.png::CompressedTexture2D::2499940502062281798::1743118356::1743452596::1::::<><>::
+tile010.png::CompressedTexture2D::7663016473573058220::1743118356::1743452596::1::::<><>::
+tile011.png::CompressedTexture2D::6070123548314613151::1743118356::1743452596::1::::<><>::
+tile012.png::CompressedTexture2D::4425969915996409881::1743118356::1743452596::1::::<><>::
+tile013.png::CompressedTexture2D::2679333483384796897::1743118356::1743452596::1::::<><>::
+tile014.png::CompressedTexture2D::4280816400920567529::1743118356::1743452596::1::::<><>::
+tile015.png::CompressedTexture2D::2197718064351355877::1743118356::1743452596::1::::<><>::
+tile016.png::CompressedTexture2D::4398275481613901773::1743118356::1743452596::1::::<><>::
+tile017.png::CompressedTexture2D::8141865107244566595::1743118356::1743452596::1::::<><>::
+tile018.png::CompressedTexture2D::2568365411702273958::1743118356::1743452596::1::::<><>::
+tile019.png::CompressedTexture2D::4274026859206857012::1743118356::1743452596::1::::<><>::
+tile020.png::CompressedTexture2D::1018652045549265347::1743118356::1743452596::1::::<><>::
+tile021.png::CompressedTexture2D::3313476081162721979::1743118356::1743452596::1::::<><>::
+tile022.png::CompressedTexture2D::5120708914290316238::1743118356::1743452596::1::::<><>::
+tile023.png::CompressedTexture2D::3172747444806571236::1743118356::1743452596::1::::<><>::
+tile024.png::CompressedTexture2D::6398797317659630871::1743118356::1743452596::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/laser_activate/::1743452596
+tile000.png::CompressedTexture2D::2297450925041697941::1743118356::1743452596::1::::<><>::
+tile001.png::CompressedTexture2D::7571876531609054597::1743118356::1743452596::1::::<><>::
+tile002.png::CompressedTexture2D::8864725903590185704::1743118356::1743452596::1::::<><>::
+tile003.png::CompressedTexture2D::2855309145976824626::1743118356::1743452596::1::::<><>::
+tile004.png::CompressedTexture2D::3579096828248745560::1743118356::1743452596::1::::<><>::
+tile005.png::CompressedTexture2D::4754969232315439181::1743118356::1743452596::1::::<><>::
+tile006.png::CompressedTexture2D::90443599878239760::1743118356::1743452596::1::::<><>::
+tile007.png::CompressedTexture2D::1035811703287829290::1743118356::1743452596::1::::<><>::
+tile008.png::CompressedTexture2D::188359522550223525::1743118356::1743452596::1::::<><>::
+tile009.png::CompressedTexture2D::4942543730222546420::1743118356::1743452596::1::::<><>::
+tile010.png::CompressedTexture2D::8866659131447538488::1743118356::1743452596::1::::<><>::
+tile011.png::CompressedTexture2D::2875856824995558368::1743118356::1743452596::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/laser_deactivate/::1743452596
+tile000.png::CompressedTexture2D::956673648758735241::1743118356::1743452596::1::::<><>::
+tile001.png::CompressedTexture2D::6665073120364747221::1743118356::1743452596::1::::<><>::
+tile002.png::CompressedTexture2D::5306523406252332753::1743118356::1743452596::1::::<><>::
+tile003.png::CompressedTexture2D::4244518334023563487::1743118356::1743452596::1::::<><>::
+tile004.png::CompressedTexture2D::8789246008772986534::1743118356::1743452596::1::::<><>::
+tile005.png::CompressedTexture2D::3690424207995507540::1743118356::1743452596::1::::<><>::
+tile006.png::CompressedTexture2D::5779695749018231651::1743118356::1743452596::1::::<><>::
+tile007.png::CompressedTexture2D::5268269928239659417::1743118356::1743452596::1::::<><>::
+tile008.png::CompressedTexture2D::4852298925816231707::1743118356::1743452596::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/laser_idle/::1743452596
+tile000.png::CompressedTexture2D::6105695902096935737::1743118356::1743452596::1::::<><>::
+tile001.png::CompressedTexture2D::7555357666256361242::1743118356::1743452596::1::::<><>::
+tile002.png::CompressedTexture2D::6115859966379149658::1743118356::1743452596::1::::<><>::
+tile003.png::CompressedTexture2D::1535451189980314101::1743118356::1743452596::1::::<><>::
+tile004.png::CompressedTexture2D::535471352891657682::1743118356::1743452596::1::::<><>::
+tile005.png::CompressedTexture2D::32038687248071958::1743118356::1743452596::1::::<><>::
+tile006.png::CompressedTexture2D::7361928133427658861::1743118356::1743452596::1::::<><>::
+tile007.png::CompressedTexture2D::8176025621838212270::1743118356::1743452596::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/laser_spikes_activate/::1743452597
+tile000.png::CompressedTexture2D::2898676304808747939::1743118356::1743452596::1::::<><>::
+tile001.png::CompressedTexture2D::2204491143290308704::1743118356::1743452596::1::::<><>::
+tile002.png::CompressedTexture2D::3676000513243819753::1743118356::1743452596::1::::<><>::
+tile003.png::CompressedTexture2D::6472738216711861907::1743118356::1743452596::1::::<><>::
+tile004.png::CompressedTexture2D::6287914035092066939::1743118356::1743452596::1::::<><>::
+tile005.png::CompressedTexture2D::8306924335202689068::1743118356::1743452596::1::::<><>::
+tile006.png::CompressedTexture2D::9163474607001098009::1743118356::1743452597::1::::<><>::
+tile007.png::CompressedTexture2D::6426682863093058267::1743118356::1743452597::1::::<><>::
+tile008.png::CompressedTexture2D::7043873142697253382::1743118356::1743452597::1::::<><>::
+tile009.png::CompressedTexture2D::8108417460349775520::1743118356::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/laser_spikes_deactivate/::1743452597
+tile000.png::CompressedTexture2D::2011966754145430589::1743118356::1743452597::1::::<><>::
+tile001.png::CompressedTexture2D::2675548056220676274::1743118356::1743452597::1::::<><>::
+tile002.png::CompressedTexture2D::1696321052760371389::1743118356::1743452597::1::::<><>::
+tile003.png::CompressedTexture2D::7054479444613541922::1743118356::1743452597::1::::<><>::
+tile004.png::CompressedTexture2D::8793263796144195344::1743118356::1743452597::1::::<><>::
+tile005.png::CompressedTexture2D::8365082218980410357::1743118356::1743452597::1::::<><>::
+tile006.png::CompressedTexture2D::298195923839355593::1743118356::1743452597::1::::<><>::
+tile007.png::CompressedTexture2D::2164036583320271494::1743118356::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/laser_spikes_idle/::1743452597
+tile000.png::CompressedTexture2D::6403556655626634279::1743118356::1743452597::1::::<><>::
+tile001.png::CompressedTexture2D::6594790963977893979::1743118356::1743452597::1::::<><>::
+tile002.png::CompressedTexture2D::1262100579393427434::1743118356::1743452597::1::::<><>::
+tile003.png::CompressedTexture2D::626403489516130129::1743118356::1743452597::1::::<><>::
+tile004.png::CompressedTexture2D::388448808993713592::1743118356::1743452597::1::::<><>::
+tile005.png::CompressedTexture2D::4228142745303539991::1743118356::1743452597::1::::<><>::
+tile006.png::CompressedTexture2D::2196828919848109146::1743118356::1743452597::1::::<><>::
+tile007.png::CompressedTexture2D::5780685802416677962::1743118356::1743452597::1::::<><>::
+tile008.png::CompressedTexture2D::987796588957307951::1743118356::1743452597::1::::<><>::
+tile009.png::CompressedTexture2D::7640633795946827831::1743118356::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/laser_turret/::1743452597
+tile000.png::CompressedTexture2D::7695135892073926984::1743118356::1743452597::1::::<><>::
+tile001.png::CompressedTexture2D::2132368489339345854::1743118356::1743452597::1::::<><>::
+tile002.png::CompressedTexture2D::7812702654927034244::1743118356::1743452597::1::::<><>::
+tile003.png::CompressedTexture2D::3586892501851732649::1743118356::1743452597::1::::<><>::
+tile004.png::CompressedTexture2D::6844925943919123885::1743118356::1743452597::1::::<><>::
+tile005.png::CompressedTexture2D::5501653459471842156::1743118356::1743452597::1::::<><>::
+tile006.png::CompressedTexture2D::7646590694452992466::1743118356::1743452597::1::::<><>::
+tile007.png::CompressedTexture2D::8172834861027691281::1743118356::1743452597::1::::<><>::
+tile008.png::CompressedTexture2D::1659653031235929485::1743118356::1743452597::1::::<><>::
+tile009.png::CompressedTexture2D::1935322277137945615::1743118356::1743452597::1::::<><>::
+tile010.png::CompressedTexture2D::4529432365421209257::1743118356::1743452597::1::::<><>::
+tile011.png::CompressedTexture2D::6259640459784254964::1743118356::1743452597::1::::<><>::
+tile012.png::CompressedTexture2D::5716378030597740927::1743118356::1743452597::1::::<><>::
+tile013.png::CompressedTexture2D::1537785698646447378::1743118356::1743452597::1::::<><>::
+tile014.png::CompressedTexture2D::3381359010060491480::1743118356::1743452597::1::::<><>::
+tile015.png::CompressedTexture2D::4528825455079440513::1743118356::1743452597::1::::<><>::
+tile016.png::CompressedTexture2D::6483565516274860110::1743118356::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/saw_activate/::1743452597
+tile000.png::CompressedTexture2D::92514508627266002::1743118356::1743452597::1::::<><>::
+tile001.png::CompressedTexture2D::5266056466796229895::1743118356::1743452597::1::::<><>::
+tile002.png::CompressedTexture2D::3330244458939239525::1743118356::1743452597::1::::<><>::
+tile003.png::CompressedTexture2D::5016838570073673818::1743118356::1743452597::1::::<><>::
+tile004.png::CompressedTexture2D::1532743828279919924::1743118356::1743452597::1::::<><>::
+tile005.png::CompressedTexture2D::2595385163167533641::1743118356::1743452597::1::::<><>::
+tile006.png::CompressedTexture2D::1219257963666382198::1743118356::1743452597::1::::<><>::
+tile007.png::CompressedTexture2D::5566445251875919061::1743118356::1743452597::1::::<><>::
+tile008.png::CompressedTexture2D::6527004314376674578::1743118356::1743452597::1::::<><>::
+tile009.png::CompressedTexture2D::8101619020542021809::1743118356::1743452597::1::::<><>::
+tile010.png::CompressedTexture2D::497261765132477542::1743118356::1743452597::1::::<><>::
+tile011.png::CompressedTexture2D::6814181805797545404::1743118356::1743452597::1::::<><>::
+tile012.png::CompressedTexture2D::3980482200119943455::1743118356::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/saw_deactivate/::1743452597
+tile000.png::CompressedTexture2D::1232817245691273048::1743118356::1743452597::1::::<><>::
+tile001.png::CompressedTexture2D::324447359258954083::1743118356::1743452597::1::::<><>::
+tile002.png::CompressedTexture2D::8579597794933359510::1743118356::1743452597::1::::<><>::
+tile003.png::CompressedTexture2D::8738085686288808952::1743118356::1743452597::1::::<><>::
+tile004.png::CompressedTexture2D::2824216750999716870::1743118356::1743452597::1::::<><>::
+tile005.png::CompressedTexture2D::4739400807286228206::1743118356::1743452597::1::::<><>::
+tile006.png::CompressedTexture2D::3246687424872111184::1743118356::1743452597::1::::<><>::
+tile007.png::CompressedTexture2D::8260781410258185652::1743118356::1743452597::1::::<><>::
+tile008.png::CompressedTexture2D::5767954279656090762::1743118356::1743452597::1::::<><>::
+tile009.png::CompressedTexture2D::1559043151666788720::1743118356::1743452597::1::::<><>::
+tile010.png::CompressedTexture2D::3705615487466177505::1743118356::1743452597::1::::<><>::
+tile011.png::CompressedTexture2D::1919245748273481094::1743118356::1743452597::1::::<><>::
+tile012.png::CompressedTexture2D::2395301726635826996::1743118356::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/saw_idle/::1743452597
+tile000.png::CompressedTexture2D::5487439135024776548::1743118356::1743452597::1::::<><>::
+tile001.png::CompressedTexture2D::2337289443417499210::1743118356::1743452597::1::::<><>::
+tile002.png::CompressedTexture2D::5846131979529651698::1743118356::1743452597::1::::<><>::
+tile003.png::CompressedTexture2D::5718914922118379715::1743118356::1743452597::1::::<><>::
+tile004.png::CompressedTexture2D::8800414487551135313::1743118356::1743452597::1::::<><>::
+tile005.png::CompressedTexture2D::891783243858633067::1743118356::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/wall_blades/::1743452597
+tile000.png::CompressedTexture2D::1415472457128917700::1743118356::1743452597::1::::<><>::
+tile001.png::CompressedTexture2D::3731855694229309583::1743118356::1743452597::1::::<><>::
+tile002.png::CompressedTexture2D::4971042402069184927::1743118356::1743452597::1::::<><>::
+tile003.png::CompressedTexture2D::8619876829608680686::1743118356::1743452597::1::::<><>::
+tile004.png::CompressedTexture2D::1900324857619854297::1743118356::1743452597::1::::<><>::
+tile005.png::CompressedTexture2D::919145485486114450::1743118356::1743452597::1::::<><>::
+tile006.png::CompressedTexture2D::4193557076361660144::1743118356::1743452597::1::::<><>::
+tile007.png::CompressedTexture2D::5956544095366754662::1743118356::1743452597::1::::<><>::
+tile008.png::CompressedTexture2D::8585756749271168968::1743118356::1743452597::1::::<><>::
+tile009.png::CompressedTexture2D::2443431313541174667::1743118356::1743452597::1::::<><>::
+tile010.png::CompressedTexture2D::2933956004126850418::1743118356::1743452597::1::::<><>::
+tile011.png::CompressedTexture2D::1269180593640938517::1743118356::1743452597::1::::<><>::
+tile012.png::CompressedTexture2D::3068845474732604346::1743118356::1743452597::1::::<><>::
+tile013.png::CompressedTexture2D::7855151938390302369::1743118356::1743452597::1::::<><>::
+tile014.png::CompressedTexture2D::5109615883269468683::1743118356::1743452597::1::::<><>::
+tile015.png::CompressedTexture2D::7170431590910593197::1743118356::1743452597::1::::<><>::
+tile016.png::CompressedTexture2D::3385969541893450200::1743118356::1743452597::1::::<><>::
+tile017.png::CompressedTexture2D::8417116404818001964::1743118356::1743452597::1::::<><>::
+tile018.png::CompressedTexture2D::6350904505917742622::1743118356::1743452597::1::::<><>::
+tile019.png::CompressedTexture2D::5389994566319319731::1743118356::1743452597::1::::<><>::
+tile020.png::CompressedTexture2D::1609140212005918724::1743118356::1743452597::1::::<><>::
+tile021.png::CompressedTexture2D::4977100310964972944::1743118356::1743452597::1::::<><>::
+tile022.png::CompressedTexture2D::6471358127342841795::1743118356::1743452597::1::::<><>::
+tile023.png::CompressedTexture2D::4857218132597240304::1743118356::1743452597::1::::<><>::
+tile024.png::CompressedTexture2D::1241113682330343435::1743118356::1743452597::1::::<><>::
+tile025.png::CompressedTexture2D::144627209277343945::1743118356::1743452597::1::::<><>::
+tile026.png::CompressedTexture2D::1016211426670328722::1743118356::1743452597::1::::<><>::
+tile027.png::CompressedTexture2D::7128182698189220312::1743118356::1743452597::1::::<><>::
+tile028.png::CompressedTexture2D::5017160309444802389::1743118356::1743452597::1::::<><>::
+::res://Serve Smash/Tilesets/Space Tileset/::1743465563
+::res://Serve Smash/Tilesets/Space Tileset/cave tileset/::1743465565
+background1.png::CompressedTexture2D::8956270397450808384::1743465532::1743465551::1::::<><>::
+background2.png::CompressedTexture2D::465948154391034539::1743465532::1743465551::1::::<><>::
+background3.png::CompressedTexture2D::3050657534801967580::1743465532::1743465551::1::::<><>::
+background4a.png::CompressedTexture2D::6001553109895544458::1743465532::1743465565::1::::<><>::
+background4b.png::CompressedTexture2D::1364309566528141954::1743465532::1743465565::1::::<><>::
+mainlev_build.png::CompressedTexture2D::5873865069790564656::1743465532::1743465565::1::::<><>::
+props1.png::CompressedTexture2D::6722259486120997800::1743465532::1743465565::1::::<><>::
+props2.png::CompressedTexture2D::8035018487685484810::1743465532::1743465565::1::::<><>::
+::res://Serve Smash/Tilesets/Space Tileset/cave tileset/PSD/::1743465535
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/::1743453542
+Readme.txt::TextFile::-1::1743453535::0::1::::<><>::
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Asteroids/::1743453542
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Asteroids/Aseprite/::1743453542
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Asteroids/PNGs/::1743453543
+Asteroid 01 - Base.png::CompressedTexture2D::2580669784431422421::1743453535::1743453536::1::::<><>::
+Asteroid 01 - Explode.png::CompressedTexture2D::437352338504686638::1743453535::1743453536::1::::<><>::
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/::1743453543
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/Aseprite/::1743453543
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/PNGs/::1743453543
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/PNGs/Condesed/::1743453543
+Starry background  - Layer 01 - Void.png::CompressedTexture2D::8772007839537104364::1743453535::1743453537::1::::<><>::
+Starry background  - Layer 02 - Stars.png::CompressedTexture2D::4608042144036405160::1743453535::1743453537::1::::<><>::
+Starry background  - Layer 03 - Stars.png::CompressedTexture2D::2417272385751237657::1743453535::1743453537::1::::<><>::
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Backgrounds/PNGs/Split up/::1743453543
+Starry background  - Layer 01 - Solid colour.png::CompressedTexture2D::2938949241713006692::1743453535::1743453536::1::::<><>::
+Starry background  - Layer 02 - Shadows 2.png::CompressedTexture2D::1365303691173853735::1743453535::1743453537::1::::<><>::
+Starry background  - Layer 02 - Shadows.png::CompressedTexture2D::1956463950738375709::1743453535::1743453537::1::::<><>::
+Starry background  - Layer 03 - Stars 2.png::CompressedTexture2D::5117040300413627039::1743453535::1743453537::1::::<><>::
+Starry background  - Layer 03 - Stars.png::CompressedTexture2D::5624714129968370323::1743453535::1743453537::1::::<><>::
+Starry background - Layer X - Big Star 2.png::CompressedTexture2D::8877617969759387115::1743453535::1743453537::1::::<><>::
+Starry background - Layer X - Big Star.png::CompressedTexture2D::7838830668901598037::1743453535::1743453537::1::::<><>::
+Starry background - Layer X -Black hole.png::CompressedTexture2D::4131204927490204778::1743453535::1743453537::1::::<><>::
+Starry background - Layer X -Rotary Star 2.png::CompressedTexture2D::4159531619166728396::1743453535::1743453537::1::::<><>::
+Starry background - Layer X -Rotary Star.png::CompressedTexture2D::4237722050244236806::1743453535::1743453537::1::::<><>::
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Effects/::1743453543
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Effects/Aseprite/::1743453543
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Effects/PNGs/::1743453543
+Asteroid - Flame.png::CompressedTexture2D::5234220969931283236::1743453535::1743453536::1::::<><>::
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Planets/::1743453543
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Planets/Aseprite/::1743453543
+::res://Serve Smash/Tilesets/Space Tileset/Foozle_2DS0015_Void_EnvironmentPack/Planets/PNGs/::1743453543
+Earth-Like planet - Without back glow.png::CompressedTexture2D::5056647026730329755::1743453535::1743453536::1::::<><>::
+Earth-Like planet.png::CompressedTexture2D::82639978879877613::1743453535::1743453536::1::::<><>::
+::res://Serve Smash/Tilesets/UI Assets/::1743644900
+FreeButtons.png::CompressedTexture2D::3269347532838882214::1743644899::1743644900::1::::<><>::
+::res://Serve Smash/Tilesets/UI Assets/Complete_UI_Essential_Pack_Free/::1743644024
+License.txt::TextFile::-1::1743644019::0::1::::<><>::
+Thank You for Purchasing!.txt::TextFile::-1::1743644019::0::1::::<><>::
+::res://Serve Smash/Tilesets/UI Assets/Complete_UI_Essential_Pack_Free/01_Flat_Theme/::1743644024
+::res://Serve Smash/Tilesets/UI Assets/Complete_UI_Essential_Pack_Free/01_Flat_Theme/Aseprite/::1743644024
+::res://Serve Smash/Tilesets/UI Assets/Complete_UI_Essential_Pack_Free/01_Flat_Theme/Sprites/::1743644024
+UI_Flat_Banner01a.png::CompressedTexture2D::3175166214752501158::1743644019::1743644020::1::::<><>::
+UI_Flat_Banner02a.png::CompressedTexture2D::9106889016402648184::1743644019::1743644020::1::::<><>::
+UI_Flat_Banner03a.png::CompressedTexture2D::2915698813114107069::1743644019::1743644020::1::::<><>::
+UI_Flat_Banner04a.png::CompressedTexture2D::2454554409898002962::1743644019::1743644020::1::::<><>::
+UI_Flat_Bar01a.png::CompressedTexture2D::8998237636232566260::1743644019::1743644020::1::::<><>::
+UI_Flat_Bar02a.png::CompressedTexture2D::214963158753167216::1743644019::1743644020::1::::<><>::
+UI_Flat_Bar03a.png::CompressedTexture2D::6021038192305996281::1743644019::1743644020::1::::<><>::
+UI_Flat_Bar04a.png::CompressedTexture2D::6713634986852241824::1743644019::1743644020::1::::<><>::
+UI_Flat_Bar05a.png::CompressedTexture2D::6175559257809663111::1743644019::1743644020::1::::<><>::
+UI_Flat_Bar06a.png::CompressedTexture2D::3262336318383794311::1743644019::1743644020::1::::<><>::
+UI_Flat_Bar07a.png::CompressedTexture2D::2178578335629008046::1743644019::1743644020::1::::<><>::
+UI_Flat_Bar08a.png::CompressedTexture2D::4941507012527421008::1743644019::1743644020::1::::<><>::
+UI_Flat_Bar09a.png::CompressedTexture2D::8944458669732034667::1743644019::1743644020::1::::<><>::
+UI_Flat_Bar10a.png::CompressedTexture2D::109356299492256060::1743644019::1743644020::1::::<><>::
+UI_Flat_Bar11a.png::CompressedTexture2D::6937292030987687342::1743644019::1743644020::1::::<><>::
+UI_Flat_Bar12a.png::CompressedTexture2D::7222476490652954494::1743644019::1743644020::1::::<><>::
+UI_Flat_Bar13a.png::CompressedTexture2D::1867884823316158675::1743644019::1743644020::1::::<><>::
+UI_Flat_BarFill01a.png::CompressedTexture2D::2324749897770072121::1743644019::1743644020::1::::<><>::
+UI_Flat_BarFill01b.png::CompressedTexture2D::677023858681952127::1743644019::1743644020::1::::<><>::
+UI_Flat_BarFill01c.png::CompressedTexture2D::3716234573268875726::1743644019::1743644020::1::::<><>::
+UI_Flat_BarFill01d.png::CompressedTexture2D::5988548242509688071::1743644019::1743644020::1::::<><>::
+UI_Flat_BarFill01e.png::CompressedTexture2D::736805135849259907::1743644019::1743644020::1::::<><>::
+UI_Flat_BarFill01f.png::CompressedTexture2D::1185425272876205837::1743644019::1743644020::1::::<><>::
+UI_Flat_BarFill01g.png::CompressedTexture2D::4734098856250097193::1743644019::1743644020::1::::<><>::
+UI_Flat_Button01a_1.png::CompressedTexture2D::1271801275583903508::1743644019::1743644020::1::::<><>::
+UI_Flat_Button01a_2.png::CompressedTexture2D::5260907793086960546::1743644019::1743644020::1::::<><>::
+UI_Flat_Button01a_3.png::CompressedTexture2D::1438741393482525432::1743644019::1743644020::1::::<><>::
+UI_Flat_Button01a_4.png::CompressedTexture2D::5874564537135937214::1743644019::1743644020::1::::<><>::
+UI_Flat_Button02a_1.png::CompressedTexture2D::2718389100980940584::1743644019::1743644020::1::::<><>::
+UI_Flat_Button02a_2.png::CompressedTexture2D::8745648344438460118::1743644019::1743644020::1::::<><>::
+UI_Flat_Button02a_3.png::CompressedTexture2D::5681111021506731131::1743644019::1743644020::1::::<><>::
+UI_Flat_Button02a_4.png::CompressedTexture2D::5014480834445087033::1743644019::1743644020::1::::<><>::
+UI_Flat_ButtonArrow01a.png::CompressedTexture2D::6685259634842623669::1743644019::1743644020::1::::<><>::
+UI_Flat_ButtonCheck01a.png::CompressedTexture2D::3525296602682366480::1743644019::1743644020::1::::<><>::
+UI_Flat_ButtonCross01a.png::CompressedTexture2D::3704560860228253381::1743644019::1743644020::1::::<><>::
+UI_Flat_ButtonMinus01a.png::CompressedTexture2D::5769240164495553353::1743644019::1743644020::1::::<><>::
+UI_Flat_ButtonPlay01a.png::CompressedTexture2D::5622543105620035812::1743644019::1743644020::1::::<><>::
+UI_Flat_ButtonPlus01a.png::CompressedTexture2D::8347420652353381629::1743644019::1743644020::1::::<><>::
+UI_Flat_Frame01a.png::CompressedTexture2D::4266228243615089436::1743644019::1743644020::1::::<><>::
+UI_Flat_Frame02a.png::CompressedTexture2D::9121764449300394189::1743644019::1743644020::1::::<><>::
+UI_Flat_Frame03a.png::CompressedTexture2D::3495680121804191749::1743644019::1743644020::1::::<><>::
+UI_Flat_FrameMarker01a.png::CompressedTexture2D::745879677163990476::1743644019::1743644020::1::::<><>::
+UI_Flat_FrameMarker02a.png::CompressedTexture2D::4102069406191472932::1743644019::1743644020::1::::<><>::
+UI_Flat_FrameMarker03a.png::CompressedTexture2D::337196699639376495::1743644019::1743644020::1::::<><>::
+UI_Flat_FrameSlot01a.png::CompressedTexture2D::4889760894430164237::1743644019::1743644020::1::::<><>::
+UI_Flat_FrameSlot01b.png::CompressedTexture2D::971676666644549539::1743644019::1743644020::1::::<><>::
+UI_Flat_FrameSlot01c.png::CompressedTexture2D::1681085791376977075::1743644019::1743644020::1::::<><>::
+UI_Flat_FrameSlot02a.png::CompressedTexture2D::2744962167069600398::1743644019::1743644020::1::::<><>::
+UI_Flat_FrameSlot02b.png::CompressedTexture2D::4301348735147712097::1743644019::1743644020::1::::<><>::
+UI_Flat_FrameSlot02c.png::CompressedTexture2D::5652909065315422281::1743644019::1743644020::1::::<><>::
+UI_Flat_FrameSlot03a.png::CompressedTexture2D::6353234342800463302::1743644019::1743644020::1::::<><>::
+UI_Flat_FrameSlot03b.png::CompressedTexture2D::5263973560372404255::1743644019::1743644020::1::::<><>::
+UI_Flat_FrameSlot03c.png::CompressedTexture2D::4623500764172839096::1743644019::1743644020::1::::<><>::
+UI_Flat_Handle01a.png::CompressedTexture2D::4598641840081288437::1743644019::1743644020::1::::<><>::
+UI_Flat_Handle02a.png::CompressedTexture2D::2818163727504426085::1743644019::1743644020::1::::<><>::
+UI_Flat_Handle03a.png::CompressedTexture2D::7678734872287928473::1743644019::1743644020::1::::<><>::
+UI_Flat_Handle04a.png::CompressedTexture2D::940563158052170477::1743644019::1743644020::1::::<><>::
+UI_Flat_Handle05a.png::CompressedTexture2D::6762945704676139900::1743644019::1743644020::1::::<><>::
+UI_Flat_Handle06a.png::CompressedTexture2D::1748731637697228185::1743644019::1743644020::1::::<><>::
+UI_Flat_IconArrow01a.png::CompressedTexture2D::5463479200581964081::1743644019::1743644020::1::::<><>::
+UI_Flat_IconArrow01b.png::CompressedTexture2D::2581968331526649057::1743644019::1743644020::1::::<><>::
+UI_Flat_IconArrow01c.png::CompressedTexture2D::3945437005799365984::1743644019::1743644020::1::::<><>::
+UI_Flat_IconCheck01a.png::CompressedTexture2D::1812608229974247609::1743644019::1743644020::1::::<><>::
+UI_Flat_IconCheck01b.png::CompressedTexture2D::37327084085617744::1743644019::1743644020::1::::<><>::
+UI_Flat_IconCheck01c.png::CompressedTexture2D::4063705597756444366::1743644019::1743644020::1::::<><>::
+UI_Flat_IconCross01a.png::CompressedTexture2D::9067639706012777297::1743644019::1743644020::1::::<><>::
+UI_Flat_IconCross01b.png::CompressedTexture2D::1487917560281860498::1743644019::1743644020::1::::<><>::
+UI_Flat_IconCross01c.png::CompressedTexture2D::8024738229147468953::1743644019::1743644020::1::::<><>::
+UI_Flat_IconDropdown01a.png::CompressedTexture2D::5514357632428304207::1743644019::1743644020::1::::<><>::
+UI_Flat_IconLine01a.png::CompressedTexture2D::2112180647563753888::1743644019::1743644020::1::::<><>::
+UI_Flat_IconPlay01a.png::CompressedTexture2D::6655075072678443244::1743644019::1743644020::1::::<><>::
+UI_Flat_IconPlay01b.png::CompressedTexture2D::3304781673387064363::1743644019::1743644020::1::::<><>::
+UI_Flat_IconPlay01c.png::CompressedTexture2D::2543198287020635564::1743644019::1743644020::1::::<><>::
+UI_Flat_IconPlay01d.png::CompressedTexture2D::5085208748276343507::1743644019::1743644020::1::::<><>::
+UI_Flat_IconPoint01a.png::CompressedTexture2D::1788084501005750474::1743644019::1743644020::1::::<><>::
+UI_Flat_IconPoint01b.png::CompressedTexture2D::5802027366252413294::1743644019::1743644020::1::::<><>::
+UI_Flat_IconPoint01c.png::CompressedTexture2D::3020792457404482992::1743644019::1743644020::1::::<><>::
+UI_Flat_IconStripe01a.png::CompressedTexture2D::2101070553178041480::1743644019::1743644020::1::::<><>::
+UI_Flat_InputField01a.png::CompressedTexture2D::5440829232708888235::1743644019::1743644020::1::::<><>::
+UI_Flat_InputField02a.png::CompressedTexture2D::1981684610044858696::1743644019::1743644020::1::::<><>::
+UI_Flat_Select01a_1.png::CompressedTexture2D::6143433201303209217::1743644019::1743644020::1::::<><>::
+UI_Flat_Select01a_2.png::CompressedTexture2D::3115039986271219214::1743644019::1743644020::1::::<><>::
+UI_Flat_Select01a_3.png::CompressedTexture2D::8451546944093763821::1743644019::1743644020::1::::<><>::
+UI_Flat_Select01a_4.png::CompressedTexture2D::1885619761809064812::1743644019::1743644020::1::::<><>::
+UI_Flat_Select02a_1.png::CompressedTexture2D::3926961592998463311::1743644019::1743644020::1::::<><>::
+UI_Flat_Select02a_2.png::CompressedTexture2D::574122443756233338::1743644019::1743644020::1::::<><>::
+UI_Flat_Select02a_3.png::CompressedTexture2D::2297918282389761390::1743644019::1743644020::1::::<><>::
+UI_Flat_Select02a_4.png::CompressedTexture2D::1476503014873387204::1743644019::1743644020::1::::<><>::
+UI_Flat_ToggleLeftOff01a.png::CompressedTexture2D::220600364096568099::1743644019::1743644020::1::::<><>::
+UI_Flat_ToggleLeftOn01a.png::CompressedTexture2D::9175754871018444337::1743644019::1743644020::1::::<><>::
+UI_Flat_ToggleOff01a.png::CompressedTexture2D::7323096950912441384::1743644019::1743644020::1::::<><>::
+UI_Flat_ToggleOff02a.png::CompressedTexture2D::2488570960163808742::1743644019::1743644020::1::::<><>::
+UI_Flat_ToggleOff03a.png::CompressedTexture2D::5766409530825720684::1743644019::1743644020::1::::<><>::
+UI_Flat_ToggleOn01a.png::CompressedTexture2D::1787129079280513032::1743644019::1743644020::1::::<><>::
+UI_Flat_ToggleOn02a.png::CompressedTexture2D::3122948026553084709::1743644019::1743644020::1::::<><>::
+UI_Flat_ToggleOn03a.png::CompressedTexture2D::8055723656563761464::1743644019::1743644020::1::::<><>::
+UI_Flat_ToggleRightOff01a.png::CompressedTexture2D::7346231193451951728::1743644019::1743644020::1::::<><>::
+UI_Flat_ToggleRightOn01a.png::CompressedTexture2D::1159086849056054497::1743644019::1743644020::1::::<><>::
+::res://Serve Smash/Tilesets/UI Assets/Complete_UI_Essential_Pack_Free/01_Flat_Theme/Spritesheets/::1743644024
+Spritesheet_UI_Flat.png::CompressedTexture2D::1542692948144751015::1743644019::1743644020::1::::<><>::
+Spritesheet_UI_Flat_Animated.png::CompressedTexture2D::1170539256239629345::1743644019::1743644020::1::::<><>::
+::res://Serve Smash/UI Assets/::1743900912
+00.png::CompressedTexture2D::3488608265781565059::1743900623::1743900626::1::::<><>::
+01.png::CompressedTexture2D::3513974137541180233::1743900623::1743900626::1::::<><>::
+02.png::CompressedTexture2D::3830603128399060848::1743900623::1743900626::1::::<><>::
+03.png::CompressedTexture2D::8207431545083923508::1743900623::1743900626::1::::<><>::
+04.png::CompressedTexture2D::6973597428858496598::1743900623::1743900626::1::::<><>::
+05.png::CompressedTexture2D::3351716961292357011::1743900623::1743900626::1::::<><>::
+06.png::CompressedTexture2D::8410430623139103571::1743900623::1743900626::1::::<><>::
+07.png::CompressedTexture2D::544646090684270512::1743900623::1743900626::1::::<><>::
+All.png::CompressedTexture2D::6873084129817827015::1743900911::1743900912::1::::<><>::

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dojputv3biy2f"
+path="res://.godot/imported/Character Select.mp3-fe04efe2b4fe9bd7d306d096eed2629c.mp3str"
+
+[deps]
+
+source_file="res://Serve Smash/Music/Character Select.mp3"
+dest_files=["res://.godot/imported/Character Select.mp3-fe04efe2b4fe9bd7d306d096eed2629c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

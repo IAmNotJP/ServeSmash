@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkg5wewhtshgg"
-path="res://.godot/imported/ballFull.png-d9a6832a6bb8ea799540f9c47f84e69b.ctex"
+path="res://.godot/imported/ballFull.png-bcc984e8e09c5904842f87f378550bae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Volleyballer/spritesheets/ballFull.png"
-dest_files=["res://.godot/imported/ballFull.png-d9a6832a6bb8ea799540f9c47f84e69b.ctex"]
+source_file="res://Serve Smash/Characters/Volleyballer/spritesheets/ballFull.png"
+dest_files=["res://.godot/imported/ballFull.png-bcc984e8e09c5904842f87f378550bae.ctex"]
 
 [params]
 

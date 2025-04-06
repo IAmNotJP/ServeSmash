@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4rcuixp1ixly"
-path="res://.godot/imported/playerReception.png-16499944f0ab32540ea8bbf65cdca246.ctex"
+path="res://.godot/imported/playerReception.png-de3661e549689a06ca48d12e6345951a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Volleyballer/spritesheets/playerReception.png"
-dest_files=["res://.godot/imported/playerReception.png-16499944f0ab32540ea8bbf65cdca246.ctex"]
+source_file="res://Serve Smash/Characters/Volleyballer/spritesheets/playerReception.png"
+dest_files=["res://.godot/imported/playerReception.png-de3661e549689a06ca48d12e6345951a.ctex"]
 
 [params]
 

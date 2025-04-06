@@ -1,14 +1,14 @@
 [gd_scene load_steps=27 format=4 uid="uid://der02bq0pu65r"]
 
-[ext_resource type="Texture2D" uid="uid://bnwhkevmogrc3" path="res://Serve Smash Assets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Tileset/level_tileset.png" id="1_k8nwp"]
-[ext_resource type="Texture2D" uid="uid://crfmcvkkoqenq" path="res://Serve Smash Assets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/barrier_idle.png" id="2_u2v2d"]
-[ext_resource type="Texture2D" uid="uid://bhe1cobkl02rx" path="res://Serve Smash Assets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Decor/full decor tiles.png" id="2_ussmg"]
-[ext_resource type="Texture2D" uid="uid://ojwd5nbulvqu" path="res://Serve Smash Assets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/saw_activate.png" id="3_vhl70"]
-[ext_resource type="Texture2D" uid="uid://uchh2yerm07a" path="res://Serve Smash Assets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/saw_deactivate.png" id="4_repws"]
-[ext_resource type="Texture2D" uid="uid://b8owdcbhxkucu" path="res://Serve Smash Assets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/saw_idle.png" id="5_e0uw1"]
-[ext_resource type="Texture2D" uid="uid://cvn16olmiakmb" path="res://Serve Smash Assets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/control_panel_deactivate.png" id="7_efvfi"]
-[ext_resource type="Texture2D" uid="uid://1kb8skc8cv4o" path="res://Serve Smash Assets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/control_panel_idle.png" id="8_wty2f"]
-[ext_resource type="Texture2D" uid="uid://colcm37ggdh72" path="res://Serve Smash Assets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/laser_spikes_activate.png" id="9_6xyxa"]
+[ext_resource type="Texture2D" uid="uid://bnwhkevmogrc3" path="res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Tileset/level_tileset.png" id="1_k8nwp"]
+[ext_resource type="Texture2D" uid="uid://crfmcvkkoqenq" path="res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/barrier_idle.png" id="2_u2v2d"]
+[ext_resource type="Texture2D" uid="uid://bhe1cobkl02rx" path="res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Decor/full decor tiles.png" id="2_ussmg"]
+[ext_resource type="Texture2D" uid="uid://ojwd5nbulvqu" path="res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/saw_activate.png" id="3_vhl70"]
+[ext_resource type="Texture2D" uid="uid://uchh2yerm07a" path="res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/saw_deactivate.png" id="4_repws"]
+[ext_resource type="Texture2D" uid="uid://b8owdcbhxkucu" path="res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/saw_idle.png" id="5_e0uw1"]
+[ext_resource type="Texture2D" uid="uid://cvn16olmiakmb" path="res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/control_panel_deactivate.png" id="7_efvfi"]
+[ext_resource type="Texture2D" uid="uid://1kb8skc8cv4o" path="res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Barrier_Control_Panel/control_panel_idle.png" id="8_wty2f"]
+[ext_resource type="Texture2D" uid="uid://colcm37ggdh72" path="res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/laser_spikes_activate.png" id="9_6xyxa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n3wcd"]
 texture = ExtResource("1_k8nwp")

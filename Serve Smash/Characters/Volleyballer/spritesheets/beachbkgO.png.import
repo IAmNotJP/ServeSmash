@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ceaj6t3h1scxl"
-path="res://.godot/imported/beachbkgO.png-b31eeb9fea3f428c20d99d22e530f781.ctex"
+path="res://.godot/imported/beachbkgO.png-a7568185ae19af0d1ac4b7b0863b5826.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Volleyballer/spritesheets/beachbkgO.png"
-dest_files=["res://.godot/imported/beachbkgO.png-b31eeb9fea3f428c20d99d22e530f781.ctex"]
+source_file="res://Serve Smash/Characters/Volleyballer/spritesheets/beachbkgO.png"
+dest_files=["res://.godot/imported/beachbkgO.png-a7568185ae19af0d1ac4b7b0863b5826.ctex"]
 
 [params]
 

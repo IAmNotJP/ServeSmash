@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://w32dc01tau50"
-path="res://.godot/imported/entrance.png-88799aebfee04e7557a928d6b14ea116.ctex"
+path="res://.godot/imported/entrance.png-a7f6b1a7faf07be6f03fdf08cde6fe12.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Serve Smash Assets/Grassland Tileset/Tiles/Social/entrance.png"
-dest_files=["res://.godot/imported/entrance.png-88799aebfee04e7557a928d6b14ea116.ctex"]
+source_file="res://Serve Smash/Tilesets/Grassland Tileset/Social/entrance.png"
+dest_files=["res://.godot/imported/entrance.png-a7f6b1a7faf07be6f03fdf08cde6fe12.ctex"]
 
 [params]
 

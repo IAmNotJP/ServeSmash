@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqvxbhtjcl32v"
-path="res://.godot/imported/preview.png-f3512ff601a3e9c9ad2eafb483c8fc20.ctex"
+path="res://.godot/imported/preview.png-5b8fcd4568488e9d40f69ddb737546d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Serve Smash Assets/Airship Tileset/Enjl-Dream Ship Tileset/preview.png"
-dest_files=["res://.godot/imported/preview.png-f3512ff601a3e9c9ad2eafb483c8fc20.ctex"]
+source_file="res://Serve Smash/Tilesets/Airship Tileset/Enjl-Dream Ship Tileset/preview.png"
+dest_files=["res://.godot/imported/preview.png-5b8fcd4568488e9d40f69ddb737546d5.ctex"]
 
 [params]
 

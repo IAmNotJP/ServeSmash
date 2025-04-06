@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ciislwjqj20ek"
-path="res://.godot/imported/Start.png-47d4660c89164678c0bfc68b9a7fc675.ctex"
+path="res://.godot/imported/Start.png-5afe58453ad45bde92d358b6d7103aa0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Serve Smash Assets/Buttons/Start.png"
-dest_files=["res://.godot/imported/Start.png-47d4660c89164678c0bfc68b9a7fc675.ctex"]
+source_file="res://Serve Smash/Buttons/Start.png"
+dest_files=["res://.godot/imported/Start.png-5afe58453ad45bde92d358b6d7103aa0.ctex"]
 
 [params]
 

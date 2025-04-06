@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dk0yunqb128kc"]
+[gd_scene load_steps=6 format=3 uid="uid://dk0yunqb128kc"]
 
-[ext_resource type="Texture2D" uid="uid://olh0e1qhnphk" path="res://Serve Smash Assets/Main Menu Assets/Smash Serve Logo.png" id="1_u74q0"]
-[ext_resource type="Texture2D" uid="uid://cv21v5kpo2sos" path="res://Serve Smash Assets/Main Menu Assets/ph3.jpg" id="1_xdsih"]
-[ext_resource type="Texture2D" uid="uid://ciislwjqj20ek" path="res://Serve Smash Assets/Buttons/Start.png" id="3_ixksr"]
-[ext_resource type="Texture2D" uid="uid://b2usbn4gornig" path="res://Serve Smash Assets/Buttons/Options.png" id="4_aji76"]
-[ext_resource type="Texture2D" uid="uid://dd6axxs0gim1b" path="res://Serve Smash Assets/Buttons/Quit.png" id="5_anh52"]
-[ext_resource type="Script" path="res://Serve Smash Assets/Scenes/sprite_2d.gd" id="6_tgskl"]
+[ext_resource type="Texture2D" uid="uid://olh0e1qhnphk" path="res://Serve Smash/Main Menu/Smash Serve Logo.png" id="1_u74q0"]
+[ext_resource type="Texture2D" uid="uid://cv21v5kpo2sos" path="res://Serve Smash/Main Menu/ph3.jpg" id="1_xdsih"]
+[ext_resource type="Texture2D" uid="uid://ciislwjqj20ek" path="res://Serve Smash/Buttons/Start.png" id="3_ixksr"]
+[ext_resource type="Texture2D" uid="uid://b2usbn4gornig" path="res://Serve Smash/Buttons/Options.png" id="4_aji76"]
+[ext_resource type="Texture2D" uid="uid://dd6axxs0gim1b" path="res://Serve Smash/Buttons/Quit.png" id="5_anh52"]
 
 [node name="Main_Menu" type="Control"]
 layout_mode = 3
@@ -64,4 +63,3 @@ position = Vector2(348, 72)
 scale = Vector2(0.245, 0.245)
 texture = ExtResource("1_u74q0")
 centered = false
-script = ExtResource("6_tgskl")

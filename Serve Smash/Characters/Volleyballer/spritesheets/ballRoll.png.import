@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddbekultl0ghe"
-path="res://.godot/imported/ballRoll.png-0064ca8b7a758c98414471cb01242585.ctex"
+path="res://.godot/imported/ballRoll.png-2c962ad55bbac02feb5cdaaa7bedaffb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Volleyballer/spritesheets/ballRoll.png"
-dest_files=["res://.godot/imported/ballRoll.png-0064ca8b7a758c98414471cb01242585.ctex"]
+source_file="res://Serve Smash/Characters/Volleyballer/spritesheets/ballRoll.png"
+dest_files=["res://.godot/imported/ballRoll.png-2c962ad55bbac02feb5cdaaa7bedaffb.ctex"]
 
 [params]
 

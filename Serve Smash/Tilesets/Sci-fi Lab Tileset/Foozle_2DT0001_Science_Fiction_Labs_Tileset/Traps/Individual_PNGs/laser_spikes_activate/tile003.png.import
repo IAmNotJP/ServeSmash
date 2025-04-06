@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyhpb18kg1qe2"
-path="res://.godot/imported/tile003.png-c545a28d18c139870f31943a6b882e7d.ctex"
+path="res://.godot/imported/tile003.png-16fd7fe53e75cb3cfc18c08be4290fcb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Serve Smash Assets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/laser_spikes_activate/tile003.png"
-dest_files=["res://.godot/imported/tile003.png-c545a28d18c139870f31943a6b882e7d.ctex"]
+source_file="res://Serve Smash/Tilesets/Sci-fi Lab Tileset/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/Individual_PNGs/laser_spikes_activate/tile003.png"
+dest_files=["res://.godot/imported/tile003.png-16fd7fe53e75cb3cfc18c08be4290fcb.ctex"]
 
 [params]
 

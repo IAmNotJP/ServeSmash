@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2usbn4gornig"
-path="res://.godot/imported/Options.png-59f9333c6f185b27966bffc8c37f8b34.ctex"
+path="res://.godot/imported/Options.png-c538aabf70ff90aaf0f84ce9e4c84ac0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Serve Smash Assets/Buttons/Options.png"
-dest_files=["res://.godot/imported/Options.png-59f9333c6f185b27966bffc8c37f8b34.ctex"]
+source_file="res://Serve Smash/Buttons/Options.png"
+dest_files=["res://.godot/imported/Options.png-c538aabf70ff90aaf0f84ce9e4c84ac0.ctex"]
 
 [params]
 
