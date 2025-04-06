@@ -1,6 +1,6 @@
 [gd_scene load_steps=91 format=3 uid="uid://e40nw3kufsoa"]
 
-[ext_resource type="Script" path="res://Characters/Volleyballer/volleyballer.gd" id="1_ughjb"]
+[ext_resource type="Script" uid="uid://rgxmfyrhafq7" path="res://Characters/Volleyballer/volleyballer.gd" id="1_ughjb"]
 [ext_resource type="Texture2D" uid="uid://b6hfschvvko8p" path="res://Characters/Volleyballer/spritesheets/playerIdle.png" id="2_8y761"]
 [ext_resource type="Texture2D" uid="uid://bgsishdkmgvk2" path="res://Characters/Volleyballer/spritesheets/playerBlock.png" id="3_4ye6u"]
 [ext_resource type="Texture2D" uid="uid://c0p0m8heovl8k" path="res://Characters/Volleyballer/spritesheets/playerRun.png" id="3_c52d6"]
@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cj43lb27iguei" path="res://Scenes/Components/movement_component.tscn" id="5_umave"]
 [ext_resource type="PackedScene" uid="uid://2001is3sa1gg" path="res://Scenes/Components/animation_component.tscn" id="6_3ns68"]
 [ext_resource type="Texture2D" uid="uid://b4rcuixp1ixly" path="res://Characters/Volleyballer/spritesheets/playerReception.png" id="6_mitmv"]
-[ext_resource type="Script" path="res://Scenes/Components/flippable_sprite.gd" id="8_w3uvh"]
+[ext_resource type="Script" uid="uid://cxhxic4obehhp" path="res://Scenes/Components/flippable_sprite.gd" id="8_w3uvh"]
 [ext_resource type="PackedScene" uid="uid://fysjotek216k" path="res://Scenes/Components/jump_component.tscn" id="11_ke7pq"]
 [ext_resource type="PackedScene" uid="uid://b6nsr3nn7sbew" path="res://Scenes/Components/gravity_component.tscn" id="12_dpwii"]
 [ext_resource type="PackedScene" uid="uid://q3tgpqskq875" path="res://Scenes/Components/flippable_shape.tscn" id="14_7117i"]

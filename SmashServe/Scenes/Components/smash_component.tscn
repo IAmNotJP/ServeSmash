@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://k7tgiwgu8awq"]
 
-[ext_resource type="Script" path="res://Scenes/Components/smash_component.gd" id="1_6uqdo"]
+[ext_resource type="Script" uid="uid://colfsqwkq3r7j" path="res://Scenes/Components/smash_component.gd" id="1_6uqdo"]
 
 [node name="SmashComponent" type="Node"]
 script = ExtResource("1_6uqdo")

@@ -1,8 +1,19 @@
-[gd_scene load_steps=4 format=4 uid="uid://wpq4gmn4k33x"]
+[gd_scene load_steps=8 format=4 uid="uid://wpq4gmn4k33x"]
 
 [ext_resource type="PackedScene" uid="uid://c3u26cgy4b4xn" path="res://Stages/Test.tscn" id="1_ecsri"]
-[ext_resource type="Script" path="res://gameplay.gd" id="1_oym2f"]
-[ext_resource type="PackedScene" uid="uid://cj7ub0jjbgbsr" path="res://Characters/Knight/Knight.tscn" id="3_4cyc4"]
+
+[ext_resource type="Script" uid="uid://1e73nb8y3wwe" path="res://gameplay.gd" id="1_oym2f"]
+[ext_resource type="PackedScene" uid="uid://b4ojcumkt2u80" path="res://Characters/Capybara/Charlie.tscn" id="3_cdel7"]
+[ext_resource type="PackedScene" uid="uid://xahoqypf73ml" path="res://ball.tscn" id="4_xuee5"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_xuee5"]
+distance = -1082.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_smepj"]
+normal = Vector2(1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_cbffv"]
+normal = Vector2(-1, 0)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_oym2f")
@@ -10,6 +21,31 @@ script = ExtResource("1_oym2f")
 [node name="Test" parent="." instance=ExtResource("1_ecsri")]
 tile_map_data = PackedByteArray("AAAZAA0AAQAFAAQAAAAZAA4AAQAFAAUAAAADAA0AAQABAAQAAAADAA4AAQABAAUAAAAEAA0AAQACAAQAAAAEAA4AAQACAAUAAAAFAA0AAQADAAQAAAAFAA4AAQADAAUAAAAGAA0AAQAEAAQAAAAGAA4AAQAEAAUAAAAHAA0AAQAFAAQAAAAHAA4AAQAFAAUAAAAMAA0AAQABAAQAAAAMAA4AAQABAAUAAAANAA0AAQACAAQAAAANAA4AAQACAAUAAAAOAA0AAQADAAQAAAAOAA4AAQADAAUAAAAPAA0AAQAEAAQAAAAPAA4AAQAEAAUAAAAQAA0AAQAFAAQAAAAQAA4AAQAFAAUAAAAVAA0AAQABAAQAAAAVAA4AAQABAAUAAAAWAA0AAQACAAQAAAAWAA4AAQACAAUAAAAXAA0AAQADAAQAAAAXAA4AAQADAAUAAAAYAA0AAQAEAAQAAAAYAA4AAQAEAAUAAAADAAwAAQABAAAAAAAEAAwAAQACAAAAAAAFAAkAAQABAAAAAAAFAAwAAQADAAAAAAAGAAkAAQACAAAAAAAGAAwAAQAEAAAAAAAHAAkAAQADAAAAAAAHAAwAAQAFAAAAAAAIAAkAAQAEAAAAAAAIAAwAAQAAAAAAAAAJAAkAAQAFAAAAAAAJAAwAAQABAAAAAAAKAAwAAQACAAAAAAALAAwAAQADAAAAAAAMAAYAAQABAAAAAAAMAAwAAQAEAAAAAAANAAYAAQACAAAAAAANAAwAAQAFAAAAAAAOAAYAAQADAAAAAAAOAAwAAQAAAAAAAAAPAAYAAQAEAAAAAAAPAAwAAQABAAAAAAAQAAYAAQAFAAAAAAAQAAwAAQACAAAAAAARAAwAAQADAAAAAAASAAwAAQAEAAAAAAATAAkAAQABAAAAAAATAAwAAQAFAAAAAAAUAAkAAQACAAAAAAAUAAwAAQAAAAAAAAAVAAkAAQADAAAAAAAVAAwAAQABAAAAAAAWAAkAAQAEAAAAAAAWAAwAAQACAAAAAAAXAAkAAQAFAAAAAAAXAAwAAQADAAAAAAAYAAwAAQAEAAAAAAAZAAwAAQAFAAAAAAACAAwAAQAAAAAAAAACAA0AAQAAAAQAAAACAA4AAQAAAAUAAAAEAAkAAQAAAAAAAAALAAYAAQAAAAAAAAALAA0AAQAAAAQAAAALAA4AAQAAAAUAAAASAAkAAQAAAAAAAAAUAA0AAQAAAAQAAAAUAA4AAQAAAAUAAAA=")
 
-[node name="Knight" parent="." instance=ExtResource("3_4cyc4")]
-position = Vector2(602, 672)
-scale = Vector2(3, 3)
+
+[node name="Charlie" parent="." instance=ExtResource("3_cdel7")]
+position = Vector2(596, 296)
+
+[node name="Ball" parent="." instance=ExtResource("4_xuee5")]
+position = Vector2(795, 515)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 128
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_xuee5")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+collision_layer = 128
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource("WorldBoundaryShape2D_smepj")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+collision_layer = 128
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(1920, 0)
+shape = SubResource("WorldBoundaryShape2D_cbffv")

@@ -15,7 +15,7 @@ var currentframe: float = 0
 func handle_jump(body: CharacterBody2D, want_to_jump: bool) -> void:
 	prevframe = currentframe
 	currentframe = body.velocity.y
-	print(body.velocity.y)
+	#print(body.velocity.y)
 	if want_to_jump and body.is_on_floor():
 		get_parent().is_airbourne = true
 		body.velocity.y = jump_velocity

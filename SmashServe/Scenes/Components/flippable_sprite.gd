@@ -9,4 +9,4 @@ var flipped: bool = false:
 			flipped = new_value
 			flip_h = flipped
 			sprite_flipped.emit(new_value)
-			print("FLIP")
+			#print("FLIP")

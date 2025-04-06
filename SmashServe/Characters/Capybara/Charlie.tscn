@@ -1,8 +1,8 @@
 [gd_scene load_steps=52 format=3 uid="uid://b4ojcumkt2u80"]
 
-[ext_resource type="Script" path="res://Characters/Capybara/charlie.gd" id="1_bkf6v"]
+[ext_resource type="Script" uid="uid://ty8eyuoiibud" path="res://Characters/Capybara/charlie.gd" id="1_bkf6v"]
 [ext_resource type="Texture2D" uid="uid://b20sfpbpmf7kt" path="res://Characters/Capybara/spritesheets/charlieTheCapybaraAnimationSheet.png" id="2_5ccbq"]
-[ext_resource type="Script" path="res://Scenes/Components/flippable_sprite.gd" id="2_jvtpo"]
+[ext_resource type="Script" uid="uid://cxhxic4obehhp" path="res://Scenes/Components/flippable_sprite.gd" id="2_jvtpo"]
 [ext_resource type="PackedScene" uid="uid://2001is3sa1gg" path="res://Scenes/Components/animation_component.tscn" id="3_12kiu"]
 [ext_resource type="PackedScene" uid="uid://cj43lb27iguei" path="res://Scenes/Components/movement_component.tscn" id="4_7b8ik"]
 [ext_resource type="PackedScene" uid="uid://b6nsr3nn7sbew" path="res://Scenes/Components/gravity_component.tscn" id="4_nnuym"]
@@ -306,6 +306,7 @@ size = Vector2(62, 37.25)
 
 [node name="Charlie" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component", "animation_component", "volley_component", "smash_component", "lob_component")]
 scale = Vector2(2, 2)
+collision_layer = 8
 script = ExtResource("1_bkf6v")
 gravity_component = NodePath("GravityComponent")
 jump_component = NodePath("JumpComponent")
@@ -353,6 +354,8 @@ volley_hitbox = NodePath("../HitboxComponent/VolleyShape")
 sprite = NodePath("../FlippableSprite")
 
 [node name="HitboxComponent" parent="." node_paths=PackedStringArray("flippable_sprite") instance=ExtResource("7_uvgmc")]
+collision_layer = 4
+collision_mask = 4
 flippable_sprite = NodePath("../FlippableSprite")
 
 [node name="SmashShape" parent="HitboxComponent" instance=ExtResource("13_1t2hw")]
