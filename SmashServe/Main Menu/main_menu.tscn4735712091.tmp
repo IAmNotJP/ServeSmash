@@ -1,0 +1,126 @@
+[gd_scene load_steps=14 format=3 uid="uid://dk0yunqb128kc"]
+
+[ext_resource type="Texture2D" uid="uid://olh0e1qhnphk" path="res://Serve Smash Assets/Smash Serve Logo.png" id="1_u74q0"]
+[ext_resource type="Texture2D" uid="uid://cv21v5kpo2sos" path="res://Serve Smash Assets/ph3.jpg" id="1_xdsih"]
+[ext_resource type="Texture2D" uid="uid://ciislwjqj20ek" path="res://Serve Smash Assets/Start.png" id="3_ixksr"]
+[ext_resource type="Texture2D" uid="uid://b2usbn4gornig" path="res://Serve Smash Assets/Options.png" id="4_aji76"]
+[ext_resource type="Texture2D" uid="uid://dd6axxs0gim1b" path="res://Serve Smash Assets/Quit.png" id="5_anh52"]
+[ext_resource type="Shader" uid="uid://s5h2mp80sv1j" path="res://Scenes/main_menu.gdshader" id="5_trj04"]
+[ext_resource type="Script" uid="uid://dkgi335frdfsk" path="res://Scenes/sprite_2d.gd" id="6_tgskl"]
+[ext_resource type="AudioStream" uid="uid://c00vy6m2mf86q" path="res://Serve Smash Assets/Music/Main Menu.mp3" id="7_cp0ys"]
+[ext_resource type="Script" uid="uid://0k4jcpnhvmia" path="res://Scenes/audio_stream_player.gd" id="9_16hvj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vr1f0"]
+shader = ExtResource("5_trj04")
+shader_parameter/flash_color = Color(1, 1, 1, 1)
+shader_parameter/flash_value = 0.0
+
+[sub_resource type="Animation" id="Animation_trj04"]
+resource_name = "flash"
+length = 0.6667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/flash_value")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_16hvj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/flash_value")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vr1f0"]
+_data = {
+&"RESET": SubResource("Animation_16hvj"),
+&"flash": SubResource("Animation_trj04")
+}
+
+[node name="Main_Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xdsih")
+
+[node name="TextureButton1" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 855.0
+offset_top = 402.0
+offset_right = 2189.0
+offset_bottom = 1301.0
+scale = Vector2(0.15, 0.15)
+texture_normal = ExtResource("3_ixksr")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 857.0
+offset_top = 580.0
+offset_right = 2191.0
+offset_bottom = 1479.0
+scale = Vector2(0.15, 0.15)
+texture_normal = ExtResource("4_aji76")
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 857.0
+offset_top = 753.0
+offset_right = 2191.0
+offset_bottom = 1652.0
+scale = Vector2(0.15, 0.15)
+texture_normal = ExtResource("5_anh52")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="CenterContainer"]
+top_level = true
+material = SubResource("ShaderMaterial_vr1f0")
+position = Vector2(348, 72)
+scale = Vector2(0.245, 0.245)
+texture = ExtResource("1_u74q0")
+centered = false
+script = ExtResource("6_tgskl")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CenterContainer/Sprite2D"]
+libraries = {
+&"": SubResource("AnimationLibrary_vr1f0")
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_cp0ys")
+volume_db = -25.0
+autoplay = true
+parameters/looping = true
+script = ExtResource("9_16hvj")

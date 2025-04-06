@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Smash Serve"
+Jaye-dev-branch
 run/main_scene="res://Characters/Volleyballer/Volleyballer.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
@@ -120,3 +121,14 @@ p2lob={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+run/main_scene="uid://dk0yunqb128kc"
+config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/bg_color=Color(0.0546268, 0.163294, 0.131008, 1)
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+main
