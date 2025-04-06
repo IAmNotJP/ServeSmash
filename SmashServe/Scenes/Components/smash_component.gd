@@ -7,6 +7,8 @@ extends Node
 func handle_hitbox(body: CharacterBody2D, want_to_hit: bool) -> void:
 	if want_to_hit and get_parent().is_airbourne == true and get_parent().is_hitting == false:
 		sprite.play("smash")
+		if body.velocity.y < 0:
+			body.velocity.y = 500
 		smash_hitbox.disabled = false
 		get_parent().is_hitting = true
 		

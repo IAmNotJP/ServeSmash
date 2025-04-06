@@ -1,6 +1,6 @@
 extends Node2D
 
-var player1 = preload("res://Characters/Volleyballer/volleyballer.gd")
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

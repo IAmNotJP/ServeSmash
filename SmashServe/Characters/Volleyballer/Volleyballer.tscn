@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cj43lb27iguei" path="res://Scenes/Components/movement_component.tscn" id="5_umave"]
 [ext_resource type="PackedScene" uid="uid://2001is3sa1gg" path="res://Scenes/Components/animation_component.tscn" id="6_3ns68"]
 [ext_resource type="Texture2D" uid="uid://b4rcuixp1ixly" path="res://Characters/Volleyballer/spritesheets/playerReception.png" id="6_mitmv"]
-[ext_resource type="Script" path="res://Characters/Volleyballer/flippable_sprite.gd" id="8_w3uvh"]
+[ext_resource type="Script" path="res://Scenes/Components/flippable_sprite.gd" id="8_w3uvh"]
 [ext_resource type="PackedScene" uid="uid://fysjotek216k" path="res://Scenes/Components/jump_component.tscn" id="11_ke7pq"]
 [ext_resource type="PackedScene" uid="uid://b6nsr3nn7sbew" path="res://Scenes/Components/gravity_component.tscn" id="12_dpwii"]
 [ext_resource type="PackedScene" uid="uid://q3tgpqskq875" path="res://Scenes/Components/flippable_shape.tscn" id="14_7117i"]
@@ -292,11 +292,6 @@ region = Rect2(320, 0, 32, 43)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rggpm"]
 animations = [{
-"frames": [],
-"loop": true,
-"name": &"airbourne",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2ucah")
@@ -570,6 +565,7 @@ size = Vector2(20, 21.75)
 
 [node name="Volleyballer" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component", "animation_component", "volley_component", "smash_component", "lob_component")]
 scale = Vector2(2, 2)
+slide_on_ceiling = false
 script = ExtResource("1_ughjb")
 gravity_component = NodePath("GravityComponent")
 jump_component = NodePath("JumpComponent")
@@ -587,8 +583,6 @@ shape = SubResource("RectangleShape2D_epd4j")
 [node name="FlippableSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rggpm")
 animation = &"run"
-frame = 5
-frame_progress = 0.507795
 script = ExtResource("8_w3uvh")
 
 [node name="InputComponent" parent="." instance=ExtResource("4_apy5s")]
