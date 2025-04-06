@@ -19,3 +19,10 @@ func animation_finished():
 
 	volley_hitbox.disabled = true
 	get_parent().is_hitting = false
+
+func ball_hit(ball: RigidBody2D):
+	if volley_hitbox.disabled:
+		return
+	print("volley")
+	print(volley_hitbox.current_flip_value)
+	ball.apply_impulse(Vector2(-50 if volley_hitbox.current_flip_value else 500, 500))

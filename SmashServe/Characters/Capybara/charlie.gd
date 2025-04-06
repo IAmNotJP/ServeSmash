@@ -27,8 +27,12 @@ var is_dashing: bool = false
 var is_airbourne: bool = false
 var is_running: bool = false
 
+var dead: bool = false
+
 
 func _physics_process(delta: float) -> void:
+	if dead:
+		return
 	gravity_component.handle_gravity(self, delta)
 	movement_component.handle_horizontal_movement(self, input_component.input_horizontal)
 	animation_component.handle_move_animation(input_component.input_horizontal)
@@ -43,4 +47,10 @@ func _on_flippable_sprite_animation_finished() -> void:
 	volley_component.animation_finished()
 	smash_component.animation_finished()
 	lob_component.animation_finished()
-	print("done")
+	#print("done")
+
+
+func die():
+	print("Kaboom! You dead.")
+	dead = true
+	

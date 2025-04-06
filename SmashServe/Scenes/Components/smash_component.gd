@@ -21,3 +21,9 @@ func handle_hitbox(body: CharacterBody2D, want_to_hit: bool) -> void:
 func animation_finished():
 	smash_hitbox.disabled = true
 	get_parent().is_hitting = false
+
+func ball_hit(ball: RigidBody2D):
+	if smash_hitbox.disabled:
+		return
+	print("smash")
+	ball.apply_impulse(Vector2(0, 100))
