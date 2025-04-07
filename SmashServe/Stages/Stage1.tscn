@@ -1,5 +1,6 @@
-[gd_scene load_steps=19 format=4 uid="uid://c5ha1oapstiup"]
+[gd_scene load_steps=20 format=4 uid="uid://c5ha1oapstiup"]
 
+[ext_resource type="Script" uid="uid://kox06dxkamh3" path="res://Stages/stage_1.gd" id="1_hqab3"]
 [ext_resource type="Texture2D" uid="uid://c0xme1wvt03jr" path="res://Serve Smash Assets/TileMap/Tiles/Assets/Background_2.png" id="1_mn45r"]
 [ext_resource type="Texture2D" uid="uid://b26umvdgyddwd" path="res://Serve Smash Assets/TileMap/Tiles/Assets/Assets.png" id="2_4cmun"]
 [ext_resource type="Texture2D" uid="uid://ftdgib1hfrkh" path="res://Serve Smash Assets/TileMap/Tiles/Social/trees.png" id="3_6aceo"]
@@ -47541,6 +47542,7 @@ sources/3 = SubResource("TileSetAtlasSource_h5722")
 sources/4 = SubResource("TileSetAtlasSource_qo4m6")
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_hqab3")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(3.975, 3.975)
