@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://diqvqyauypmvo"
+path="res://.godot/imported/Character Select.mp3-e37ded5cdb7b9a28edb8ed13b1147d21.mp3str"
+
+[deps]
+
+source_file="res://Music/Character Select.mp3"
+dest_files=["res://.godot/imported/Character Select.mp3-e37ded5cdb7b9a28edb8ed13b1147d21.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
