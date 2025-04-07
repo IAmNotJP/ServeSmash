@@ -38,4 +38,3 @@ func _on_flippable_sprite_animation_finished() -> void:
 	volley_component.animation_finished()
 	smash_component.animation_finished()
 	lob_component.animation_finished()
-	print("done")
