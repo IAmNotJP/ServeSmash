@@ -20,9 +20,17 @@ func animation_finished():
 	get_parent().is_hitting = false
 
 
-func ball_hit(ball: RigidBody2D):
+func ball_hit(ball: RigidBody2D, vel: float):
 	if lob_hitbox.disabled:
 		return
 	print("lob")
+	var final_hit = Vector2(1, 0)
+	final_hit = final_hit.rotated(-5 * PI / 16)
+	if lob_hitbox.current_flip_value:
+		final_hit.x *= -1
+	final_hit *= vel * 1.5
+	final_hit -= ball.linear_velocity
+	print(final_hit)
 	
-	ball.apply_impulse(Vector2(0, 100))
+	
+	ball.apply_impulse(final_hit)

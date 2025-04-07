@@ -124,10 +124,3 @@ run/main_scene="uid://dk0yunqb128kc"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/bg_color=Color(0.0546268, 0.163294, 0.131008, 1)
 config/icon="res://icon.svg"
-
-[display]
-
-window/size/viewport_width=1920
-window/size/viewport_height=1080
-window/size/mode=3
-main

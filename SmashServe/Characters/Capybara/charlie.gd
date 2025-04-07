@@ -51,6 +51,7 @@ func _on_flippable_sprite_animation_finished() -> void:
 
 
 func die():
-	print("Kaboom! You dead.")
-	dead = true
+	#print("Kaboom! You dead.")
+	#dead = true
+	pass
 	
