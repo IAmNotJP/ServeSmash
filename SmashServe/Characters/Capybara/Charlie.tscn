@@ -1,8 +1,8 @@
 [gd_scene load_steps=52 format=3 uid="uid://b4ojcumkt2u80"]
 
-[ext_resource type="Script" path="res://Characters/Capybara/charlie.gd" id="1_bkf6v"]
+[ext_resource type="Script" uid="uid://ty8eyuoiibud" path="res://Characters/Capybara/charlie.gd" id="1_bkf6v"]
 [ext_resource type="Texture2D" uid="uid://b20sfpbpmf7kt" path="res://Characters/Capybara/spritesheets/charlieTheCapybaraAnimationSheet.png" id="2_5ccbq"]
-[ext_resource type="Script" path="res://Scenes/Components/flippable_sprite.gd" id="2_jvtpo"]
+[ext_resource type="Script" uid="uid://cxhxic4obehhp" path="res://Scenes/Components/flippable_sprite.gd" id="2_jvtpo"]
 [ext_resource type="PackedScene" uid="uid://2001is3sa1gg" path="res://Scenes/Components/animation_component.tscn" id="3_12kiu"]
 [ext_resource type="PackedScene" uid="uid://cj43lb27iguei" path="res://Scenes/Components/movement_component.tscn" id="4_7b8ik"]
 [ext_resource type="PackedScene" uid="uid://b6nsr3nn7sbew" path="res://Scenes/Components/gravity_component.tscn" id="4_nnuym"]

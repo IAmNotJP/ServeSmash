@@ -22,8 +22,15 @@ func animation_finished():
 	smash_hitbox.disabled = true
 	get_parent().is_hitting = false
 
-func ball_hit(ball: RigidBody2D):
+func ball_hit(ball: RigidBody2D, vel: float):
 	if smash_hitbox.disabled:
 		return
 	print("smash")
-	ball.apply_impulse(Vector2(0, 100))
+	var final_hit = Vector2(1, 0)
+	final_hit = final_hit.rotated(3 * PI / 8)
+	if smash_hitbox.current_flip_value:
+		final_hit.x *= -1
+	final_hit *= vel * 2
+	final_hit -= ball.linear_velocity
+	print(final_hit)
+	ball.apply_impulse(final_hit)
