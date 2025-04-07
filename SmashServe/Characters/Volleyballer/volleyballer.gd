@@ -1,15 +1,5 @@
 extends CharacterBody2D
 
-var inputs = {
-	"up": null,
-	"down": null,
-	"left": null,
-	"right": null,
-	"jump": null,
-	"volley": null,
-	"smash": null,
-	"lob": null,
-}
 
 @export_subgroup("Nodes")
 @export var gravity_component: GravityComponent
@@ -21,11 +11,16 @@ var inputs = {
 @export var smash_component: SmashComponent
 @export var lob_component: LobComponent
 
+var inputs
 var team: String
 var is_hitting: bool = false
 var is_dashing: bool = false
 var is_airbourne: bool = false
 var is_running: bool = false
+
+func _ready() -> void:
+	inputs = get_parent().inputs
+	self.position = Vector2(get_parent().positionx,get_parent().positiony)
 
 
 func _physics_process(delta: float) -> void:

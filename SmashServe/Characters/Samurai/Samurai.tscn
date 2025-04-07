@@ -1,6 +1,6 @@
 [gd_scene load_steps=47 format=3 uid="uid://bgxt3u4j4pghh"]
 
-[ext_resource type="Script" uid="uid://cc1gvptwys46" path="res://Characters/Samurai/samurai.gd" id="1_e7ibr"]
+[ext_resource type="Script" path="res://Characters/Samurai/samurai.gd" id="1_e7ibr"]
 [ext_resource type="Texture2D" uid="uid://fyxeebw8rhrg" path="res://Characters/Samurai/spritesheets/Fall.png" id="2_y7e60"]
 [ext_resource type="Texture2D" uid="uid://drt4tfp8d4r7s" path="res://Characters/Samurai/spritesheets/Idle.png" id="3_m7v4g"]
 [ext_resource type="Texture2D" uid="uid://btlxh4bw7k6ae" path="res://Characters/Samurai/spritesheets/Jump.png" id="4_lnwpq"]
@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://714k15452blk" path="res://Characters/Samurai/spritesheets/Attack2.png" id="6_wbjqx"]
 [ext_resource type="Texture2D" uid="uid://bufsxxd8fpff7" path="res://Characters/Samurai/spritesheets/Attack1.png" id="7_mxqbo"]
 [ext_resource type="PackedScene" uid="uid://tawiiu8h1sqj" path="res://Scenes/Components/input_component.tscn" id="8_hlsd1"]
-[ext_resource type="Script" uid="uid://cxhxic4obehhp" path="res://Scenes/Components/flippable_sprite.gd" id="8_ufhxx"]
+[ext_resource type="Script" path="res://Scenes/Components/flippable_sprite.gd" id="8_ufhxx"]
 [ext_resource type="PackedScene" uid="uid://cj43lb27iguei" path="res://Scenes/Components/movement_component.tscn" id="9_uijgm"]
 [ext_resource type="PackedScene" uid="uid://fysjotek216k" path="res://Scenes/Components/jump_component.tscn" id="10_2h1gy"]
 [ext_resource type="PackedScene" uid="uid://b6nsr3nn7sbew" path="res://Scenes/Components/gravity_component.tscn" id="11_3kckm"]
