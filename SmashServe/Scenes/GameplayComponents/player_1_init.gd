@@ -7,6 +7,8 @@ extends Node2D
 @export var positionx: float
 @export var positiony: float
 
+var path
+
 @export var inputs = {
 	"up": 'p1up',
 	"down": 'p1down',
@@ -17,3 +19,8 @@ extends Node2D
 	"smash": 'p1smash',
 	"lob": 'p1lob',
 }
+
+func _ready() -> void:
+	var scene = load(path)
+	var instance = scene.instanciate()
+	add_child(instance)
