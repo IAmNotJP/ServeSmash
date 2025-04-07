@@ -1,6 +1,9 @@
-[gd_scene load_steps=4 format=4 uid="uid://c3u26cgy4b4xn"]
+[gd_scene load_steps=7 format=4 uid="uid://c3u26cgy4b4xn"]
 
 [ext_resource type="Texture2D" uid="uid://uaqpvtb6hrc2" path="res://Stages/[FREE] Industrial Tileset/5. Industrial Tileset - Starter Pack 32p/1_Industrial_Tileset_1B.png" id="1_w8ls6"]
+[ext_resource type="PackedScene" uid="uid://7fsly34hvrv7" path="res://Scenes/Components/player_spawn.tscn" id="2_l7vbt"]
+[ext_resource type="PackedScene" uid="uid://cj7ub0jjbgbsr" path="res://Characters/Knight/Knight.tscn" id="3_cjv3o"]
+[ext_resource type="PackedScene" uid="uid://dhqy5ersl1von" path="res://ball.tscn" id="4_i71uv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4vexs"]
 texture = ExtResource("1_w8ls6")
@@ -142,7 +145,8 @@ texture = ExtResource("1_w8ls6")
 11:7/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_lcsgu"]
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 3
+physics_layer_0/collision_mask = 3
 sources/1 = SubResource("TileSetAtlasSource_4vexs")
 
 [node name="Test" type="TileMapLayer"]
@@ -151,3 +155,34 @@ tile_map_data = PackedByteArray("AAAZAA0AAQAEAAQAAAAZAA4AAQAEAAUAAAAaAA0AAQAFAAQ
 tile_set = SubResource("TileSet_lcsgu")
 collision_visibility_mode = 1
 navigation_enabled = false
+
+[node name="Player1Spawn" parent="." instance=ExtResource("2_l7vbt")]
+positionx = 200.0
+positiony = 160.25
+
+[node name="Knight" parent="Player1Spawn" instance=ExtResource("3_cjv3o")]
+position = Vector2(200, 160.25)
+scale = Vector2(1, 1)
+
+[node name="Player2Spawn" parent="." instance=ExtResource("2_l7vbt")]
+positionx = 281.25
+positiony = 161.0
+inputs = {
+"down": "p2down",
+"jump": "p2jump",
+"left": "p2left",
+"lob": "p2lob",
+"right": "p2right",
+"smash": "p2smash",
+"up": "p2up",
+"volley": "p2volley"
+}
+
+[node name="Knight" parent="Player2Spawn" instance=ExtResource("3_cjv3o")]
+position = Vector2(281.25, 161)
+scale = Vector2(1, 1)
+
+[node name="Ball" parent="." instance=ExtResource("4_i71uv")]
+position = Vector2(241.5, 144.25)
+collision_layer = 2
+collision_mask = 2
