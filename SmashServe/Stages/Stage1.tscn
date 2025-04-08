@@ -1,5 +1,6 @@
-[gd_scene load_steps=22 format=4 uid="uid://c5ha1oapstiup"]
+[gd_scene load_steps=21 format=4 uid="uid://c5ha1oapstiup"]
 
+[ext_resource type="Script" uid="uid://kox06dxkamh3" path="res://Stages/stage_1.gd" id="1_hqab3"]
 [ext_resource type="Texture2D" uid="uid://c0xme1wvt03jr" path="res://Serve Smash Assets/TileMap/Tiles/Assets/Background_2.png" id="1_mn45r"]
 [ext_resource type="Texture2D" uid="uid://b26umvdgyddwd" path="res://Serve Smash Assets/TileMap/Tiles/Assets/Assets.png" id="2_4cmun"]
 [ext_resource type="Texture2D" uid="uid://ftdgib1hfrkh" path="res://Serve Smash Assets/TileMap/Tiles/Social/trees.png" id="3_6aceo"]
@@ -7,8 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://csx1b62txw4ys" path="res://Serve Smash Assets/TileMap/Tiles/Social/Assets.png" id="5_nmcay"]
 [ext_resource type="Texture2D" uid="uid://w32dc01tau50" path="res://Serve Smash Assets/TileMap/Tiles/Social/entrance.png" id="6_7bj6w"]
 [ext_resource type="AudioStream" uid="uid://dmnp6baitybnk" path="res://Serve Smash Assets/Music/Character Select.mp3" id="7_hjltf"]
-[ext_resource type="PackedScene" uid="uid://36d5hxuy50y5" path="res://Scenes/GameplayComponents/player1_init.tscn" id="8_lbdgq"]
-[ext_resource type="PackedScene" uid="uid://b4ojcumkt2u80" path="res://Characters/Capybara/Charlie.tscn" id="9_0udcg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5bt4n"]
 texture = ExtResource("1_mn45r")
@@ -47548,6 +47547,7 @@ sources/4 = SubResource("TileSetAtlasSource_qo4m6")
 size = Vector2(236.73, 27.1698)
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_hqab3")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(3.975, 3.975)
@@ -47565,7 +47565,6 @@ tile_set = SubResource("TileSet_sa0uw")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer"]
 position = Vector2(-13.8365, 118.113)
 rotation = -1.5708
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_j2ik2")
 one_way_collision = true
 one_way_collision_margin = 0.0
@@ -47575,11 +47574,3 @@ stream = ExtResource("7_hjltf")
 volume_db = -25.0
 autoplay = true
 parameters/looping = true
-
-[node name="Player1Init" parent="." instance=ExtResource("8_lbdgq")]
-positionx = 468.0
-positiony = 835.0
-
-[node name="Charlie" parent="Player1Init" instance=ExtResource("9_0udcg")]
-position = Vector2(468, 835)
-collision_layer = 9
