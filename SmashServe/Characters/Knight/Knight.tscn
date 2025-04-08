@@ -1,9 +1,9 @@
 [gd_scene load_steps=61 format=3 uid="uid://cj7ub0jjbgbsr"]
 
-[ext_resource type="Script" uid="uid://02mlpnog030y" path="res://Characters/Knight/knight.gd" id="1_2kq1r"]
+[ext_resource type="Script" path="res://Characters/Knight/knight.gd" id="1_2kq1r"]
 [ext_resource type="Texture2D" uid="uid://br5iat1cwyqyh" path="res://Characters/Knight/spritesheet/Idle.png" id="2_4miaa"]
 [ext_resource type="Texture2D" uid="uid://cl6c7mw3jg1d2" path="res://Characters/Knight/spritesheet/Jump.png" id="3_2xjvp"]
-[ext_resource type="Script" uid="uid://cxhxic4obehhp" path="res://Scenes/Components/flippable_sprite.gd" id="3_mjvv4"]
+[ext_resource type="Script" path="res://Scenes/Components/flippable_sprite.gd" id="3_mjvv4"]
 [ext_resource type="Texture2D" uid="uid://dvco2hxkkatww" path="res://Characters/Knight/spritesheet/Attacks.png" id="4_irpd4"]
 [ext_resource type="PackedScene" uid="uid://tawiiu8h1sqj" path="res://Scenes/Components/input_component.tscn" id="4_o5ysx"]
 [ext_resource type="Texture2D" uid="uid://k8sfuwpealfh" path="res://Characters/Knight/spritesheet/Run.png" id="5_3k450"]
@@ -383,8 +383,8 @@ smash_hitbox = NodePath("../HitboxComponent/SmashShape")
 sprite = NodePath("../FlippableSprite")
 
 [node name="HitboxComponent" parent="." node_paths=PackedStringArray("flippable_sprite") instance=ExtResource("12_2qyx0")]
-collision_layer = 7
-collision_mask = 7
+collision_layer = 14
+collision_mask = 14
 flippable_sprite = NodePath("../FlippableSprite")
 
 [node name="VolleyShape" parent="HitboxComponent" instance=ExtResource("13_xql1o")]

@@ -11,13 +11,13 @@
 
 [node name="Player1Init" parent="." instance=ExtResource("1_3ykug")]
 
-[node name="Knight" parent="Player1Init" instance=ExtResource("2_sp3aw")]
-position = Vector2(1458, 778)
+[node name="Samurai" parent="Player1Init" instance=ExtResource("4_kgpbf")]
+position = Vector2(370, 830)
 
 [node name="Player2Init" parent="." instance=ExtResource("3_bu6ql")]
 
-[node name="Samurai" parent="Player2Init" instance=ExtResource("4_kgpbf")]
-position = Vector2(370, 830)
+[node name="Knight" parent="Player2Init" instance=ExtResource("2_sp3aw")]
+position = Vector2(1458, 778)
 
 [node name="Ball" parent="." instance=ExtResource("5_syosu")]
 position = Vector2(583, 760)
