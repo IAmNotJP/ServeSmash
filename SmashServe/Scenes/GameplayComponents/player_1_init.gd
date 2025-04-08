@@ -20,7 +20,7 @@ var path
 	"lob": 'p1lob',
 }
 
-func _ready() -> void:
-	var scene = load(path)
-	var instance = scene.instanciate()
-	add_child(instance)
+#func _ready() -> void:
+	#var scene = load(path)
+	#var instance = scene.instanciate()
+	#add_child(instance)
