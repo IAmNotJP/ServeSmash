@@ -1,9 +1,9 @@
 extends Area2D
 
 const MVEL_MULT = 1.05
-const GRAD_VEL_START = 1000
-const GRAD_VEL_END = 5000
-const GRAD_VEL_END_START = 2000
+const GRAD_VEL_START = 750
+const GRAD_VEL_END = 1500
+const GRAD_VEL_END_START = 1000
 
 var last_player
 var num_bounces = 0
@@ -16,12 +16,8 @@ func _process(_delta: float):
 	if prev_positions.size() > 20:
 		prev_positions.pop_back()
 		
-	#var test = Sprite2D.new()
-	#test.texture = ColorRect.new()
-	#test.texture
-	#test.position = position
 	for i in range(prev_positions.size()):
-		get_node("../Line2D").set_point_position(i, prev_positions[i] - global_position)
+		get_node("../Line2D").set_point_position(i, (prev_positions[i] - global_position).rotated(-global_rotation))
 	
 	if get_parent().linear_velocity.length() > GRAD_VEL_START:
 		var start_scaling_factor = clamp(get_parent().linear_velocity.length() - GRAD_VEL_START, 0, GRAD_VEL_END) / GRAD_VEL_END
@@ -47,7 +43,7 @@ func _on_area_entered(area: Area2D) -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	print(body)
+	#print(body)
 	if body is not CharacterBody2D:
 		num_bounces += 1
 	if num_bounces >= 2:
