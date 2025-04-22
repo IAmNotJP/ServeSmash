@@ -1,15 +1,31 @@
-[gd_scene load_steps=6 format=3 uid="uid://dhqy5ersl1von"]
+[gd_scene load_steps=11 format=3 uid="uid://dhqy5ersl1von"]
 
+[ext_resource type="Texture2D" uid="uid://c3khsdaoe2y8v" path="res://ball_glow.png" id="1_hgol0"]
 [ext_resource type="Texture2D" uid="uid://duudo6vqmekok" path="res://ball.png" id="1_x8fbi"]
 [ext_resource type="Script" uid="uid://c13df518naqjt" path="res://hitbox.gd" id="2_41u45"]
+[ext_resource type="Script" uid="uid://r241so0gwbuq" path="res://line_2d.gd" id="3_ktgx5"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_41u45"]
 friction = 0.05
 bounce = 0.95
 
+[sub_resource type="Curve" id="Curve_41u45"]
+_data = [Vector2(0, 1), 0.0, -1.00059, 0, 0, Vector2(1, 0), -1.00059, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_ktgx5"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hgol0"]
+gradient = SubResource("Gradient_ktgx5")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_cbx31"]
+radius = 5.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x8fbi"]
+radius = 5.0
 
 [node name="Ball" type="RigidBody2D"]
 collision_layer = 0
@@ -17,9 +33,28 @@ collision_mask = 129
 physics_material_override = SubResource("PhysicsMaterial_41u45")
 angular_damp_mode = 1
 
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+width_curve = SubResource("Curve_41u45")
+default_color = Color(0.501961, 1, 0, 1)
+script = ExtResource("3_ktgx5")
+
+[node name="glow" type="Sprite2D" parent="."]
+light_mask = 2
+position = Vector2(2.38419e-07, 2.38419e-07)
+scale = Vector2(0.0233051, 0.0233051)
+texture = ExtResource("1_hgol0")
+
+[node name="PointLight2D" type="PointLight2D" parent="glow"]
+position = Vector2(-1.02303e-05, -1.02303e-05)
+scale = Vector2(42.9091, 42.9091)
+energy = 16.0
+blend_mode = 2
+range_item_cull_mask = 2
+texture = SubResource("GradientTexture2D_hgol0")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(5.96046e-08, -5.96046e-08)
-scale = Vector2(0.0335091, 0.0335091)
+scale = Vector2(0.01427, 0.01427)
 texture = ExtResource("1_x8fbi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
