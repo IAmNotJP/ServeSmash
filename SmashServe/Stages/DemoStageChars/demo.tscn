@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://dkb2fcqwdy3jq"]
+
+[ext_resource type="PackedScene" uid="uid://36d5hxuy50y5" path="res://Scenes/GameplayComponents/player1_init.tscn" id="1_3ykug"]
+[ext_resource type="PackedScene" uid="uid://cj7ub0jjbgbsr" path="res://Characters/Knight/Knight.tscn" id="2_sp3aw"]
+[ext_resource type="PackedScene" uid="uid://bn8ps1g1u2eof" path="res://Scenes/GameplayComponents/player2_init.tscn" id="3_bu6ql"]
+[ext_resource type="PackedScene" uid="uid://bgxt3u4j4pghh" path="res://Characters/Samurai/Samurai.tscn" id="4_kgpbf"]
+[ext_resource type="PackedScene" uid="uid://dhqy5ersl1von" path="res://ball.tscn" id="5_syosu"]
+[ext_resource type="PackedScene" uid="uid://c5ha1oapstiup" path="res://Stages/Stage1.tscn" id="6_xrqbe"]
+
+[node name="Demo" type="Node2D"]
+
+[node name="Player1Init" parent="." instance=ExtResource("1_3ykug")]
+
+[node name="Samurai" parent="Player1Init" instance=ExtResource("4_kgpbf")]
+position = Vector2(370, 830)
+
+[node name="Player2Init" parent="." instance=ExtResource("3_bu6ql")]
+
+[node name="Knight" parent="Player2Init" instance=ExtResource("2_sp3aw")]
+position = Vector2(1458, 778)
+
+[node name="Ball" parent="." instance=ExtResource("5_syosu")]
+position = Vector2(583, 760)
+
+[node name="Node2D" parent="." instance=ExtResource("6_xrqbe")]
+z_index = -10

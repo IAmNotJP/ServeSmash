@@ -4,8 +4,8 @@ extends Node2D
 @export_subgroup("Settings")
 
 @export var enabled: bool
-@export var positionx: float
-@export var positiony: float
+@export var positionx: float = 370.0
+@export var positiony: float = 778.0
 
 var path
 
@@ -20,7 +20,7 @@ var path
 	"lob": 'p1lob',
 }
 
-func _ready() -> void:
-	var scene = load(path)
-	var instance = scene.instanciate()
-	add_child(instance)
+#func _ready() -> void:
+	#var scene = load(path)
+	#var instance = scene.instanciate()
+	#add_child(instance)
