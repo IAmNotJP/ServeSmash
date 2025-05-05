@@ -1,6 +1,6 @@
-[gd_scene load_steps=23 format=4 uid="uid://c5ha1oapstiup"]
+[gd_scene load_steps=25 format=4 uid="uid://c5ha1oapstiup"]
 
-[ext_resource type="Script" path="res://Stages/stage_1.gd" id="1_hqab3"]
+[ext_resource type="Script" uid="uid://kox06dxkamh3" path="res://Stages/stage_1.gd" id="1_hqab3"]
 [ext_resource type="Texture2D" uid="uid://c0xme1wvt03jr" path="res://Serve Smash Assets/TileMap/Tiles/Assets/Background_2.png" id="1_mn45r"]
 [ext_resource type="Texture2D" uid="uid://b26umvdgyddwd" path="res://Serve Smash Assets/TileMap/Tiles/Assets/Assets.png" id="2_4cmun"]
 [ext_resource type="Texture2D" uid="uid://ftdgib1hfrkh" path="res://Serve Smash Assets/TileMap/Tiles/Social/trees.png" id="3_6aceo"]
@@ -47545,11 +47545,17 @@ sources/2 = SubResource("TileSetAtlasSource_36vkx")
 sources/3 = SubResource("TileSetAtlasSource_h5722")
 sources/4 = SubResource("TileSetAtlasSource_qo4m6")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_hqab3"]
+normal = Vector2(1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_82npi"]
+normal = Vector2(-1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_dp4ru"]
+distance = 8.5
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wn7lt"]
 size = Vector2(20, 1085)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0pi22"]
-size = Vector2(1966.5, 21)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mqxme"]
 size = Vector2(20, 200.5)
@@ -47584,18 +47590,18 @@ collision_layer = 13
 collision_mask = 13
 
 [node name="RightWall" type="CollisionShape2D" parent="Walls"]
-position = Vector2(12, 543)
-shape = SubResource("RectangleShape2D_wn7lt")
+position = Vector2(0, 544)
+shape = SubResource("WorldBoundaryShape2D_hqab3")
 debug_color = Color(0.71876, 0.44275, 0.507726, 0.42)
 
 [node name="LeftWall" type="CollisionShape2D" parent="Walls"]
-position = Vector2(1958, 545)
-shape = SubResource("RectangleShape2D_wn7lt")
+position = Vector2(1920, 544)
+shape = SubResource("WorldBoundaryShape2D_82npi")
 debug_color = Color(0.717647, 0.443137, 0.505882, 0.419608)
 
 [node name="Floor" type="CollisionShape2D" parent="Walls"]
-position = Vector2(986.75, 900.5)
-shape = SubResource("RectangleShape2D_0pi22")
+position = Vector2(986, 899)
+shape = SubResource("WorldBoundaryShape2D_dp4ru")
 debug_color = Color(0.717647, 0.443137, 0.505882, 0.419608)
 
 [node name="PlayerOnlyWalls" type="StaticBody2D" parent="."]

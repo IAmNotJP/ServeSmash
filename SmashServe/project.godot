@@ -11,7 +11,8 @@ config_version=5
 [application]
 
 config/name="Smash Serve"
-config/features=PackedStringArray("4.3", "Forward Plus")
+run/main_scene="uid://dk0yunqb128kc"
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 Jaye-dev-branchrun/main_scene="res://Characters/Volleyballer/Volleyballer.tscn"
 
