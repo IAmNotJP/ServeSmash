@@ -352,7 +352,7 @@ shape = SubResource("RectangleShape2D_x4e47")
 
 [node name="FlippableSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_hhmps")
-animation = &"smash"
+animation = &"idle"
 script = ExtResource("3_mjvv4")
 
 [node name="InputComponent" parent="." instance=ExtResource("4_o5ysx")]
