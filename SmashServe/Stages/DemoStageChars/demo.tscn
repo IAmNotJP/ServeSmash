@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://36d5hxuy50y5" path="res://Scenes/GameplayComponents/player1_init.tscn" id="1_3ykug"]
 [ext_resource type="PackedScene" uid="uid://dch0qngoywd1v" path="res://Characters/Fireworm/Fireworm.tscn" id="2_cjtjx"]
 [ext_resource type="PackedScene" uid="uid://bn8ps1g1u2eof" path="res://Scenes/GameplayComponents/player2_init.tscn" id="3_bu6ql"]
-[ext_resource type="PackedScene" uid="uid://dqk56eraln8d1" path="res://Characters/Necromancer/Necromancer.tscn" id="4_0s4y7"]
+[ext_resource type="PackedScene" uid="uid://bja6br6rj6set" path="res://Characters/Wolfman/Wolfman.tscn" id="4_bypjd"]
 [ext_resource type="PackedScene" uid="uid://dhqy5ersl1von" path="res://ball.tscn" id="5_syosu"]
 [ext_resource type="PackedScene" uid="uid://c5ha1oapstiup" path="res://Stages/Stage1.tscn" id="6_xrqbe"]
 
@@ -15,7 +15,7 @@
 
 [node name="Player2Init" parent="." instance=ExtResource("3_bu6ql")]
 
-[node name="Necromancer" parent="Player2Init" instance=ExtResource("4_0s4y7")]
+[node name="Wolfman" parent="Player2Init" instance=ExtResource("4_bypjd")]
 
 [node name="Ball" parent="." instance=ExtResource("5_syosu")]
 position = Vector2(583, 760)
