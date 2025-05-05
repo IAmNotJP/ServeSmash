@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dkb2fcqwdy3jq"]
+[gd_scene load_steps=8 format=3 uid="uid://dkb2fcqwdy3jq"]
 
 [ext_resource type="PackedScene" uid="uid://36d5hxuy50y5" path="res://Scenes/GameplayComponents/player1_init.tscn" id="1_3ykug"]
 [ext_resource type="PackedScene" uid="uid://cj7ub0jjbgbsr" path="res://Characters/Knight/Knight.tscn" id="2_sp3aw"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bgxt3u4j4pghh" path="res://Characters/Samurai/Samurai.tscn" id="4_kgpbf"]
 [ext_resource type="PackedScene" uid="uid://dhqy5ersl1von" path="res://ball.tscn" id="5_syosu"]
 [ext_resource type="PackedScene" uid="uid://c5ha1oapstiup" path="res://Stages/Stage1.tscn" id="6_xrqbe"]
+[ext_resource type="PackedScene" uid="uid://cxicvaebvy55k" path="res://game_controller.tscn" id="7_da6ol"]
 
 [node name="Demo" type="Node2D"]
 
@@ -24,3 +25,7 @@ position = Vector2(583, 760)
 
 [node name="Node2D" parent="." instance=ExtResource("6_xrqbe")]
 z_index = -10
+
+[node name="GameController" parent="." instance=ExtResource("7_da6ol")]
+
+[connection signal="score" from="Ball" to="GameController" method="_on_ball_score"]
