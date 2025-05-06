@@ -27,7 +27,7 @@ func ball_hit(ball: RigidBody2D, vel: float):
 		return
 	print("smash")
 	var final_hit = Vector2(1, 0)
-	final_hit = final_hit.rotated(3 * PI / 8)
+	final_hit = final_hit.rotated(1 * PI / 16)
 	if smash_hitbox.current_flip_value:
 		final_hit.x *= -1
 	final_hit *= vel * 2

@@ -5,15 +5,15 @@ extends Node
 @export var sprite: AnimatedSprite2D
 
 func handle_hitbox(body: CharacterBody2D, want_to_hit: bool) -> void:
-	if want_to_hit and body.is_on_floor() and get_parent().is_hitting == false:
+	if want_to_hit and get_parent().is_hitting == false:
 		sprite.play("volley")
 		volley_hitbox.disabled = false
 		get_parent().is_hitting = true
 		
-	if !body.is_on_floor():
-		if sprite.animation == "volley":
-			volley_hitbox.disabled = true
-			get_parent().is_hitting = false
+	#if !body.is_on_floor():
+		#if sprite.animation == "volley":
+			#volley_hitbox.disabled = true
+			#get_parent().is_hitting = false
 		
 func animation_finished():
 
@@ -24,11 +24,11 @@ func ball_hit(ball: RigidBody2D, vel: float):
 	if volley_hitbox.disabled:
 		return
 	print("volley")
-	var final_hit = Vector2(1, 0)
-	final_hit = final_hit.rotated(-PI / 4)
+	var final_hit = Vector2(1.5, 0)
+	final_hit = final_hit.rotated(-4 * PI / 16)
 	if volley_hitbox.current_flip_value:
 		final_hit.x *= -1
-	final_hit *= vel
+	final_hit *= vel * 1.2
 	final_hit -= ball.linear_velocity
 	print(final_hit)
 	ball.apply_impulse(final_hit)

@@ -24,11 +24,11 @@ func ball_hit(ball: RigidBody2D, vel: float):
 	if lob_hitbox.disabled:
 		return
 	print("lob")
-	var final_hit = Vector2(1, 0)
-	final_hit = final_hit.rotated(-5 * PI / 16)
+	var final_hit = Vector2(1.5, 0)
+	final_hit = final_hit.rotated(-6 * PI / 16)
 	if lob_hitbox.current_flip_value:
 		final_hit.x *= -1
-	final_hit *= vel * 1.5
+	final_hit *= vel * 1.25
 	final_hit -= ball.linear_velocity
 	print(final_hit)
 	

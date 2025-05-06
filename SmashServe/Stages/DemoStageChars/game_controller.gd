@@ -23,7 +23,7 @@ func ball_reset(ball: RigidBody2D):
 	ball.linear_velocity = Vector2(0, 0)
 	ball.get_node("Hitbox").call("reset_internals")
 	ball.freeze = true
-	await get_tree().create_timer(5.0, true, false, true).timeout
+	await get_tree().create_timer(2.5, true, false, true).timeout
 	ball.freeze = false
 	
 
@@ -46,9 +46,9 @@ func _on_ball_score(last_hitter: CharacterBody2D, ball: RigidBody2D) -> void:
 		print("Player wins a point but somehow it's neither P1 or P2.")
 	
 	
-	if p1_score > 2:
+	if p1_score > 3:
 		win(true)
-	elif p2_score > 2:
+	elif p2_score > 3:
 		win(false)
 	else:
 		print("Current score: ", p1_score, "-", p2_score) # display the score

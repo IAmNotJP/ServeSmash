@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dkb2fcqwdy3jq"]
 
 [ext_resource type="PackedScene" uid="uid://36d5hxuy50y5" path="res://Scenes/GameplayComponents/player1_init.tscn" id="1_3ykug"]
-[ext_resource type="PackedScene" uid="uid://dch0qngoywd1v" path="res://Characters/Fireworm/Fireworm.tscn" id="2_cjtjx"]
+[ext_resource type="PackedScene" uid="uid://bgxt3u4j4pghh" path="res://Characters/Samurai/Samurai.tscn" id="2_da6ol"]
 [ext_resource type="PackedScene" uid="uid://bn8ps1g1u2eof" path="res://Scenes/GameplayComponents/player2_init.tscn" id="3_bu6ql"]
 [ext_resource type="PackedScene" uid="uid://bja6br6rj6set" path="res://Characters/Wolfman/Wolfman.tscn" id="4_bypjd"]
 [ext_resource type="PackedScene" uid="uid://dhqy5ersl1von" path="res://ball.tscn" id="5_syosu"]
@@ -12,7 +12,7 @@
 
 [node name="Player1Init" parent="." instance=ExtResource("1_3ykug")]
 
-[node name="Fireworm" parent="Player1Init" instance=ExtResource("2_cjtjx")]
+[node name="Samurai" parent="Player1Init" instance=ExtResource("2_da6ol")]
 
 [node name="Player2Init" parent="." instance=ExtResource("3_bu6ql")]
 
