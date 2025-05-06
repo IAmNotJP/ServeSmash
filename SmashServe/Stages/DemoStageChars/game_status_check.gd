@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 			await get_tree().create_timer(2).timeout
 		if(get_parent().p2_score > p2score):
 			text = "P2 Scored!"
-			p1score = get_parent().p2_score
+			p2score = get_parent().p2_score
 			await get_tree().create_timer(2).timeout
 		text = "Resetting..."
 		await get_tree().create_timer(2).timeout
