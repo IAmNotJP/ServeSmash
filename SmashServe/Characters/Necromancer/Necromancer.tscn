@@ -1,8 +1,8 @@
 [gd_scene load_steps=43 format=3 uid="uid://dqk56eraln8d1"]
 
-[ext_resource type="Script" path="res://Characters/Necromancer/necromancer.gd" id="1_a2wb6"]
+[ext_resource type="Script" uid="uid://ex5tld66xbih" path="res://Characters/Necromancer/necromancer.gd" id="1_a2wb6"]
 [ext_resource type="Texture2D" uid="uid://ceevbfewd03b6" path="res://Characters/Necromancer/Spritesheet/Necromancer_creativekind-Sheet.png" id="1_or2lb"]
-[ext_resource type="Script" path="res://Scenes/Components/flippable_sprite.gd" id="2_blypn"]
+[ext_resource type="Script" uid="uid://cxhxic4obehhp" path="res://Scenes/Components/flippable_sprite.gd" id="2_blypn"]
 [ext_resource type="PackedScene" uid="uid://tawiiu8h1sqj" path="res://Scenes/Components/input_component.tscn" id="3_pk0q3"]
 [ext_resource type="PackedScene" uid="uid://2001is3sa1gg" path="res://Scenes/Components/animation_component.tscn" id="4_sbtj4"]
 [ext_resource type="PackedScene" uid="uid://cj43lb27iguei" path="res://Scenes/Components/movement_component.tscn" id="5_dj5c3"]

@@ -11,10 +11,12 @@ extends Node2D
 
 var p1_score = 0
 var p2_score = 0
+var resetting = false
 var scored = false
 var p1_serves = RandomNumberGenerator.new().randf() < 0.5
 
 func ball_reset(ball: RigidBody2D):
+	resetting = true
 	if p1_serves:
 		ball.global_position = p1_ball_spawn
 	else:
@@ -25,6 +27,7 @@ func ball_reset(ball: RigidBody2D):
 	ball.freeze = true
 	await get_tree().create_timer(2.5, true, false, true).timeout
 	ball.freeze = false
+	resetting = false
 	
 
 func _on_ball_score(last_hitter: CharacterBody2D, ball: RigidBody2D) -> void:
@@ -69,5 +72,4 @@ func win(p1_won: bool) -> void:
 	Engine.time_scale = 1
 	
 	# wipe to black or something idk
-	
 	get_tree().change_scene_to_file("res://Main Menu/main_menu.tscn")

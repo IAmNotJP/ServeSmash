@@ -1,10 +1,10 @@
 [gd_scene load_steps=45 format=3 uid="uid://o2th1j3h14qt"]
 
-[ext_resource type="Script" path="res://Characters/Huntress/huntress.gd" id="1_pek4l"]
+[ext_resource type="Script" uid="uid://24c28cqc1wk4" path="res://Characters/Huntress/huntress.gd" id="1_pek4l"]
 [ext_resource type="Texture2D" uid="uid://beq2fapcbam57" path="res://Characters/Huntress/spritesheets/Sprites/Idle.png" id="2_bxpff"]
 [ext_resource type="Texture2D" uid="uid://bsmoehj6jk6b4" path="res://Characters/Huntress/spritesheets/Sprites/Jump.png" id="3_4vkio"]
 [ext_resource type="PackedScene" uid="uid://tawiiu8h1sqj" path="res://Scenes/Components/input_component.tscn" id="3_jt4oe"]
-[ext_resource type="Script" path="res://Scenes/Components/flippable_sprite.gd" id="4_72kc3"]
+[ext_resource type="Script" uid="uid://cxhxic4obehhp" path="res://Scenes/Components/flippable_sprite.gd" id="4_72kc3"]
 [ext_resource type="PackedScene" uid="uid://2001is3sa1gg" path="res://Scenes/Components/animation_component.tscn" id="4_bjb68"]
 [ext_resource type="Texture2D" uid="uid://dm58jbv2lhe3f" path="res://Characters/Huntress/spritesheets/Sprites/Attack1.png" id="4_lt4kp"]
 [ext_resource type="PackedScene" uid="uid://cj43lb27iguei" path="res://Scenes/Components/movement_component.tscn" id="5_7y6vw"]
