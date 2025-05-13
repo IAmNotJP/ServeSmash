@@ -2,12 +2,22 @@ extends Control
 
 @onready var asp: AudioStreamPlayer = $AudioStreamPlayer
 @onready var logo: Sprite2D = $CenterContainer/Sprite2D
-@onready var flash_animation: AnimationPlayer = $CenterContainer/Sprite2D/AnimationPlayer
+@onready var animation_player: AnimationPlayer = $CenterContainer/Sprite2D/AnimationPlayer
 @onready var next_scene: PackedScene = preload("res://Stages/DemoStageChars/demo.tscn")
+@onready var options_menu: PanelContainer = $OptionsMenu
+
 
 func _ready():
 	logo.scale = Vector2(0.245, 0.245)  # Shrinks sprite to 50% of original size
-	flash_animation.play("flash")
+	animation_player.play("flash")
+	options_menu.exit_options_menu.connect(on_exit_options_menu)
+
+
+
+
+func on_exit_options_menu() -> void:
+	options_menu.hide()
+	options_menu.set_process(false)
 
 
 func _on_texture_button_1_pressed() -> void:
@@ -15,6 +25,11 @@ func _on_texture_button_1_pressed() -> void:
 	get_tree().change_scene_to_packed(next_scene)
 	
 
+
+func _on_texture_button_2_pressed() -> void:
+	options_menu.show()
+	options_menu.set_process(true)
+	
 
 
 func _on_texture_button_3_pressed() -> void:
