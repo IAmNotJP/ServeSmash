@@ -4,3 +4,6 @@
 
 [node name="LobComponent" type="Node"]
 script = ExtResource("1_2y5nl")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+bus = &"SFX"

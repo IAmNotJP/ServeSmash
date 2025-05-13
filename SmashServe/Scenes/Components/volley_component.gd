@@ -3,10 +3,14 @@ extends Node
 
 @export var volley_hitbox: FlippableShape
 @export var sprite: AnimatedSprite2D
+var sound: AudioStream = load("res://SFX/hitHurt.wav")
+
 
 func handle_hitbox(body: CharacterBody2D, want_to_hit: bool) -> void:
 	if want_to_hit and get_parent().is_hitting == false:
 		sprite.play("volley")
+		$AudioStreamPlayer2D.stream = sound
+		$AudioStreamPlayer2D.play()
 		volley_hitbox.disabled = false
 		get_parent().is_hitting = true
 		
