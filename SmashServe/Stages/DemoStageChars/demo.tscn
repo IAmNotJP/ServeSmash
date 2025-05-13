@@ -1,5 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://dkb2fcqwdy3jq"]
 
+
 [ext_resource type="PackedScene" uid="uid://36d5hxuy50y5" path="res://Scenes/GameplayComponents/player1_init.tscn" id="1_3ykug"]
 [ext_resource type="PackedScene" uid="uid://bgxt3u4j4pghh" path="res://Characters/Samurai/Samurai.tscn" id="2_da6ol"]
 [ext_resource type="PackedScene" uid="uid://bn8ps1g1u2eof" path="res://Scenes/GameplayComponents/player2_init.tscn" id="3_bu6ql"]
@@ -8,10 +9,12 @@
 [ext_resource type="PackedScene" uid="uid://c5ha1oapstiup" path="res://Stages/Stage1.tscn" id="6_xrqbe"]
 [ext_resource type="PackedScene" uid="uid://dpaskslc0quto" path="res://Scenes/GameplayComponents/pause_menu.tscn" id="7_d2r4y"]
 [ext_resource type="PackedScene" uid="uid://cxicvaebvy55k" path="res://game_controller.tscn" id="7_da6ol"]
+
 [ext_resource type="FontFile" uid="uid://q355qhow6fuh" path="res://Serve Smash Assets/Fonts/PressStart2P-Regular.ttf" id="8_pa2so"]
 [ext_resource type="Script" uid="uid://bd2j5qsr1qcug" path="res://Scenes/GameplayComponents/pause_menu.gd" id="8_vkq8d"]
 [ext_resource type="Script" uid="uid://bfb8p8g2ak5w0" path="res://Stages/DemoStageChars/p_1_score.gd" id="8_xa06r"]
 [ext_resource type="Script" uid="uid://bfrthm2eh2sp" path="res://Stages/DemoStageChars/p_2_score.gd" id="9_pa2so"]
+
 [ext_resource type="Script" uid="uid://xa6ffubnrnkr" path="res://Stages/DemoStageChars/game_status_check.gd" id="10_bvbrg"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_bvbrg"]

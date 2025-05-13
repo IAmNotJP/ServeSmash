@@ -9,6 +9,7 @@ extends Node2D
 
 @onready var left_is_p1 = p1.position.x < DisplayServer.window_get_size(0).x / 2
 
+
 var total_games;
 var total_sets;
 var total_matches;
@@ -67,6 +68,11 @@ func _on_ball_score(last_hitter: CharacterBody2D, ball: RigidBody2D) -> void:
 		Engine.time_scale = 1
 		scored = false
 		ball_reset(ball)
+		
+func _input(ev):
+	if Input.is_action_just_pressed("Reset"):
+		Engine.time_scale = 1
+		get_tree().reload_current_scene()
 
 func win(p1_won: bool) -> void:
 	if p1_won: # Do the displaying of player 1 or 2 winning
