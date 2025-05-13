@@ -10,6 +10,7 @@ var is_falling: bool = false
 
 var prevframe: float = 0
 var currentframe: float = 0
+var sound: AudioStream = load("res://SFX/jump.wav")
 
 
 func handle_jump(body: CharacterBody2D, want_to_jump: bool) -> void:
@@ -19,6 +20,8 @@ func handle_jump(body: CharacterBody2D, want_to_jump: bool) -> void:
 	if want_to_jump and body.is_on_floor():
 		get_parent().is_airbourne = true
 		body.velocity.y = jump_velocity
+		$AudioStreamPlayer2D.stream = sound
+		$AudioStreamPlayer2D.play()
 	
 	if body.velocity.y < 0 and not body.is_on_floor() and is_jumping == false and get_parent().is_hitting == false:
 		sprite.play("jump_launch")

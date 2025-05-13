@@ -2,6 +2,12 @@ extends Node
 var config = ConfigFile.new()
 var global_sfx = .8;
 var global_music = .8;
+var globalp1;
+var globalp2;
+var globalp3;
+var globalp4;
+
+var globalstage;
 
 	
 

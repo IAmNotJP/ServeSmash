@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6y4a2dfuxiho"]
+
+[ext_resource type="Script" uid="uid://bn6qnrv0gf54w" path="res://jump_sound.gd" id="1_81a5p"]
+[ext_resource type="Script" uid="uid://cgh2wjotaryd1" path="res://hit_sound.gd" id="2_5j07x"]
+
+[node name="Charactersound" type="Node"]
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
+bus = &"SFX"
+script = ExtResource("1_81a5p")
+
+[node name="HitSound" type="AudioStreamPlayer2D" parent="."]
+bus = &"SFX"
+script = ExtResource("2_5j07x")

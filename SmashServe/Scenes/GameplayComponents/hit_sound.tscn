@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfnvmnf8rjtap"]
+
+[ext_resource type="Script" uid="uid://cgh2wjotaryd1" path="res://hit_sound.gd" id="1_2c58e"]
+
+[node name="HitSound" type="AudioStreamPlayer2D"]
+bus = &"SFX"
+script = ExtResource("1_2c58e")

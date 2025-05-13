@@ -4,6 +4,6 @@
 
 [node name="JumpComponent" type="Node"]
 script = ExtResource("1_b5owa")
-jump_height = null
-jump_time_to_peak = null
-jump_time_to_descent = null
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+bus = &"SFX"
