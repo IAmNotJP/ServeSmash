@@ -9,8 +9,15 @@ extends Node2D
 
 @onready var left_is_p1 = p1.position.x < DisplayServer.window_get_size(0).x / 2
 
+var total_games;
+var total_sets;
+var total_matches;
 var p1_score = 0
 var p2_score = 0
+var p1_games = 0
+var p2_games = 0
+var p1_matches;
+var p2_matches;
 var resetting = false
 var scored = false
 var p1_serves = RandomNumberGenerator.new().randf() < 0.5

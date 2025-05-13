@@ -7,6 +7,11 @@ extends Node2D
 @export var positionx: float = 370.0
 @export var positiony: float = 778.0
 
+var player_stats = {
+	"Hits": 0,
+	"Swings": 0
+}
+
 var path
 
 @export var inputs = {
