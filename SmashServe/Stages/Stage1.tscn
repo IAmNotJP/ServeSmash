@@ -47582,6 +47582,7 @@ tile_set = SubResource("TileSet_sa0uw")
 stream = ExtResource("7_hjltf")
 volume_db = -25.0
 autoplay = true
+bus = &" Music"
 parameters/looping = true
 
 [node name="Walls" type="StaticBody2D" parent="."]
