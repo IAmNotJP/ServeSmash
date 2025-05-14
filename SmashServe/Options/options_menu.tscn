@@ -57,7 +57,6 @@ offset_bottom = 48.0
 grow_horizontal = 2
 grow_vertical = 2
 scrollable = false
-bus_name = "Master"
 
 [node name="MusicLabel" type="Label" parent="TabContainer/Sound/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -80,7 +79,6 @@ offset_bottom = 48.0
 grow_horizontal = 2
 grow_vertical = 2
 scrollable = false
-bus_name = "Music"
 
 [node name="SFXLabel" type="Label" parent="TabContainer/Sound/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -103,7 +101,6 @@ offset_bottom = 48.0
 grow_horizontal = 2
 grow_vertical = 2
 scrollable = false
-bus_name = "SFX"
 
 [node name="Controls" type="TabBar" parent="TabContainer"]
 visible = false
