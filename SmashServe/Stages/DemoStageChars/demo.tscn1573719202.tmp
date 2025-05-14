@@ -55,9 +55,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 320.0
+offset_left = 300.0
 offset_top = 40.0
-offset_right = 640.0
+offset_right = 700.0
 offset_bottom = 140.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -73,9 +73,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 1280.0
+offset_left = 1300.0
 offset_top = 40.0
-offset_right = 1600.0
+offset_right = 1620.0
 offset_bottom = 140.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -101,24 +101,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("10_bvbrg")
 
-[node name="P1Games" type="Label" parent="GameController"]
-offset_left = 438.0
-offset_top = 132.0
-offset_right = 522.0
-offset_bottom = 197.0
-theme_override_constants/outline_size = 4
-theme_override_fonts/font = ExtResource("8_pa2so")
-theme_override_font_sizes/font_size = 48
-text = "○○"
-
-[node name="P2Games" type="Label" parent="GameController"]
-offset_left = 1398.0
-offset_top = 132.0
-offset_right = 1482.0
-offset_bottom = 197.0
-theme_override_constants/outline_size = 4
-theme_override_fonts/font = ExtResource("8_pa2so")
-theme_override_font_sizes/font_size = 48
-text = "○○"
+[node name="Label" type="Label" parent="GameController"]
+offset_right = 40.0
+offset_bottom = 23.0
 
 [connection signal="score" from="Ball" to="GameController" method="_on_ball_score"]
