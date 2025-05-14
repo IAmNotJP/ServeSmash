@@ -47561,6 +47561,7 @@ size = Vector2(20, 1085)
 size = Vector2(20, 200.5)
 
 [node name="Stage1" type="Node2D"]
+show_behind_parent = true
 script = ExtResource("1_hqab3")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -47582,7 +47583,6 @@ tile_set = SubResource("TileSet_sa0uw")
 stream = ExtResource("7_hjltf")
 volume_db = -12.0
 autoplay = true
-bus = &"Music"
 parameters/looping = true
 
 [node name="Walls" type="StaticBody2D" parent="."]

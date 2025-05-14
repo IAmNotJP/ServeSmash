@@ -12,7 +12,7 @@ var player_stats = {
 	"Swings": 0
 }
 
-var path
+var path = Globals.p1["Path"]
 
 @export var inputs = {
 	"up": 'p1up',
@@ -25,7 +25,7 @@ var path
 	"lob": 'p1lob',
 }
 
-#func _ready() -> void:
-	#var scene = load(path)
-	#var instance = scene.instanciate()
-	#add_child(instance)
+func _ready() -> void:
+	print("path")
+	var scene = load(path)
+	add_child(scene.instantiate())

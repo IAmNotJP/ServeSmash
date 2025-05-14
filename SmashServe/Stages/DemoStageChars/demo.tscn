@@ -1,11 +1,9 @@
-[gd_scene load_steps=17 format=3 uid="uid://dkb2fcqwdy3jq"]
+[gd_scene load_steps=15 format=3 uid="uid://dkb2fcqwdy3jq"]
 
 [ext_resource type="PackedScene" uid="uid://36d5hxuy50y5" path="res://Scenes/GameplayComponents/player1_init.tscn" id="1_3ykug"]
-[ext_resource type="PackedScene" uid="uid://bgxt3u4j4pghh" path="res://Characters/Samurai/Samurai.tscn" id="2_da6ol"]
+[ext_resource type="Script" uid="uid://edgt5s06qm05" path="res://Stages/DemoStageChars/gameplay.gd" id="1_bvbrg"]
 [ext_resource type="PackedScene" uid="uid://bn8ps1g1u2eof" path="res://Scenes/GameplayComponents/player2_init.tscn" id="3_bu6ql"]
-[ext_resource type="PackedScene" uid="uid://bja6br6rj6set" path="res://Characters/Wolfman/Wolfman.tscn" id="4_bypjd"]
 [ext_resource type="PackedScene" uid="uid://dhqy5ersl1von" path="res://ball.tscn" id="5_syosu"]
-[ext_resource type="PackedScene" uid="uid://c5ha1oapstiup" path="res://Stages/Stage1.tscn" id="6_xrqbe"]
 [ext_resource type="PackedScene" uid="uid://dpaskslc0quto" path="res://Scenes/GameplayComponents/pause_menu.tscn" id="7_d2r4y"]
 [ext_resource type="PackedScene" uid="uid://cxicvaebvy55k" path="res://game_controller.tscn" id="7_da6ol"]
 [ext_resource type="FontFile" uid="uid://dklnqdkk835j" path="res://Serve Smash Assets/Fonts/PressStart2P-Regular.ttf" id="8_pa2so"]
@@ -33,22 +31,17 @@ outline_size = 5
 outline_color = Color(0, 0, 0, 1)
 
 [node name="Gameplay" type="Node2D"]
+script = ExtResource("1_bvbrg")
 
 [node name="Player1Init" parent="." instance=ExtResource("1_3ykug")]
-
-[node name="Samurai" parent="Player1Init" instance=ExtResource("2_da6ol")]
+top_level = true
 
 [node name="Player2Init" parent="." instance=ExtResource("3_bu6ql")]
-
-[node name="Wolfman" parent="Player2Init" instance=ExtResource("4_bypjd")]
+top_level = true
 
 [node name="Ball" parent="." instance=ExtResource("5_syosu")]
+top_level = true
 position = Vector2(583, 760)
-
-[node name="Stage1" parent="." instance=ExtResource("6_xrqbe")]
-process_mode = 3
-z_index = -10
-script = null
 
 [node name="PauseMenu" parent="." instance=ExtResource("7_d2r4y")]
 process_mode = 3

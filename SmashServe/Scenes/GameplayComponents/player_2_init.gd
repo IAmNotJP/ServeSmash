@@ -7,7 +7,7 @@ extends Node2D
 @export var positionx: float = 1500.0
 @export var positiony: float = 830.0
 
-var path
+var path = Globals.p2["Path"]
 
 @export var inputs = {
 	"up": 'p2up',
@@ -20,7 +20,7 @@ var path
 	"lob": 'p2lob',
 }
 
-#func _ready() -> void:
-	#var scene = load(path)
-	#var instance = scene.instanciate()
-	#add_child(instance)
+func _ready() -> void:
+	print("path")
+	var scene = load(path)
+	add_child(scene.instantiate())
