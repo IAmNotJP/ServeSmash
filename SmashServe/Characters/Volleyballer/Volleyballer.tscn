@@ -614,6 +614,8 @@ lob_hitbox = NodePath("../HitboxComponent/LobShape")
 sprite = NodePath("../FlippableSprite")
 
 [node name="HitboxComponent" parent="." node_paths=PackedStringArray("flippable_sprite") instance=ExtResource("14_ku3gw")]
+collision_layer = 14
+collision_mask = 14
 flippable_sprite = NodePath("../FlippableSprite")
 
 [node name="VolleyShape" parent="HitboxComponent" instance=ExtResource("14_7117i")]
