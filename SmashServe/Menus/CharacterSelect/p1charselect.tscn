@@ -1,0 +1,123 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8ybj7uvyw2fl"]
+
+[ext_resource type="Script" uid="uid://dvym24ukout4r" path="res://Menus/CharacterSelect/p1charselect.gd" id="1_bxh5d"]
+[ext_resource type="Texture2D" uid="uid://b28w4caamgcrt" path="res://Serve Smash Assets/ph1.png" id="2_hll06"]
+[ext_resource type="FontFile" uid="uid://dklnqdkk835j" path="res://Serve Smash Assets/Fonts/PressStart2P-Regular.ttf" id="3_p8xsr"]
+
+[node name="P1 Character Select" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bxh5d")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1090.0
+texture = ExtResource("2_hll06")
+
+[node name="Charlie" type="Button" parent="."]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 301.0
+offset_right = 480.0
+offset_bottom = 451.0
+theme_override_fonts/font = ExtResource("3_p8xsr")
+text = "Charlie"
+
+[node name="Necromancer" type="Button" parent="."]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 516.0
+offset_right = 480.0
+offset_bottom = 666.0
+theme_override_fonts/font = ExtResource("3_p8xsr")
+text = "Necromancer"
+
+[node name="Fireworm" type="Button" parent="."]
+layout_mode = 0
+offset_left = 690.0
+offset_top = 301.0
+offset_right = 890.0
+offset_bottom = 451.0
+theme_override_fonts/font = ExtResource("3_p8xsr")
+text = "Fireworm"
+
+[node name="Samurai" type="Button" parent="."]
+layout_mode = 0
+offset_left = 690.0
+offset_top = 516.0
+offset_right = 890.0
+offset_bottom = 666.0
+theme_override_fonts/font = ExtResource("3_p8xsr")
+text = "Samurai"
+
+[node name="Huntress" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1100.0
+offset_top = 301.0
+offset_right = 1300.0
+offset_bottom = 451.0
+theme_override_fonts/font = ExtResource("3_p8xsr")
+text = "Huntress"
+
+[node name="Volleyballer" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1100.0
+offset_top = 516.0
+offset_right = 1300.0
+offset_bottom = 666.0
+theme_override_fonts/font = ExtResource("3_p8xsr")
+text = "Volleyballer"
+
+[node name="Knight" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1510.0
+offset_top = 301.0
+offset_right = 1710.0
+offset_bottom = 451.0
+theme_override_fonts/font = ExtResource("3_p8xsr")
+text = "Knight"
+
+[node name="Wolfman" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1510.0
+offset_top = 516.0
+offset_right = 1710.0
+offset_bottom = 666.0
+theme_override_fonts/font = ExtResource("3_p8xsr")
+text = "Wolfman"
+
+[node name="Back Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1598.0
+offset_top = 45.0
+offset_right = 1798.0
+offset_bottom = 195.0
+theme_override_fonts/font = ExtResource("3_p8xsr")
+theme_override_font_sizes/font_size = 36
+text = "Back
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 24.0
+offset_right = 952.0
+offset_bottom = 125.0
+theme_override_fonts/font = ExtResource("3_p8xsr")
+theme_override_font_sizes/font_size = 60
+text = "P1 SELECT CHARACTER"
+
+[connection signal="pressed" from="Charlie" to="." method="_on_charlie_pressed"]
+[connection signal="pressed" from="Necromancer" to="." method="_on_necromancer_pressed"]
+[connection signal="pressed" from="Fireworm" to="." method="_on_fireworm_pressed"]
+[connection signal="pressed" from="Samurai" to="." method="_on_samurai_pressed"]
+[connection signal="pressed" from="Huntress" to="." method="_on_huntress_pressed"]
+[connection signal="pressed" from="Volleyballer" to="." method="_on_volleyballer_pressed"]
+[connection signal="pressed" from="Knight" to="." method="_on_knight_pressed"]
+[connection signal="pressed" from="Wolfman" to="." method="_on_wolfman_pressed"]
+[connection signal="pressed" from="Back Button" to="." method="_on_back_button_pressed"]
