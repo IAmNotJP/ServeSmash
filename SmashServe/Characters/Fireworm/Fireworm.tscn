@@ -362,13 +362,13 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ljb4b"]
-size = Vector2(20, 15)
+size = Vector2(20, 36.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1wgw4"]
-size = Vector2(20, 15)
+size = Vector2(29.5833, 32.4167)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ennuh"]
-size = Vector2(20, 15)
+size = Vector2(19.1667, 27.4167)
 
 [node name="Fireworm" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component", "animation_component", "volley_component", "smash_component", "lob_component")]
 scale = Vector2(2.4, 2.4)
@@ -427,19 +427,19 @@ collision_mask = 14
 flippable_sprite = NodePath("../FlippableSprite")
 
 [node name="VolleyShape" parent="HitboxComponent" instance=ExtResource("14_plj5r")]
-position = Vector2(35, -12)
+position = Vector2(35, -18.125)
 shape = SubResource("RectangleShape2D_ljb4b")
 disabled = true
 default_position = Vector2(35, -12)
 
 [node name="LobShape" parent="HitboxComponent" instance=ExtResource("14_plj5r")]
-position = Vector2(35, -12)
+position = Vector2(31.4583, -3.29167)
 shape = SubResource("RectangleShape2D_1wgw4")
 disabled = true
 default_position = Vector2(35, -12)
 
 [node name="SmashShape" parent="HitboxComponent" instance=ExtResource("14_plj5r")]
-position = Vector2(35, -12)
+position = Vector2(34.5833, -5.79167)
 shape = SubResource("RectangleShape2D_ennuh")
 disabled = true
 default_position = Vector2(35, -12)

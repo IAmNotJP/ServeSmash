@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b66qr7d6v1pqu"]
+[gd_scene load_steps=5 format=3 uid="uid://b66qr7d6v1pqu"]
 
 [ext_resource type="Script" uid="uid://cafqxredqyw4b" path="res://Menus/CharacterSelect/p2charselect.gd" id="1_wu5rf"]
 [ext_resource type="Texture2D" uid="uid://b28w4caamgcrt" path="res://Serve Smash Assets/ph1.png" id="2_ljbis"]
 [ext_resource type="FontFile" uid="uid://dklnqdkk835j" path="res://Serve Smash Assets/Fonts/PressStart2P-Regular.ttf" id="3_owfex"]
+[ext_resource type="AudioStream" uid="uid://dmnp6baitybnk" path="res://Serve Smash Assets/Music/Character Select.mp3" id="4_ljbis"]
 
 [node name="P2 Character Select" type="Control"]
 layout_mode = 3
@@ -111,6 +112,13 @@ offset_bottom = 125.0
 theme_override_fonts/font = ExtResource("3_owfex")
 theme_override_font_sizes/font_size = 60
 text = "P2 SELECT CHARACTER"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ljbis")
+volume_db = -12.0
+autoplay = true
+bus = &"Music"
+parameters/looping = true
 
 [connection signal="pressed" from="Charlie" to="." method="_on_charlie_pressed"]
 [connection signal="pressed" from="Necromancer" to="." method="_on_necromancer_pressed"]

@@ -556,12 +556,13 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8inbt"]
-size = Vector2(16, 16)
+size = Vector2(36, 28.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_17vuu"]
-size = Vector2(20, 21.75)
+size = Vector2(26, 54.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5q4gt"]
+size = Vector2(33, 47)
 
 [node name="Volleyballer" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component", "animation_component", "volley_component", "smash_component", "lob_component")]
 scale = Vector2(2, 2)
@@ -616,19 +617,19 @@ sprite = NodePath("../FlippableSprite")
 flippable_sprite = NodePath("../FlippableSprite")
 
 [node name="VolleyShape" parent="HitboxComponent" instance=ExtResource("14_7117i")]
-position = Vector2(9, 10.5)
+position = Vector2(19, -1.75)
 shape = SubResource("RectangleShape2D_8inbt")
 disabled = true
 default_position = Vector2(9, 10.5)
 
 [node name="SmashShape" parent="HitboxComponent" instance=ExtResource("14_7117i")]
-position = Vector2(7, -10.875)
+position = Vector2(10, 5.375)
 shape = SubResource("RectangleShape2D_17vuu")
 disabled = true
 default_position = Vector2(7, -10.875)
 
 [node name="LobShape" parent="HitboxComponent" instance=ExtResource("14_7117i")]
-position = Vector2(8, -14.5)
+position = Vector2(17, -2.5)
 shape = SubResource("RectangleShape2D_5q4gt")
 disabled = true
 default_position = Vector2(8, -14.5)

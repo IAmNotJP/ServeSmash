@@ -242,7 +242,7 @@ radius = 41.0
 height = 188.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8uwc0"]
-radius = 41.0
+radius = 53.0
 height = 188.0
 
 [node name="Samurai" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component", "animation_component", "volley_component", "smash_component", "lob_component")]
@@ -316,7 +316,7 @@ disabled = true
 default_position = Vector2(99, -11)
 
 [node name="SmashShape" parent="HitboxComponent" instance=ExtResource("16_elkio")]
-position = Vector2(99, -11)
+position = Vector2(96, -6)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_8uwc0")
 disabled = true

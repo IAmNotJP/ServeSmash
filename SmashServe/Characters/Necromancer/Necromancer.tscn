@@ -1,6 +1,6 @@
 [gd_scene load_steps=43 format=3 uid="uid://dqk56eraln8d1"]
 
-[ext_resource type="Script" uid="uid://ex5tld66xbih" path="res://Characters/Necromancer/necromancer.gd" id="1_a2wb6"]
+[ext_resource type="Script" uid="uid://madiwh63mjta" path="res://Characters/Necromancer/necromancer.gd" id="1_a2wb6"]
 [ext_resource type="Texture2D" uid="uid://ceevbfewd03b6" path="res://Characters/Necromancer/Spritesheet/Necromancer_creativekind-Sheet.png" id="1_or2lb"]
 [ext_resource type="Script" uid="uid://cxhxic4obehhp" path="res://Scenes/Components/flippable_sprite.gd" id="2_blypn"]
 [ext_resource type="PackedScene" uid="uid://tawiiu8h1sqj" path="res://Scenes/Components/input_component.tscn" id="3_pk0q3"]
@@ -323,10 +323,10 @@ animations = [{
 size = Vector2(46, 48)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8njkr"]
-size = Vector2(46, 48)
+size = Vector2(37, 82.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lqvfw"]
-size = Vector2(46, 48)
+size = Vector2(41, 62.5)
 
 [node name="Necromancer" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component", "animation_component", "volley_component", "smash_component", "lob_component")]
 position = Vector2(-7, -87)
@@ -383,19 +383,19 @@ collision_mask = 14
 flippable_sprite = NodePath("../FlippableSprite")
 
 [node name="VolleyShape" parent="HitboxComponent" instance=ExtResource("12_4h27v")]
-position = Vector2(18, -16)
+position = Vector2(21, 2)
 shape = SubResource("RectangleShape2D_wrtld")
 disabled = true
 default_position = Vector2(30.5, -12)
 
 [node name="LobShape" parent="HitboxComponent" instance=ExtResource("12_4h27v")]
-position = Vector2(18, -16)
+position = Vector2(24, 17.75)
 shape = SubResource("RectangleShape2D_8njkr")
 disabled = true
 default_position = Vector2(18, -16)
 
 [node name="SmashShape" parent="HitboxComponent" instance=ExtResource("12_4h27v")]
-position = Vector2(18, -16)
+position = Vector2(21.5, 38)
 shape = SubResource("RectangleShape2D_lqvfw")
 disabled = true
 default_position = Vector2(18, -16)
