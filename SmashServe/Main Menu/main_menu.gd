@@ -3,7 +3,7 @@ extends Control
 @onready var asp: AudioStreamPlayer = $AudioStreamPlayer
 @onready var logo: Sprite2D = $CenterContainer/Sprite2D
 @onready var animation_player: AnimationPlayer = $CenterContainer/Sprite2D/AnimationPlayer
-@onready var next_scene: PackedScene = preload("res://Stages/DemoStageChars/demo.tscn")
+@onready var next_scene: PackedScene = preload("res://Menus/CharacterSelect/p1charselect.tscn")
 @onready var options_menu: PanelContainer = $OptionsMenu
 
 
