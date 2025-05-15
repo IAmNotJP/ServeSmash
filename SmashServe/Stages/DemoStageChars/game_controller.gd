@@ -71,7 +71,7 @@ func _on_ball_score(last_hitter: CharacterBody2D, ball: RigidBody2D) -> void:
 			win_game(true)
 			ball_reset(ball)
 	elif p2_score > 3:
-		if p1_games == 1:
+		if p2_games == 1:
 			win(false)
 		else:
 			win_game(false)

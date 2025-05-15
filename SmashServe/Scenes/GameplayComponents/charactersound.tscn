@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c6y4a2dfuxiho"]
 
-[ext_resource type="Script" uid="uid://bn6qnrv0gf54w" path="res://jump_sound.gd" id="1_81a5p"]
-[ext_resource type="Script" uid="uid://cgh2wjotaryd1" path="res://hit_sound.gd" id="2_5j07x"]
+[ext_resource type="Script" uid="uid://bn6qnrv0gf54w" path="res://Scenes/GameplayComponents/jump_sound.gd" id="1_81a5p"]
+[ext_resource type="Script" uid="uid://cgh2wjotaryd1" path="res://Scenes/GameplayComponents/hit_sound.gd" id="2_5j07x"]
 
 [node name="Charactersound" type="Node"]
 

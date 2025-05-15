@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://k1glkdo0yx5v"
-path="res://.godot/imported/0_Template_Tileset.png-6af3fca958e4c7a386c1d0c34e3e54f8.ctex"
+uid="uid://duudo6vqmekok"
+path="res://.godot/imported/ball.png-dc7c2185477cc5eac67f8e27bb54ae84.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Stages/[FREE] Industrial Tileset/5. Industrial Tileset - Starter Pack 32p/0_Template_Tileset.png"
-dest_files=["res://.godot/imported/0_Template_Tileset.png-6af3fca958e4c7a386c1d0c34e3e54f8.ctex"]
+source_file="res://Stages/DemoStageChars/ball.png"
+dest_files=["res://.godot/imported/ball.png-dc7c2185477cc5eac67f8e27bb54ae84.ctex"]
 
 [params]
 

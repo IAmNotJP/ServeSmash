@@ -329,7 +329,7 @@ animations = [{
 size = Vector2(24, 27)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qvix6"]
-size = Vector2(29.3333, 47.1667)
+size = Vector2(34.3333, 47.1667)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4hd54"]
 size = Vector2(26.8333, 41.6667)
@@ -394,7 +394,7 @@ disabled = true
 default_position = Vector2(38, 9)
 
 [node name="LobShape" parent="HitboxComponent" instance=ExtResource("13_xql1o")]
-position = Vector2(14.3333, 8.08333)
+position = Vector2(16.8333, 8.08333)
 shape = SubResource("RectangleShape2D_qvix6")
 disabled = true
 default_position = Vector2(10, -5)

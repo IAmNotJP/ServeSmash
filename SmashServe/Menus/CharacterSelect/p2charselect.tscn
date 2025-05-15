@@ -120,6 +120,17 @@ autoplay = true
 bus = &"Music"
 parameters/looping = true
 
+[node name="Loading" type="Label" parent="."]
+layout_mode = 0
+offset_left = 832.0
+offset_top = 468.0
+offset_right = 1152.0
+offset_bottom = 500.0
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("3_owfex")
+theme_override_font_sizes/font_size = 32
+text = "Loading..."
+
 [connection signal="pressed" from="Charlie" to="." method="_on_charlie_pressed"]
 [connection signal="pressed" from="Necromancer" to="." method="_on_necromancer_pressed"]
 [connection signal="pressed" from="Fireworm" to="." method="_on_fireworm_pressed"]

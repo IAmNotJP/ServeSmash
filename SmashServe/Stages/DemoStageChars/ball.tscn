@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://dhqy5ersl1von"]
 
-[ext_resource type="Texture2D" uid="uid://c3khsdaoe2y8v" path="res://ball_glow.png" id="1_hgol0"]
-[ext_resource type="Script" uid="uid://bp8y4gcb5mf6f" path="res://ball.gd" id="1_n5601"]
-[ext_resource type="Texture2D" uid="uid://duudo6vqmekok" path="res://ball.png" id="1_x8fbi"]
-[ext_resource type="Script" uid="uid://c13df518naqjt" path="res://hitbox.gd" id="2_41u45"]
+[ext_resource type="Texture2D" uid="uid://c3khsdaoe2y8v" path="res://Stages/DemoStageChars/ball_glow.png" id="1_hgol0"]
+[ext_resource type="Script" uid="uid://bp8y4gcb5mf6f" path="res://Stages/DemoStageChars/ball.gd" id="1_n5601"]
+[ext_resource type="Texture2D" uid="uid://duudo6vqmekok" path="res://Stages/DemoStageChars/ball.png" id="1_x8fbi"]
+[ext_resource type="Script" uid="uid://c13df518naqjt" path="res://Stages/DemoStageChars/hitbox.gd" id="2_41u45"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_41u45"]
 friction = 0.05

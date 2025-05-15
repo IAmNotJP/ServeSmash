@@ -1,6 +1,10 @@
 extends Control
 
 @onready var next_scene: PackedScene = preload("res://Stages/DemoStageChars/demo.tscn")
+@onready var loading: Label = $Loading
+
+func _ready() -> void:
+	loading.hide()
 
 func _on_charlie_pressed() -> void:
 	Globals.p2["Character"] = "Charlie"
@@ -56,4 +60,10 @@ func _on_back_button_pressed() -> void:
 	
 	
 func confirm() -> void:
+	loading.show()
+	await get_tree().process_frame
+	await get_tree().process_frame
+	await get_tree().process_frame
+	await get_tree().process_frame
+	await get_tree().process_frame
 	get_tree().change_scene_to_packed(next_scene)
