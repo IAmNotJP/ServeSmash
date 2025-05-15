@@ -306,7 +306,6 @@ size = Vector2(62, 37.25)
 
 [node name="Charlie" type="CharacterBody2D" node_paths=PackedStringArray("gravity_component", "jump_component", "input_component", "movement_component", "animation_component", "volley_component", "smash_component", "lob_component")]
 scale = Vector2(2, 2)
-collision_layer = 8
 script = ExtResource("1_bkf6v")
 gravity_component = NodePath("GravityComponent")
 jump_component = NodePath("JumpComponent")
