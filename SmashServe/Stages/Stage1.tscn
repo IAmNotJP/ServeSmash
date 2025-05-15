@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://danoip02fppi8" path="res://Serve Smash Assets/TileMap/Tiles/Social/Mine.png" id="4_omp8m"]
 [ext_resource type="Texture2D" uid="uid://csx1b62txw4ys" path="res://Serve Smash Assets/TileMap/Tiles/Social/Assets.png" id="5_nmcay"]
 [ext_resource type="Texture2D" uid="uid://w32dc01tau50" path="res://Serve Smash Assets/TileMap/Tiles/Social/entrance.png" id="6_7bj6w"]
-[ext_resource type="AudioStream" uid="uid://dmnp6baitybnk" path="res://Serve Smash Assets/Music/Character Select.mp3" id="7_hjltf"]
+[ext_resource type="AudioStream" uid="uid://b0618c7qjw0ie" path="res://Serve Smash Assets/Music/Intense Gaming.mp3" id="8_hqab3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5bt4n"]
 texture = ExtResource("1_mn45r")
@@ -47580,7 +47580,7 @@ tile_map_data = PackedByteArray("AAABAA0AAAANAAAAAAAbAA0AAAANAAAAAAAcAA0AAAAPAAA
 tile_set = SubResource("TileSet_sa0uw")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_hjltf")
+stream = ExtResource("8_hqab3")
 volume_db = -12.0
 autoplay = true
 bus = &"Music"
